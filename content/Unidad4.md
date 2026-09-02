@@ -17,7 +17,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-4/pruebas-escritorio.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-4/pruebas-escritorio.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ### Practiquemos lo aprendido
@@ -37,7 +37,7 @@ kernelspec:
 
 :::{grid-item}
 :columns: 3
-<img src="https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/imgs/gato-pipa.png" width="80" />
+<img src="https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/imgs/gato-pipa.png" width="80" />
 :::
 
 ::::
@@ -47,7 +47,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-4/creacion-ejecucion-programa.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-4/creacion-ejecucion-programa.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ## Entrada y Salida de Variables
@@ -58,7 +58,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-4/entrada-salida-var.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-4/entrada-salida-var.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 :::{note}
@@ -87,7 +87,7 @@ Puedes acceder a los notebooks en las siguiente páginas (*Strings y Entrada de 
 
 :::{grid-item}
 :columns: 3
-<img src="https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
+<img src="https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
 :::
 
 ::::

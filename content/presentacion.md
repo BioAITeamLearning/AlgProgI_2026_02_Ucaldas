@@ -24,23 +24,23 @@ Si no ves cambios en cualquier unidad de la página realiza un [hard refresh](ht
 ## Clases y horarios
 
 **Grupo 3**
-- Miércoles 10:00 AM - 01:00 PM
-- Viernes 8:00 AM - 10:00 AM
+- Miércoles 12:00 PM - 03:00 PM
+- Viernes 7:00 AM - 09:00 AM
 
 ## Presentación del Programa Oficial
 
-El curso PROGRAMACIÓN I presenta, las herramientas necesarias para llegar a la solución de problemas a nivel de programación de computadores.
+El curso Algoritmia y Programación I presenta, las herramientas necesarias para llegar a la solución de problemas a nivel de programación de computadores.
 
 Antes de enfatizar en el manejo de un lenguaje de programación como tal, es importante conocer elementos que ayuden a desarrollar la lógica algorítmica, de tal manera que posteriormente se facilite el manejo de las herramientas de programación.
 
 ## Área de Programación
 
-Plan de estudios Ingeniería de Sistemas y Computación
+Plan de estudios Profesional en Ciencia de Datos.
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/area-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/area-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 ## Información del Curso
@@ -50,7 +50,7 @@ Plan de estudios Ingeniería de Sistemas y Computación
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/info-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/info-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 
@@ -76,7 +76,7 @@ Porcentajes de Parciales, Quices y Talleres
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/porcentajes.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/porcentajes.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 

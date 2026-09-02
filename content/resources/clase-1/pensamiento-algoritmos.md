@@ -85,5 +85,5 @@ $$
 Intenta listar las Entradas, Salida(s) y Procesos. La tabla resultado debe ver asi:
 
 <div style="justify-content: center; display: flex;">
-    <img src="https://raw.githubusercontent.com/BioAITeamLearning/progI-2024-01-ucaldas/main/content/imgs/img1-unid-1.png" alt="pensamiento1" width="600px"/>
+    <img src="https://raw.githubusercontent.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/main/content/imgs/img1-unid-1.png" alt="pensamiento1" width="600px"/>
 </div>
