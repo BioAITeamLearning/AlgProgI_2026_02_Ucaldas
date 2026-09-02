@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>📄 Taller 5 &#8212; Curso de Programación I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/talleres/taller5';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="🔨 Quiz 4" href="../quices/quiz4.html" />
+    <link rel="prev" title="🧰 Recursos y Actividades" href="../resources/clase-5/recursos-clase5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logosem.png" class="logo__image only-light" alt="Curso de Programación I - Home"/>
+    <img src="../../_static/logosem.png" class="logo__image only-dark pst-js-only" alt="Curso de Programación I - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    📖 Programación I
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción al Curso</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../presentacion.html">🎥 Generalidades</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidades</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Introducción</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller1.html">📄 Taller 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Tipos de Datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase2.html">📙 Tipos de Datos y Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller2.html">📄 Taller 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad3.html">📘 Operadores</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase3-Java.html">📙 Operadores en Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase3-Python.html">📙 Operadores en Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-3/recursos-clase3.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller3.html">📄 Taller 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz2.html">🔨 Quiz 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad4.html">📘 Entrada/Salida de Variables</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase4-Java.html">📙 Strings y Entrada de Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-4/recursos-clase4.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller4.html">📄 Taller 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz3.html">🔨 Quiz 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../Unidad5.html">📘 Condicionales</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase5-Java.html">📙 Condicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-5/recursos-clase5.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">📄 Taller 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz4.html">🔨 Quiz 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad6.html">📘 Estructura Repetitiva <code class="docutils literal notranslate"><span class="pre">for</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase6-Java.html">📙 Ciclo Repetitivo <code class="docutils literal notranslate"><span class="pre">for</span></code> - Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase6-Python.html">📙 Ciclo Repetitivo <code class="docutils literal notranslate"><span class="pre">for</span></code> - Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-6/recursos-clase6.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller6_A.html">📄 Taller 6 B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller6_B.html">📄 Taller 6 A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz5.html">🔨 Quiz 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad7.html">📘 Estructura Repetitiva <code class="docutils literal notranslate"><span class="pre">while</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase7-Java.html">📙 Ciclos <code class="docutils literal notranslate"><span class="pre">while</span></code> y <code class="docutils literal notranslate"><span class="pre">do-while</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-7/recursos-clase7.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller7.html">📄 Taller 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz6.html">🔨 Quiz 6</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad8.html">📘 Funciones</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase8-Java.html">📙 Funciones y Procedimientos - Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase8-Python.html">📙 Funciones - Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-8/recursos-clase8.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller8.html">📄 Taller 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz7.html">🔨 Quiz 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad9.html">📘 Arreglos y Listas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase9-Java.html">📙 Arrays - Java</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase9-Python.html">📙 Arrays - Python</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-9/recursos-clase9.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller9.html">📄 Taller 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz8.html">🔨 Quiz 8</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad10.html">📘 Matrices</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase10-Java.html">📙 Matrices - Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase10-Python.html">📙 Matrices - Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-10/recursos-clase10.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller10.html">📄 Taller 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz9.html">🔨 Quiz 9</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/blob/master/content/talleres/taller5.md" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/talleres/taller5.ipynb" target="_blank"
+   class="btn btn-sm btn-download-notebook-button dropdown-item"
+   title="Descargar archivo de cuaderno"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="../../_sources/content/talleres/taller5.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>📄 Taller 5</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicionales">Condicionales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6">Ejercicio 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7">Ejercicio 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8">Ejercicio 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9">Ejercicio 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-10">Ejercicio 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-11">Ejercicio 11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-12">Ejercicio 12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-13">Ejercicio 13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-14">Ejercicio 14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-15">Ejercicio 15</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-16">Ejercicio 16</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-17">Ejercicio 17</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-18">Ejercicio 18</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="taller-5">
+<h1>📄 Taller 5<a class="headerlink" href="#taller-5" title="Link to this heading">#</a></h1>
+<section id="condicionales">
+<h2>Condicionales<a class="headerlink" href="#condicionales" title="Link to this heading">#</a></h2>
+<p>Programación I</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Este Taller debe entregarse en formato <code class="docutils literal notranslate"><span class="pre">docx</span></code>, con sus respectivas pruebas de escritorio y diagrama de flujo realizado a mano y subido en forma de foto (en caso de pedirse).</p>
+<p>Los notebooks de Colaboratory (tanto Java como Python) deben tener su respectivo enlace en el <code class="docutils literal notranslate"><span class="pre">.docx</span></code> con los permisos en público.</p>
+</div>
+<section id="ejercicio-1">
+<h3>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h3>
+<p>Lea desde el teclado el Nombre, la Edad, el Sexo (<code class="docutils literal notranslate"><span class="pre">M</span></code> o <code class="docutils literal notranslate"><span class="pre">F</span></code>) y el Estado Civil (Soltero/a, Casado/a, Unión libre, Separado/a, Divorciado/a, Viudo/a) de una persona e imprima todos los datos solo si la persona es Soltera y mayor de edad, de lo contrario imprima solo el Nombre y la Edad.</p>
+</section>
+<section id="ejercicio-2">
+<h3>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Link to this heading">#</a></h3>
+<p>Dado un número entero <code class="docutils literal notranslate"><span class="pre">n</span></code> (ingresado por teclado), realice las siguientes acciones condicionales:</p>
+<ul class="simple">
+<li><p>Si <code class="docutils literal notranslate"><span class="pre">n</span></code> es impar, imprima <code class="docutils literal notranslate"><span class="pre">Número</span> <span class="pre">Raro</span></code></p></li>
+<li><p>Si <code class="docutils literal notranslate"><span class="pre">n</span></code> es par y está en el rango inclusivo de 2 a 5, imprima <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">es</span> <span class="pre">Raro</span></code></p></li>
+<li><p>Si <code class="docutils literal notranslate"><span class="pre">n</span></code> es par y está en el rango inclusivo de 6 a 20, imprima <code class="docutils literal notranslate"><span class="pre">Número</span> <span class="pre">Raro</span></code></p></li>
+<li><p>Si <code class="docutils literal notranslate"><span class="pre">n</span></code> es par y mayor que 20, imprima <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">es</span> <span class="pre">Raro</span></code></p></li>
+</ul>
+<p>Nota. El rango de números permitidos es 1 a 100.</p>
+<p>Realiza una prueba de escritorio con <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">24</span></code></p>
+</section>
+<section id="ejercicio-3">
+<h3>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Link to this heading">#</a></h3>
+<p>Lea dos números y calcule el cociente de dividir el primero por el segundo. Imprima el cociente. Si el segundo número leído es cero NO ejecute el cálculo e imprima un mensaje que diga <code class="docutils literal notranslate"><span class="pre">La</span> <span class="pre">división</span> <span class="pre">no</span> <span class="pre">es</span> <span class="pre">posible</span></code>.</p>
+</section>
+<section id="ejercicio-4">
+<h3>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Link to this heading">#</a></h3>
+<p>Una frutería ofrece peras con descuento según la siguiente tabla:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Precio</p></th>
+<th class="head"><p>Porcentaje de Descuento</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\$2.000\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\%\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\$3.500\)</span> - <span class="math notranslate nohighlight">\(\$5.500\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(7\%\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\$6.000\)</span> - <span class="math notranslate nohighlight">\(\$8.000\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(12\%\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\$15.000\)</span> en adelante</p></td>
+<td><p><span class="math notranslate nohighlight">\(15\%\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Entrar por pantalla: número de peras compradas y valor de compra. Determinar cuánto pagará una persona que compre peras en esa frutería.</p>
+</section>
+<section id="ejercicio-5">
+<h3>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Link to this heading">#</a></h3>
+<p>Determinar el precio de un pasaje de ida y vuelta por avión, conociendo la distancia a recorrer, el número de días de estancia y sabiendo que si la distancia es superior a <span class="math notranslate nohighlight">\(1000 Km\)</span> y el número de días de estancia es superior a <span class="math notranslate nohighlight">\(7\)</span>, la línea aérea le hace un descuento del <span class="math notranslate nohighlight">\(30\%\)</span>. El precio por kilómetro es de <span class="math notranslate nohighlight">\(\$1.350\)</span>.</p>
+</section>
+<section id="ejercicio-6">
+<h3>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Link to this heading">#</a></h3>
+<p>Entrar por pantalla los siguientes datos de un estudiante: <code class="docutils literal notranslate"><span class="pre">codigo</span></code>, <code class="docutils literal notranslate"><span class="pre">nombre</span></code>, <code class="docutils literal notranslate"><span class="pre">nota1</span></code>, <code class="docutils literal notranslate"><span class="pre">nota2</span></code>, <code class="docutils literal notranslate"><span class="pre">nota3</span></code>. Mostrar el código, nombre y el promedio de nota si el estudiante aprobó la materia, en caso contrario sacar un mensaje que indique que el estudiante perdió la materia.</p>
+</section>
+<section id="ejercicio-7">
+<h3>Ejercicio 7<a class="headerlink" href="#ejercicio-7" title="Link to this heading">#</a></h3>
+<p>Realizar un algoritmo que lea el valor de la unidad y el número de unidades vendidas por un empleado e imprima su comisión si se sabe que la comisión es del <span class="math notranslate nohighlight">\(15\%\)</span> si vende más de <span class="math notranslate nohighlight">\(200\)</span> unidades, del <span class="math notranslate nohighlight">\(10\%\)</span> si vende entre <span class="math notranslate nohighlight">\(100\)</span> y <span class="math notranslate nohighlight">\(200\)</span> unidades, y el <span class="math notranslate nohighlight">\(5\%\)</span> si vende menos de <span class="math notranslate nohighlight">\(100\)</span> unidades sobre el valor total de la venta.</p>
+</section>
+<section id="ejercicio-8">
+<h3>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Link to this heading">#</a></h3>
+<p>En un supermercado se hace una promoción, mediante la cual el cliente obtiene un descuento dependiendo de un número que se escoge al azar. Si el número escogido es menor que <span class="math notranslate nohighlight">\(74\)</span> el descuento es del <span class="math notranslate nohighlight">\(15\%\)</span> sobre el total de la compra, si es mayor o igual a <span class="math notranslate nohighlight">\(74\)</span> el descuento es del <span class="math notranslate nohighlight">\(20\%\)</span>. Obtener cuanto dinero se le descuenta.</p>
+</section>
+<section id="ejercicio-9">
+<h3>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Link to this heading">#</a></h3>
+<p>Realice un programa que solicite al usuario una fecha y muestre la fecha correspondiente al día siguiente.</p>
+<ul class="simple">
+<li><p>Se debe leer un día, mes y año</p></li>
+<li><p>Debe validarse que el día, mes y/o año sean correctos</p></li>
+<li><p>Realizar una prueba de escritorio con <code class="docutils literal notranslate"><span class="pre">day</span> <span class="pre">=</span> <span class="pre">31</span></code>, <code class="docutils literal notranslate"><span class="pre">month</span> <span class="pre">=</span> <span class="pre">12</span></code>, <code class="docutils literal notranslate"><span class="pre">year</span> <span class="pre">=</span> <span class="pre">2023</span></code></p></li>
+</ul>
+</section>
+<section id="ejercicio-10">
+<h3>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Link to this heading">#</a></h3>
+<p>En una fábrica de computadoras se planea ofrecer a los clientes un descuento que dependerá del número de computadoras que compren.</p>
+<ul class="simple">
+<li><p>Si las computadoras son menos de cinco se les dará un <span class="math notranslate nohighlight">\(15\%\)</span> de descuento sobre el total de la compra.</p></li>
+<li><p>Si el número de computadoras es mayor o igual a cinco pero menos de diez se le otorga un <span class="math notranslate nohighlight">\(25\%\)</span> de descuento.</p></li>
+<li><p>Si son <span class="math notranslate nohighlight">\(15\)</span> o más se les da un <span class="math notranslate nohighlight">\(30\%\)</span> de descuento.</p></li>
+</ul>
+<p>Nota. El precio individual por computadora es de <span class="math notranslate nohighlight">\(\$18.000\)</span></p>
+</section>
+<section id="ejercicio-11">
+<h3>Ejercicio 11<a class="headerlink" href="#ejercicio-11" title="Link to this heading">#</a></h3>
+<p>Leer cuatro valores por pantalla, imprima el mayor de todos. Suponga que todos son diferentes.</p>
+</section>
+<section id="ejercicio-12">
+<h3>Ejercicio 12<a class="headerlink" href="#ejercicio-12" title="Link to this heading">#</a></h3>
+<p>Realiza un programa que calcule la potencia de un número, dado este y su exponente. Pueden ocurrir tres casos:</p>
+<ul class="simple">
+<li><p>El exponente sea positivo: imprime el resultado en pantalla.</p></li>
+<li><p>El exponente sea 0, imprime el resultado es 1.</p></li>
+<li><p>El exponente sea negativo, imprime el resultado es 1, potencia con el exponente positivo.</p></li>
+</ul>
+</section>
+<section id="ejercicio-13">
+<h3>Ejercicio 13<a class="headerlink" href="#ejercicio-13" title="Link to this heading">#</a></h3>
+<p>Elaborar un algoritmo para que calcule la nota definitiva de un estudiante de lógica. Se debe leer las siguientes notas por pantalla: <code class="docutils literal notranslate"><span class="pre">seg</span></code> (seguimiento 60%), <code class="docutils literal notranslate"><span class="pre">parc1</span></code> (parcial uno <span class="math notranslate nohighlight">\(20\%\)</span>) y <code class="docutils literal notranslate"><span class="pre">parc2</span></code> (parcial dos <span class="math notranslate nohighlight">\(20\%\)</span>), al final debe imprimir un mensaje que indique si ganó o perdió la materia.</p>
+</section>
+<section id="ejercicio-14">
+<h3>Ejercicio 14<a class="headerlink" href="#ejercicio-14" title="Link to this heading">#</a></h3>
+<p>Lea las tres dimensiones de un bloque rectangular. Encuentre las tres diagonales de sus caras diferentes y determine si pudiera atravesar por un orificio circular de diámetro dado.</p>
+</section>
+<section id="ejercicio-15">
+<h3>Ejercicio 15<a class="headerlink" href="#ejercicio-15" title="Link to this heading">#</a></h3>
+<p>Un almacén de venta de ropa tiene las siguientes promociones para sus clientes las cuales consisten en lo siguiente:</p>
+<ul class="simple">
+<li><p>Para ventas menores o iguales a <span class="math notranslate nohighlight">\(\$100.000\)</span> con pago en efectivo, se hace un descuento del <span class="math notranslate nohighlight">\(20\%\)</span>, con tarjeta de crédito se hace el <span class="math notranslate nohighlight">\(10\%\)</span>.</p></li>
+<li><p>Para ventas mayores a <span class="math notranslate nohighlight">\(\$100.000\)</span> y menores o iguales a <span class="math notranslate nohighlight">\(\$200.000\)</span>, con pago en efectivo se hace un descuento del <span class="math notranslate nohighlight">\(30\%\)</span>, con tarjeta de crédito se hace el <span class="math notranslate nohighlight">\(15\%\)</span>.</p></li>
+<li><p>Para ventas mayores a <span class="math notranslate nohighlight">\(\$200.000\)</span>, con pago en efectivo se hace un descuento del <span class="math notranslate nohighlight">\(40\%\)</span> y con tarjeta de crédito se hace el <span class="math notranslate nohighlight">\(20\%\)</span>.</p></li>
+</ul>
+</section>
+<section id="ejercicio-16">
+<h3>Ejercicio 16<a class="headerlink" href="#ejercicio-16" title="Link to this heading">#</a></h3>
+<p>En una escuela el costo de matrícula de los alumnos se determina según el número de materias que cursan. El costo de todas las materias es el mismo. Se ha establecido un programa para recompensar a los alumnos, el cual consiste en lo siguiente:</p>
+<ul class="simple">
+<li><p>Si el promedio obtenido por un alumno en el último periodo es mayor o igual que <span class="math notranslate nohighlight">\(4\)</span>, se le hará un descuento del <span class="math notranslate nohighlight">\(30\%\)</span> sobre la matrícula y no se le cobrará IVA.</p></li>
+<li><p>Si el promedio obtenido es menor que <span class="math notranslate nohighlight">\(4\)</span> deberá pagar la matrícula completa, la cual incluye el <span class="math notranslate nohighlight">\(10\%\)</span> de IVA.</p></li>
+</ul>
+<p>Imprimir el promedio del estudiante, el descuento aplicado y el valor final de la matrícula (mensual y anual), el valor en bruto de la matrícula es de <span class="math notranslate nohighlight">\(\$2.500.000\)</span> mensuales.</p>
+</section>
+<section id="ejercicio-17">
+<h3>Ejercicio 17<a class="headerlink" href="#ejercicio-17" title="Link to this heading">#</a></h3>
+<p>Diseñar un algoritmo que lea tres números y encuentre si uno de ellos es la suma de los otros dos, en este caso mostrar <code class="docutils literal notranslate"><span class="pre">Iguales</span></code> de lo contrario mostrar <code class="docutils literal notranslate"><span class="pre">Son</span> <span class="pre">distintos</span></code>.</p>
+</section>
+<section id="ejercicio-18">
+<h3>Ejercicio 18<a class="headerlink" href="#ejercicio-18" title="Link to this heading">#</a></h3>
+<p>Juan cuenta con una pequeña laptop que está muy desactualizada y no cuenta con la aplicación de calculadora, sin embargo, es un pelao muy fino y ve que el ordenador tiene instalado tanto un compilador de Java como de Python, entonces decide realizar una calculadora de forma manual, para esto Juan debe como mínimo cumplir con los siguientes requisitos:</p>
+<ul class="simple">
+<li><p>Leer mínimo dos números por teclado.</p></li>
+<li><p>Hacer sumas entre los dos números.</p></li>
+<li><p>Hacer restas entre los dos números.</p></li>
+<li><p>Hacer multiplicaciones entre los dos números.</p></li>
+<li><p>Hacer divisiones entre los dos números.</p></li>
+<li><p>Mostrar el resultado después de cada operación.</p></li>
+</ul>
+<p><strong>Pista:</strong> Se sugiere utilizar la estructura <code class="docutils literal notranslate"><span class="pre">switch</span> <span class="pre">case</span></code> en Java para mayor eficiencia y utilizar <code class="docutils literal notranslate"><span class="pre">elif</span></code> en Python.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/talleres"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../resources/clase-5/recursos-clase5.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">🧰 Recursos y Actividades</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../quices/quiz4.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">🔨 Quiz 4</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicionales">Condicionales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6">Ejercicio 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7">Ejercicio 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8">Ejercicio 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9">Ejercicio 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-10">Ejercicio 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-11">Ejercicio 11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-12">Ejercicio 12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-13">Ejercicio 13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-14">Ejercicio 14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-15">Ejercicio 15</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-16">Ejercicio 16</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-17">Ejercicio 17</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-18">Ejercicio 18</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Johan Piña & Santiago Barrero
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
