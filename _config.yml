@@ -1,6 +1,6 @@
-author: Joshua Bernal & Ricardo Ortega
-logo: content/imgs/logo.png
-copyright: "2024"
+author: Johan Piña & Santiago Barrero
+logo: _static/logosem.png
+copyright: "2026"
 title: Curso de Programación I
 
 execute:
@@ -11,7 +11,7 @@ latex:
     targetname: book.tex
 
 repository:
-  url: https://github.com/BioAITeamLearning/progI-2024-01-ucaldas
+  url: https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas
   branch: master
 
 html:

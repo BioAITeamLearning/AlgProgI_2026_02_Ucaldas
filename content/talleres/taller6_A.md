@@ -15,8 +15,6 @@ kernelspec:
 ## Ciclo For
 Programación I
 
-Reinel Tabares Soto
-
 :::{note}
 Este Taller debe entregarse en formato `docx`, con sus respectivas pruebas de escritorio y diagrama de flujo realizado a mano y subido en forma de foto (en caso de pedirse).
 

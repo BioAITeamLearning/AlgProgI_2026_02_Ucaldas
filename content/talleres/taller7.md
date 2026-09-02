@@ -15,8 +15,6 @@ kernelspec:
 ## Ciclos while y do-while
 Programación I
 
-Reinel Tabares Soto
-
 :::{note}
 Este taller puede entregarse en Google Colab (enlace en un `.docx` con los permisos en público) o en archivos `.py` o `.java`.
 

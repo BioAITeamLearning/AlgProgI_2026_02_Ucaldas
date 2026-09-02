@@ -15,8 +15,6 @@ kernelspec:
 ## Funciones
 Programación I
 
-Reinel Tabares Soto
-
 :::{note}
 Este taller puede entregarse en Google Colab (enlace al notebook en un `.docx` con los permisos en público) o en archivos `.java`.
 
