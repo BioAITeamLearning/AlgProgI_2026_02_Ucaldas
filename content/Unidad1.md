@@ -86,4 +86,4 @@ Linea de tiempo con los principales acontecimientos que marcaron el mundo de la 
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQObU56sC2CoAELItwjbpp384wMk9aOPI4HpJkQb7djxXSPLfBPpCy32XSpfnap1w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/clase1-diaps.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

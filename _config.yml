@@ -6,6 +6,12 @@ title: Curso de Programación I
 execute:
   execute_notebooks: off
 
+exclude_patterns:
+  - "node_modules/**"
+  - "**/node_modules/**"
+  - ".venv/**"
+  - "**/.ipynb_checkpoints/**"
+
 latex:
   latex_documents:
     targetname: book.tex
