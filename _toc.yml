@@ -1,0 +1,74 @@
+format: jb-book
+root: intro
+parts:
+- caption: Introducción al Curso
+  chapters:
+  - file: content/presentacion
+
+- caption: Unidades
+  chapters:
+  - file: content/Unidad1
+    sections:
+    - file: content/resources/clase-1/pensamiento-algoritmos
+    - file: content/resources/clase-1/recursos-clase1
+    - file: content/talleres/taller1
+  - file: content/Unidad2
+    sections:
+    - file: content/notebooks/Clase2
+    - file: content/resources/clase-2/recursos-clase2
+    - file: content/talleres/taller2
+    - file: content/quices/quiz1
+  - file: content/Unidad3
+    sections:
+    - file: content/notebooks/Clase3-Java
+    - file: content/notebooks/Clase3-Python
+    - file: content/resources/clase-3/recursos-clase3
+    - file: content/talleres/taller3
+    - file: content/quices/quiz2
+  - file: content/Unidad4
+    sections:
+    - file: content/notebooks/Clase4-Java
+    - file: content/resources/clase-4/recursos-clase4
+    - file: content/talleres/taller4
+    - file: content/quices/quiz3
+  - file: content/Unidad5
+    sections:
+    - file: content/notebooks/Clase5-Java
+    - file: content/resources/clase-5/recursos-clase5
+    - file: content/talleres/taller5
+    - file: content/quices/quiz4
+  - file: content/Unidad6
+    sections:
+    - file: content/notebooks/Clase6-Java
+    - file: content/notebooks/Clase6-Python
+    - file: content/resources/clase-6/recursos-clase6
+    - file: content/talleres/taller6_A
+    - file: content/talleres/taller6_B
+    - file: content/quices/quiz5
+  - file: content/Unidad7
+    sections:
+    - file: content/notebooks/Clase7-Java
+    - file: content/resources/clase-7/recursos-clase7
+    - file: content/talleres/taller7
+    - file: content/quices/quiz6
+  - file: content/Unidad8
+    sections:
+    - file: content/notebooks/Clase8-Java
+    - file: content/notebooks/Clase8-Python
+    - file: content/resources/clase-8/recursos-clase8
+    - file: content/talleres/taller8
+    - file: content/quices/quiz7
+  - file: content/Unidad9
+    sections:
+    - file: content/notebooks/Clase9-Java
+    - file: content/notebooks/Clase9-Python
+    - file: content/resources/clase-9/recursos-clase9
+    - file: content/talleres/taller9
+    - file: content/quices/quiz8
+  - file: content/Unidad10
+    sections:
+    - file: content/notebooks/Clase10-Java
+    - file: content/notebooks/Clase10-Python
+    - file: content/resources/clase-10/recursos-clase10
+    - file: content/talleres/taller10
+    - file: content/quices/quiz9

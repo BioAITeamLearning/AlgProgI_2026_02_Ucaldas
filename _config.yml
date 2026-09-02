@@ -1,0 +1,36 @@
+author: Joshua Bernal & Ricardo Ortega
+logo: content/imgs/logo.png
+copyright: "2024"
+title: Curso de Programación I
+
+execute:
+  execute_notebooks: off
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+repository:
+  url: https://github.com/BioAITeamLearning/progI-2024-01-ucaldas
+  branch: master
+
+html:
+  use_issues_button: false
+  use_repository_button: false
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+
+parse:
+  myst_enable_extensions:
+    - dollarmath
+    - linkify
+    - substitution
+    - colon_fence
+    - html_admonition
+  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+
+sphinx:
+  config:
+    language: es
