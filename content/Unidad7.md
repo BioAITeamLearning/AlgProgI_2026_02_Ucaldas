@@ -105,4 +105,4 @@ Puedes acceder al notebook en la siguiente página (*Ciclos `while` y `do-while`
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRHEHV6SryuOrZp_g72IT8bWNXWswaj4LhpesT98_wE4haVtdoWK3nw8LmCGcVgaQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-7/Clase_7_parte1.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

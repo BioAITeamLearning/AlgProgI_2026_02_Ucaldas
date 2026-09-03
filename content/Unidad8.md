@@ -86,4 +86,4 @@ Puedes acceder a los notebooks en las siguientes páginas (*Funciones y Procedim
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGjiVXa2eH68qnd4S8qkSx-LjuK5o7KXY6AgiSnZb9b6tcOqc087hW2l4Qw3rN9A/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-8/Clase8-Programaci%C3%B3n%20I.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

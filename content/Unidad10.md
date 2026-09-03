@@ -65,4 +65,4 @@ Puedes acceder a los notebooks en las siguientes páginas (*Arreglos - Java, Arr
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSPbCwNai00P3auLR5tOMo2QTznp2isMWJvqOOtFiHc69CUS_ZYWoiU1j6DVQU2yg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-10/Clase10_parte1.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

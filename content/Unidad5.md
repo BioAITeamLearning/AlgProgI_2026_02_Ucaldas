@@ -123,4 +123,4 @@ Puedes acceder a los notebooks en las siguiente páginas (*Condicionales*)
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTE3UrqanZGtku8HfC1lZw0X5S8npLAulcvFhdoi0Zic6xv0gd8wNNgdyVNS02Qgw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/Clase%205%20-%20Programaci%C3%B3n%20I.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

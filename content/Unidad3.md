@@ -69,4 +69,4 @@ Puedes acceder a los notebook en la siguiente página (*Operadores en Java y Pyt
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQJtCJ611LAxoobYuLhH2Fw8qIf-8hY9y161SDsoyByFIMwjytzBrTQcFTYWH_keg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-3/Operadores_logicos.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

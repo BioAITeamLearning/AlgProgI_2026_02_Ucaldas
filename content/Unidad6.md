@@ -97,4 +97,4 @@ Puedes acceder a los notebooks en las siguiente páginas (*Ciclo Repetitivo `for
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZjQHrK3p_85sDX9G7YWWSBUMtIZsiJO9Xf9Qb8Tb_G5XwjWFxR3iH7BRHgt_BVw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-6/Clase_6_parte_1.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

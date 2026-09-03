@@ -67,4 +67,4 @@ Puedes acceder al notebook en la siguiente página (*Tipos de Datos y Variables*
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT9jyuQkEe6LQdm1cxB21knlHQZJl32adn9PdDztiu79y3wDG4Q5hPIPaKg23kNEg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-2/clase2-diaps.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
