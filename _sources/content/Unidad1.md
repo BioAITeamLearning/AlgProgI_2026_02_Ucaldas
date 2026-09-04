@@ -22,7 +22,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/1-intro-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/1-intro-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 ## Algoritmos
@@ -33,7 +33,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/2-algoritmos.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/2-algoritmos.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 ## Tipos de Lenguajes
@@ -43,7 +43,7 @@ Lenguajes según su nivel de abstracción
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/3-tipos-lenguajes.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/3-tipos-lenguajes.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 ## Historia de la Programación
@@ -53,7 +53,7 @@ Linea de tiempo con los principales acontecimientos que marcaron el mundo de la 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/4-historia.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/4-historia.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 ## Lógica de Programación
@@ -66,7 +66,7 @@ Linea de tiempo con los principales acontecimientos que marcaron el mundo de la 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/5-logica-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/5-logica-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 ## Pseudocódigo y Diagramas de Flujo
@@ -78,7 +78,7 @@ Linea de tiempo con los principales acontecimientos que marcaron el mundo de la 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-1/6-pseudo-diagramas.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/6-pseudo-diagramas.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
 
 ## Presentación Completa
@@ -86,4 +86,4 @@ Linea de tiempo con los principales acontecimientos que marcaron el mundo de la 
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQObU56sC2CoAELItwjbpp384wMk9aOPI4HpJkQb7djxXSPLfBPpCy32XSpfnap1w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-1/clase1-diaps.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

@@ -79,11 +79,11 @@
 
 ## Objetivo del curso
 
-Brindar al estudiante los conceptos, fundamentos y habilidades necesarios para incursionar en el apasionante mundo de la programación con Java. A través de material de apoyo cuidadosamente seleccionado y la experimentación práctica, el estudiante adquirirá las bases esenciales para resolver problemas lógicos de programación y desarrollar habilidades que le serán de gran utilidad en su futura carrera profesional.
+Brindar al estudiante los conceptos, fundamentos y habilidades necesarios para incursionar en el apasionante mundo de la programación con Python y Java. A través de material de apoyo cuidadosamente seleccionado y la experimentación práctica, el estudiante adquirirá las bases esenciales para resolver problemas lógicos de programación y desarrollar habilidades que le serán de gran utilidad en su futura carrera profesional.
 
 ```{admonition} Nota
 :class: tip
-El curso se centra en el lenguaje de programación Java ☕
+El curso se centra en el lenguaje de programación Python 🐍 y Java ☕
 ```
 
 ---

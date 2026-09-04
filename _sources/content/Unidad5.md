@@ -22,7 +22,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-5/condicionales.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/condicionales.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ## Ejemplos Estructura `if`
@@ -30,7 +30,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-5/ejemplos-if.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/ejemplos-if.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ## Ejemplos Estructura `else`
@@ -38,7 +38,7 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-5/ejemplos-else.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/ejemplos-else.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ### Practiquemos lo aprendido
@@ -55,7 +55,7 @@ Nota. Los 3 montos no necesariamente tienen que pertenecer a uno de los grupos s
 
 :::{grid-item}
 :columns: 3
-<img src="https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
+<img src="https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
 :::
 
 ::::
@@ -65,7 +65,7 @@ Nota. Los 3 montos no necesariamente tienen que pertenecer a uno de los grupos s
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-5/ejemplos-else-if.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/ejemplos-else-if.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 :::{note}
@@ -93,7 +93,7 @@ Finalmente, el programa escribe por pantalla el precio del helado con el topping
 
 :::{grid-item}
 :columns: 3
-<img src="https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
+<img src="https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
 :::
 
 ::::
@@ -103,7 +103,7 @@ Finalmente, el programa escribe por pantalla el precio del helado con el topping
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-5/switch-case.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/switch-case.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ## Ejemplos Estructura `switch case`
@@ -111,7 +111,7 @@ Finalmente, el programa escribe por pantalla el precio del helado con el topping
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/resources/clase-5/ejemplos-switch-case.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/ejemplos-switch-case.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 :::{note}
@@ -123,4 +123,4 @@ Puedes acceder a los notebooks en las siguiente páginas (*Condicionales*)
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTE3UrqanZGtku8HfC1lZw0X5S8npLAulcvFhdoi0Zic6xv0gd8wNNgdyVNS02Qgw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-5/Clase%205%20-%20Programaci%C3%B3n%20I.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

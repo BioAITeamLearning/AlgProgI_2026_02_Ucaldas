@@ -17,7 +17,7 @@ kernelspec:
 <div class="admonition" style="background: lightblue; padding: 10px">
     <p class="title">Lectura Obligatoria</p>
     <p>Realizar la lectura del Capitulo 1 del libro 'Introducción a la Programación. Lógica y Diseño'.</p>
-    <a href="https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/libros/Introduccion-a-la-programacion-logica-y-diseno-Cap1.pdf" download="Introduccion-a-la-programacion-logica-y-diseno-Cap1.pdf">Accede al capitulo aqui</a>
+    <a href="https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/libros/Introduccion-a-la-programacion-logica-y-diseno-Cap1.pdf" download="Introduccion-a-la-programacion-logica-y-diseno-Cap1.pdf">Accede al capitulo aqui</a>
 </div>
 
 ## Recursos
@@ -29,7 +29,7 @@ Sientete libre de explorar la herramienta [ChatGPT](https://openai.com/chatgpt) 
 :::{card} 🔵 Libro
 </p>Si deseas aprender aún más puedes leer el libro 'Fundamentos de Programación'.</p>
 
-[Accede al capitulo aqui](https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/raw/main/content/libros/Fundamentos-de-programacion-Luis-Joyanes-Aguilar.pdf)
+[Accede al capitulo aqui](https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/libros/Fundamentos-de-programacion-Luis-Joyanes-Aguilar.pdf)
 :::
 
 :::{card} 🔵 PSeInt
@@ -41,7 +41,7 @@ Descarga el software PSeInt donde puedes crear pseudocodigo y diagramas de flujo
 :::{card} 🔵 Ejemplos PSeInt
 Accede a ejemplos de PSeInt
 
-[Enlace a la carpeta](https://github.com/BioAITeamLearning/progI-2024-01-ucaldas/tree/9cc932db5444d152eeade70ec36020924da32873/content/resources/clase-1/Ejemplos-PSeInt)
+[Enlace a la carpeta](https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/tree/9cc932db5444d152eeade70ec36020924da32873/content/resources/clase-1/Ejemplos-PSeInt)
 :::
 
 :::{card} 🔵 Ejemplos PSeInt
