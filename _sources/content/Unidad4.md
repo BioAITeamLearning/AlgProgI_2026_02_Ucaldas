@@ -94,7 +94,7 @@ Puedes acceder a los notebooks en las siguiente páginas (*Strings y Entrada de 
 
 ## Presentación Completa
 
-:::{warning} La presentación completa es temporal
+:::{warning} La presentación completa es temporal y puede cambiar en cualquier momento, por favor revisa el contenido de cada clase para ver los cambios.
 :::
 
 <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/raw/main/content/resources/clase-4/Clase%204%20-%20Programaci%C3%B3n%20I.pptx" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
