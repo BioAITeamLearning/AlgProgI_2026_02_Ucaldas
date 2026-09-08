@@ -90,88 +90,67 @@ Intenta listar las Entradas, Salida(s) y Procesos. La tabla resultado debe ver a
 
 ### Ejercicio 6
 
-Un carpintero corta tres listones de madera para armar un marco triangular. Antes de cortar quiere saber, dadas las tres longitudes de los listones, si en verdad pueden formar un triángulo (recuerda: la suma de cualquier par de lados debe ser mayor que el tercero). Si sí es posible, debe indicar si el triángulo es **equilátero** (los 3 lados iguales), **isósceles** (2 lados iguales) o **escaleno** (todos distintos). Si las longitudes no pueden formar un triángulo, debe informarle al carpintero que el corte no es válido.
+Una biblioteca presta libros a sus estudiantes. Cuando alguien lleva un libro al mostrador, el bibliotecario primero revisa si el libro está disponible o si ya está prestado. Si está disponible, revisa si el estudiante tiene préstamos vencidos de otras veces; si los tiene, no puede llevarse el libro hasta que los devuelva. Si no tiene préstamos vencidos, el bibliotecario mira si el libro pertenece a la sección de "solo consulta en sala" (libros de reserva, diccionarios, enciclopedias); esos nunca salen del edificio, sin importar quién los pida. Si el libro sí puede prestarse, se registra el préstamo y se le indica al estudiante la fecha de devolución.
 
 ### Ejercicio 7
 
-El supermercado "La Economía" aplica descuentos según el monto total de la compra y el tipo de membresía del cliente (Ninguna, Plata, Oro):
-
-- Sin membresía: 5% de descuento si la compra supera $150.000, si no, sin descuento.
-- Membresía Plata: 10% de descuento si la compra supera $100.000, si no, 5%.
-- Membresía Oro: 15% de descuento sobre cualquier monto, y si además la compra supera $200.000, se suma un 5% adicional (20% en total).
-
-Dado el monto de la compra y la membresía del cliente, calcular el valor final a pagar.
+En la recepción de un consultorio médico llegan pacientes durante toda la mañana. La recepcionista primero pregunta si el paciente tiene cita programada para ese día. Si no la tiene, pregunta si se trata de una urgencia; las urgencias pasan de inmediato donde el médico de turno, sin importar que haya otros pacientes esperando. Si no es urgencia y no tiene cita, se le ofrece agendar para otro día. Si el paciente sí tiene cita, la recepcionista verifica si llegó a tiempo o llegó tarde; si llegó más de 15 minutos tarde, pierde el turno y debe reprogramar; si llegó a tiempo, se confirma si está afiliado a una EPS o si es particular, porque eso cambia el formulario que debe diligenciar antes de pasar a la sala de espera.
 
 ### Ejercicio 8
 
-Un parqueadero cobra por tiempo de permanencia y tipo de vehículo (carro o moto). Los primeros 15 minutos son gratis. Después de eso:
-
-- Carro: $100 por cada 10 minutos adicionales (o fracción).
-- Moto: $60 por cada 10 minutos adicionales (o fracción).
-
-Si el cliente tiene abono mensual, paga solo el 50% del valor calculado, sin importar el tiempo. Dado el tiempo total de permanencia (en minutos), el tipo de vehículo y si tiene o no abono mensual, calcular el valor a pagar.
+Un mesero en un restaurante debe tomar el pedido de una mesa siguiendo un orden. Primero pregunta si algún comensal tiene alguna alergia o restricción alimentaria, porque eso determina qué platos del menú puede ofrecer. Luego toma el pedido de entradas, si la mesa desea alguna. Después pregunta si prefieren el plato fuerte servido de inmediato o esperar a que todos terminen la entrada antes de traerlo. Al final pregunta por bebidas, y si alguien pide una bebida alcohólica, el mesero debe confirmar que la persona sea mayor de edad antes de anotar ese pedido; si no puede confirmarlo, ofrece solo bebidas sin alcohol a esa persona.
 
 ### Ejercicio 9
 
-Un estudiante tiene 3 notas de un curso con distintos pesos: Examen 1 (30%), Examen 2 (30%) y Proyecto Final (40%). Calcular la nota definitiva (sobre 5.0). Con esa nota:
-
-- Si la definitiva es menor a 3.0, el estudiante pierde el curso.
-- Si es mayor o igual a 3.0, aprueba.
-- Además, entra a "cuadro de honor" únicamente si la definitiva es mayor o igual a 4.5 **y** ninguna de las tres notas individuales fue menor a 3.5 (aunque el promedio dé alto, una sola nota baja lo descalifica del cuadro de honor).
+Una veterinaria recibe mascotas que llegan sin cita. La recepcionista de la clínica pregunta primero qué tipo de animal es (perro, gato u otro), porque hay consultorios separados según el tipo. Luego pregunta si la mascota está sangrando, con dificultad para respirar, o inconsciente; cualquiera de esas señales hace que pase directamente a urgencias, saltándose la fila. Si no presenta ninguna de esas señales, se pregunta si es la primera vez que la mascota visita esa veterinaria; si es la primera vez, se debe abrir una historia clínica antes de pasar a consulta. Si ya tiene historia clínica, se pregunta el motivo de la visita (vacunación, control, o síntoma de enfermedad) para decidir a qué consultorio se dirige.
 
 ### Ejercicio 10
 
-Una persona quiere elegir el plan de telefonía más barato entre tres opciones, según cuántos minutos y cuántos GB de datos usa al mes:
-
-- Plan Básico ($30.000): incluye hasta 100 minutos y 2 GB. Si se pasa de cualquiera de los dos límites, no sirve para ese usuario.
-- Plan Intermedio ($50.000): incluye hasta 300 minutos y 6 GB. Si se pasa de cualquiera de los dos límites, no sirve.
-- Plan Ilimitado ($80.000): sin límites de minutos ni datos.
-
-Dado el consumo mensual de minutos y GB de una persona, el programa debe recomendar el plan **más barato** que le sirva (revisando en orden Básico → Intermedio → Ilimitado), o indicar que necesita el plan Ilimitado si ninguno de los otros dos alcanza.
+Una persona necesita organizar la basura de su casa antes de sacarla. Por cada objeto que va a botar, primero debe fijarse si está mojado o sucio con comida; si es así, va directo a la bolsa de orgánicos, sin importar de qué material esté hecho. Si está limpio y seco, debe identificar el material principal (papel/cartón, plástico o vidrio/metal) para saber a cuál bolsa de reciclaje va. Si el objeto es algo peligroso (pilas, medicamentos vencidos, bombillas rotas), no va en ninguna de las bolsas anteriores, sino que se aparta para llevarlo a un punto de recolección especial, incluso si está limpio y sería reciclable.
 
 ## Tarea
 
 ```{admonition} Para entregar
 :class: important
-Para cada ejercicio: identifica Entradas, Salida(s) y Proceso, diseña el pseudocódigo en PSeInt y dibuja el diagrama de flujo.
+Para cada ejercicio: identifica Entradas, Salida(s) y Proceso, escribe los pasos en orden (usando bifurcaciones donde el proceso se divida en caminos distintos) y dibuja el diagrama de flujo. Todavía no uses la sintaxis formal de PSeInt (`Si-Entonces-SiNo`) ni operadores lógicos (`Y`, `O`) — descríbelo con tus propias palabras, como en el ejemplo del pastel.
 ```
 
 ### Ejercicio 11
 
-A partir del peso (kg) y la estatura (m) de una persona, calcular su Índice de Masa Corporal ($IMC = peso / estatura^2$) y clasificarlo en Bajo peso (<18.5), Normal (18.5–24.9), Sobrepeso (25–29.9) u Obesidad (≥30).
+Un cajero de banco atiende clientes en ventanilla. Primero pide la cédula y verifica si la persona es cuentahabiente del banco. Si no lo es, solo puede hacer un giro o cambiar un cheque, nada más. Si es cuentahabiente, pregunta qué operación quiere hacer (retiro, consignación, o transferencia). En un retiro, revisa si hay fondos suficientes en la cuenta antes de entregar el dinero; si el monto es muy alto (más de cierto límite que el banco define), debe llamar al supervisor para que autorice antes de continuar.
 
 ### Ejercicio 12
 
-Dado un año, determinar si es bisiesto. Un año es bisiesto si es divisible por 4, excepto los divisibles por 100, salvo que también sean divisibles por 400 (por eso 2000 sí fue bisiesto, pero 1900 no).
+Un profesor debe organizar la entrega de exámenes al final del semestre. Primero separa los exámenes por grupo (mañana o tarde). Dentro de cada grupo, revisa si el estudiante presentó el examen o no; si no lo presentó, aparta ese examen porque debe presentar uno especial después. Si sí lo presentó, revisa si la nota es reprobatoria; si es reprobatoria, aparta el examen en un montón distinto para citar al estudiante a una revisión. Los exámenes aprobados se organizan de mayor a menor nota antes de ser devueltos.
 
 ### Ejercicio 13
 
-Un taxi cobra una tarifa base de $4.500 más $1.300 por kilómetro recorrido. Si el viaje inicia entre las 10pm y las 5am, se suma un recargo nocturno del 30% sobre el total. Si además el día es festivo, se suma un recargo adicional del 15% (los dos recargos se pueden acumular). Calcular el valor final del viaje.
+Una persona quiere organizar su clóset por temporada. Por cada prenda que saca, primero decide si es de temporada actual o no; si no lo es, la guarda directamente en una caja de almacenamiento. Si es de temporada, revisa si la prenda tiene alguna mancha o daño; si tiene daño, la separa para lavarla o repararla antes de guardarla en el clóset. Si está en buen estado, decide en qué sección del clóset va según el tipo de prenda (arriba, abajo, colgado).
 
 ### Ejercicio 14
 
-Dados los tres lados de un triángulo válido, determinar si es rectángulo, acutángulo u obtusángulo comparando el cuadrado del lado mayor con la suma de los cuadrados de los otros dos (Teorema de Pitágoras generalizado). Ojo: primero hay que identificar cuál lado es el mayor.
+Un semáforo peatonal inteligente decide cuándo cambiar de color. Normalmente el semáforo vehicular está en verde y el peatonal en rojo. Cuando un peatón presiona el botón, el sistema espera a que termine el ciclo actual del semáforo vehicular. Si en ese momento se acerca una ambulancia con la sirena encendida, el sistema cancela el cambio y mantiene el semáforo vehicular en verde hasta que la ambulancia pase. Si no hay ninguna emergencia, el semáforo vehicular cambia a rojo, el peatonal cambia a verde durante un tiempo fijo, y luego vuelve a la normalidad.
 
 ### Ejercicio 15
 
-Una casa tiene sensores de puerta, ventana y movimiento, y un modo de sistema (Armado / Desarmado). La alarma debe sonar solo si el sistema está armado **y** al menos uno de los tres sensores se activó. Además, si se activa el sensor de movimiento estando armado, debe mostrar un mensaje de "Alerta alta prioridad" en vez del mensaje normal.
+Una persona llega al aeropuerto para hacer el check-in de su vuelo. Primero el sistema revisa si el vuelo todavía admite check-in (algunos vuelos cierran el check-in cierto tiempo antes de salir); si ya cerró, la persona debe ir directamente al mostrador de atención especial. Si el check-in sigue abierto, se pregunta si el pasajero lleva equipaje para despachar; si lleva, se pesa la maleta y se revisa si excede el límite permitido, en cuyo caso debe pagar un excedente antes de continuar. Al final, si el pasajero pidió un asiento en una fila de salida de emergencia, se le pregunta si está en condiciones de ayudar en una evacuación; si dice que no, se le reasigna a otro asiento.
 
 ### Ejercicio 16
 
-Dado el rendimiento del carro (km por galón), la cantidad de combustible actual en el tanque (galones) y la distancia del viaje (km), determinar si el carro llega sin reabastecer. Si no llega, calcular cuántos galones adicionales se necesitan y, si esos galones cuestan más de $60.000 en total, mostrar una advertencia de presupuesto.
+Un cajero automático (ATM) atiende una transacción. Primero pide la tarjeta y la clave; si la clave es incorrecta, da otra oportunidad, pero si falla tres veces seguidas, retiene la tarjeta y termina la operación. Si la clave es correcta, muestra las opciones (retiro, consulta de saldo, cambio de clave). En un retiro, pregunta el monto y revisa si el cajero tiene suficientes billetes de las denominaciones necesarias para entregar esa cantidad exacta; si no puede entregar el monto exacto, le pide a la persona que elija otro monto.
 
 ### Ejercicio 17
 
-El precio de una boleta de cine depende de la edad (Niño <12, Adulto 12–59, Adulto mayor ≥60) con tarifas de $8.000, $14.000 y $9.000 respectivamente. Si el día de la compra es miércoles, aplica una promoción 2x1 (se cobra una sola boleta por cada dos). Calcular el valor a pagar por una persona.
+Una persona quiere regar las plantas de su casa. Por cada planta, primero toca la tierra para sentir si está seca o húmeda; si está húmeda, no la riega y pasa a la siguiente. Si está seca, revisa qué tipo de planta es, porque las sensibles al sol directo se riegan por la tarde y las demás se pueden regar en cualquier momento del día. Si al regar nota que el agua no se absorbe y se queda estancada en la superficie, revisa si la maceta tiene hueco de drenaje; si no lo tiene, aparta esa planta para cambiarla de maceta más tarde.
 
 ### Ejercicio 18
 
-Dado un número entero, indicar si es positivo, negativo o cero; si es par o impar; y si es múltiplo de 3 y de 5 al mismo tiempo, mostrar un mensaje especial adicional ("¡Múltiplo de 15!"). Un mismo número puede activar varios mensajes a la vez.
+En un supermercado, la caja de autoservicio debe procesar los productos que el cliente va pasando. Por cada producto, el sistema identifica si requiere verificación de edad (como licor o cigarrillos); si la requiere, se enciende una luz para que un empleado se acerque a confirmar la edad del cliente antes de continuar. Si el producto es una fruta o verdura sin código de barras, el sistema espera a que el cliente la seleccione de una lista en pantalla y la pese en la báscula. Al finalizar, si el cliente tiene una tarjeta de puntos registrada, el sistema pregunta si quiere acumularlos o redimirlos por un descuento en esa misma compra.
 
 ### Ejercicio 19
 
-Un banco aprueba un préstamo si el historial crediticio es "Bueno" y la relación deuda/ingreso (deudas mensuales ÷ ingresos mensuales) es menor al 40%. Si el historial es "Malo", se rechaza sin importar el resto. Si el historial es "Regular", se aprueba solo si la relación deuda/ingreso es menor al 20% **y** el ingreso mensual supera $3.000.000.
+Un socorrista de primeros auxilios debe decidir cómo actuar cuando llega a atender a una persona. Primero verifica si la persona está consciente. Si no responde, revisa si respira; si no respira, debe iniciar maniobras de reanimación de inmediato y pedir que alguien llame a emergencias. Si respira pero no responde, la ubica en posición de recuperación y espera ayuda. Si la persona está consciente, le pregunta qué le pasó y si tiene alguna herida visible, sangrado, o dolor fuerte en algún lugar, para decidir cómo atenderla mientras llega ayuda especializada.
 
 ### Ejercicio 20
 
-Una tienda ajusta el monto de una compra según el método de pago: efectivo (-5%), débito (sin cambio), o crédito (+3% si el monto es menor a $100.000, +1.5% si es mayor o igual). Si el cliente es afiliado al programa de lealtad, se resta un 2% adicional al total, sin importar el método de pago. Calcular el monto final.
+Un profesor de laboratorio debe distribuir a los estudiantes en grupos de trabajo para una práctica. Primero revisa la lista de asistencia y separa a quienes llegaron tarde, porque ellos entran a un grupo aparte con instrucciones adicionales. A los que llegaron a tiempo, los organiza según si ya trabajaron juntos en una práctica anterior; si ya trabajaron juntos, intenta separarlos en distintos grupos para que conozcan otros compañeros. Si un grupo queda con un número impar de estudiantes al final, el profesor decide si agregarlo a otro grupo o dejarlo trabajar con uno menos, dependiendo de qué tan compleja sea la práctica de ese día.
