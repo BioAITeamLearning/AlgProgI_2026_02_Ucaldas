@@ -72,6 +72,10 @@ La persona sube y encuentra 8 pasajeros, luego se bajan 3, suben 10 pasajeros, v
 
 El conductor del bus además le dice que si hay más de 10 pasajeros en el bus le hace un descuento del 20\% del costo total.
 
+```{admonition} Para PSeInt
+:class: tip
+Este ejercicio no necesita ciclos: cada subida/bajada es una línea de código distinta (7 instrucciones seguidas de suma/resta), y el descuento es un único `Si-Entonces-SiNo` al final.
+```
 
 ### Ejercicio 5
 
@@ -88,69 +92,81 @@ Intenta listar las Entradas, Salida(s) y Procesos. La tabla resultado debe ver a
     <img src="https://raw.githubusercontent.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/main/content/imgs/img1-unid-1.png" alt="pensamiento1" width="600px"/>
 </div>
 
-### Ejercicio 6
+```{admonition} Para PSeInt
+:class: tip
+Todavía no hemos visto ciclos (`Para`), así que escribe las 6 filas de la tabla como 6 bloques de código seguidos (Año1, Año2, ... Año6), cada uno calculando y escribiendo su propia depreciación acumulada y valor real. Es repetitivo, pero así se hace por ahora — con ciclos, más adelante, se reduce a unas pocas líneas.
+```
 
-Una biblioteca presta libros a sus estudiantes. Cuando alguien lleva un libro al mostrador, el bibliotecario primero revisa si el libro está disponible o si ya está prestado. Si está disponible, revisa si el estudiante tiene préstamos vencidos de otras veces; si los tiene, no puede llevarse el libro hasta que los devuelva. Si no tiene préstamos vencidos, el bibliotecario mira si el libro pertenece a la sección de "solo consulta en sala" (libros de reserva, diccionarios, enciclopedias); esos nunca salen del edificio, sin importar quién los pida. Si el libro sí puede prestarse, se registra el préstamo y se le indica al estudiante la fecha de devolución.
+## Ejercicios con condicionales
 
-### Ejercicio 7
+```{admonition} Nota
+:class: note
+De aquí en adelante los ejercicios ya se resuelven directamente en PSeInt: piden datos por teclado con `Leer`, hacen algún cálculo, y usan `Si-Entonces` o `Si-Entonces-SiNo` para decidir qué mostrar. Ninguno necesita ciclos (`Para`, `Mientras`) — todavía no los hemos visto.
+```
 
-En la recepción de un consultorio médico llegan pacientes durante toda la mañana. La recepcionista primero pregunta si el paciente tiene cita programada para ese día. Si no la tiene, pregunta si se trata de una urgencia; las urgencias pasan de inmediato donde el médico de turno, sin importar que haya otros pacientes esperando. Si no es urgencia y no tiene cita, se le ofrece agendar para otro día. Si el paciente sí tiene cita, la recepcionista verifica si llegó a tiempo o llegó tarde; si llegó más de 15 minutos tarde, pierde el turno y debe reprogramar; si llegó a tiempo, se confirma si está afiliado a una EPS o si es particular, porque eso cambia el formulario que debe diligenciar antes de pasar a la sala de espera.
+### Ejercicio 6 — Mayoría de edad
 
-### Ejercicio 8
+Escribe un algoritmo que lea la edad de una persona y diga si es mayor o menor de edad (mayor de edad a partir de los 18 años).
 
-Un mesero en un restaurante debe tomar el pedido de una mesa siguiendo un orden. Primero pregunta si algún comensal tiene alguna alergia o restricción alimentaria, porque eso determina qué platos del menú puede ofrecer. Luego toma el pedido de entradas, si la mesa desea alguna. Después pregunta si prefieren el plato fuerte servido de inmediato o esperar a que todos terminen la entrada antes de traerlo. Al final pregunta por bebidas, y si alguien pide una bebida alcohólica, el mesero debe confirmar que la persona sea mayor de edad antes de anotar ese pedido; si no puede confirmarlo, ofrece solo bebidas sin alcohol a esa persona.
+### Ejercicio 7 — Sensación térmica
 
-### Ejercicio 9
+Escribe un algoritmo que lea una temperatura en grados Celsius, la convierta a Fahrenheit ($F = C \times 1.8 + 32$), y además diga si hace frío (menos de 15°C), clima templado (entre 15°C y 28°C), o calor (más de 28°C).
 
-Una veterinaria recibe mascotas que llegan sin cita. La recepcionista de la clínica pregunta primero qué tipo de animal es (perro, gato u otro), porque hay consultorios separados según el tipo. Luego pregunta si la mascota está sangrando, con dificultad para respirar, o inconsciente; cualquiera de esas señales hace que pase directamente a urgencias, saltándose la fila. Si no presenta ninguna de esas señales, se pregunta si es la primera vez que la mascota visita esa veterinaria; si es la primera vez, se debe abrir una historia clínica antes de pasar a consulta. Si ya tiene historia clínica, se pregunta el motivo de la visita (vacunación, control, o síntoma de enfermedad) para decidir a qué consultorio se dirige.
+### Ejercicio 8 — Vuelto en una compra
 
-### Ejercicio 10
+Escribe un algoritmo que lea el valor total de una compra y el monto con el que el cliente paga en efectivo. Si el monto es suficiente, calcula y muestra el vuelto; si el monto no alcanza para cubrir la compra, muestra un mensaje indicando que el pago es insuficiente (nunca debe mostrar un vuelto negativo).
 
-Una persona necesita organizar la basura de su casa antes de sacarla. Por cada objeto que va a botar, primero debe fijarse si está mojado o sucio con comida; si es así, va directo a la bolsa de orgánicos, sin importar de qué material esté hecho. Si está limpio y seco, debe identificar el material principal (papel/cartón, plástico o vidrio/metal) para saber a cuál bolsa de reciclaje va. Si el objeto es algo peligroso (pilas, medicamentos vencidos, bombillas rotas), no va en ninguna de las bolsas anteriores, sino que se aparta para llevarlo a un punto de recolección especial, incluso si está limpio y sería reciclable.
+### Ejercicio 9 — ¿Aprobó la materia?
+
+Escribe un algoritmo que lea la nota final de un estudiante (sobre 5.0) y diga si aprobó (nota ≥ 3.0) o reprobó. Si aprobó, muestra cuántos puntos sacó por encima de 3.0; si reprobó, muestra cuántos puntos le faltaron para llegar a 3.0.
+
+### Ejercicio 10 — El mayor de dos números
+
+Escribe un algoritmo que lea dos números y diga cuál de los dos es mayor, o si son iguales.
 
 ## Tarea
 
 ```{admonition} Para entregar
 :class: important
-Para cada ejercicio: identifica Entradas, Salida(s) y Proceso, escribe los pasos en orden (usando bifurcaciones donde el proceso se divida en caminos distintos) y dibuja el diagrama de flujo. Todavía no uses la sintaxis formal de PSeInt (`Si-Entonces-SiNo`) ni operadores lógicos (`Y`, `O`) — descríbelo con tus propias palabras, como en el ejemplo del pastel.
+Para cada ejercicio: identifica Entradas, Salida(s) y Proceso, resuélvelo en PSeInt (con `Leer`, cálculos y `Si-Entonces`/`Si-Entonces-SiNo`, sin ciclos) y dibuja su diagrama de flujo.
 ```
 
-### Ejercicio 11
+### Ejercicio 11 — Par o impar
 
-Un cajero de banco atiende clientes en ventanilla. Primero pide la cédula y verifica si la persona es cuentahabiente del banco. Si no lo es, solo puede hacer un giro o cambiar un cheque, nada más. Si es cuentahabiente, pregunta qué operación quiere hacer (retiro, consignación, o transferencia). En un retiro, revisa si hay fondos suficientes en la cuenta antes de entregar el dinero; si el monto es muy alto (más de cierto límite que el banco define), debe llamar al supervisor para que autorice antes de continuar.
+Lee un número entero y di si es par o impar (usa el operador `MOD`: un número es par si el resto de dividirlo entre 2 es cero).
 
-### Ejercicio 12
+### Ejercicio 12 — Área y perímetro de un círculo
 
-Un profesor debe organizar la entrega de exámenes al final del semestre. Primero separa los exámenes por grupo (mañana o tarde). Dentro de cada grupo, revisa si el estudiante presentó el examen o no; si no lo presentó, aparta ese examen porque debe presentar uno especial después. Si sí lo presentó, revisa si la nota es reprobatoria; si es reprobatoria, aparta el examen en un montón distinto para citar al estudiante a una revisión. Los exámenes aprobados se organizan de mayor a menor nota antes de ser devueltos.
+Lee el radio de un círculo y calcula su área ($A = \pi r^2$) y su perímetro ($P = 2 \pi r$). Este es puramente de cálculo, sin condicionales.
 
-### Ejercicio 13
+### Ejercicio 13 — Descuento por monto
 
-Una persona quiere organizar su clóset por temporada. Por cada prenda que saca, primero decide si es de temporada actual o no; si no lo es, la guarda directamente en una caja de almacenamiento. Si es de temporada, revisa si la prenda tiene alguna mancha o daño; si tiene daño, la separa para lavarla o repararla antes de guardarla en el clóset. Si está en buen estado, decide en qué sección del clóset va según el tipo de prenda (arriba, abajo, colgado).
+Lee el precio de un producto. Si supera $100.000, aplica un descuento del 10%; si no, no aplica descuento. Muestra el precio final.
 
-### Ejercicio 14
+### Ejercicio 14 — Signo de un número
 
-Un semáforo peatonal inteligente decide cuándo cambiar de color. Normalmente el semáforo vehicular está en verde y el peatonal en rojo. Cuando un peatón presiona el botón, el sistema espera a que termine el ciclo actual del semáforo vehicular. Si en ese momento se acerca una ambulancia con la sirena encendida, el sistema cancela el cambio y mantiene el semáforo vehicular en verde hasta que la ambulancia pase. Si no hay ninguna emergencia, el semáforo vehicular cambia a rojo, el peatonal cambia a verde durante un tiempo fijo, y luego vuelve a la normalidad.
+Lee un número y di si es positivo, negativo o cero.
 
-### Ejercicio 15
+### Ejercicio 15 — Conversión de distancia
 
-Una persona llega al aeropuerto para hacer el check-in de su vuelo. Primero el sistema revisa si el vuelo todavía admite check-in (algunos vuelos cierran el check-in cierto tiempo antes de salir); si ya cerró, la persona debe ir directamente al mostrador de atención especial. Si el check-in sigue abierto, se pregunta si el pasajero lleva equipaje para despachar; si lleva, se pesa la maleta y se revisa si excede el límite permitido, en cuyo caso debe pagar un excedente antes de continuar. Al final, si el pasajero pidió un asiento en una fila de salida de emergencia, se le pregunta si está en condiciones de ayudar en una evacuación; si dice que no, se le reasigna a otro asiento.
+Lee una distancia en kilómetros y conviértela a metros y a millas (1 km = 1000 m = 0.621 millas). Puramente de cálculo, sin condicionales.
 
-### Ejercicio 16
+### Ejercicio 16 — Promedio de dos notas
 
-Un cajero automático (ATM) atiende una transacción. Primero pide la tarjeta y la clave; si la clave es incorrecta, da otra oportunidad, pero si falla tres veces seguidas, retiene la tarjeta y termina la operación. Si la clave es correcta, muestra las opciones (retiro, consulta de saldo, cambio de clave). En un retiro, pregunta el monto y revisa si el cajero tiene suficientes billetes de las denominaciones necesarias para entregar esa cantidad exacta; si no puede entregar el monto exacto, le pide a la persona que elija otro monto.
+Lee dos notas de un estudiante, calcula su promedio, y di si aprueba (promedio ≥ 3.0) o no.
 
-### Ejercicio 17
+### Ejercicio 17 — Conversión de moneda
 
-Una persona quiere regar las plantas de su casa. Por cada planta, primero toca la tierra para sentir si está seca o húmeda; si está húmeda, no la riega y pasa a la siguiente. Si está seca, revisa qué tipo de planta es, porque las sensibles al sol directo se riegan por la tarde y las demás se pueden regar en cualquier momento del día. Si al regar nota que el agua no se absorbe y se queda estancada en la superficie, revisa si la maceta tiene hueco de drenaje; si no lo tiene, aparta esa planta para cambiarla de maceta más tarde.
+Lee una cantidad en dólares y la tasa de cambio del día (pesos por dólar), y calcula a cuántos pesos colombianos equivale. Puramente de cálculo, sin condicionales.
 
-### Ejercicio 18
+### Ejercicio 18 — El menor de tres números
 
-En un supermercado, la caja de autoservicio debe procesar los productos que el cliente va pasando. Por cada producto, el sistema identifica si requiere verificación de edad (como licor o cigarrillos); si la requiere, se enciende una luz para que un empleado se acerque a confirmar la edad del cliente antes de continuar. Si el producto es una fruta o verdura sin código de barras, el sistema espera a que el cliente la seleccione de una lista en pantalla y la pese en la báscula. Al finalizar, si el cliente tiene una tarjeta de puntos registrada, el sistema pregunta si quiere acumularlos o redimirlos por un descuento en esa misma compra.
+Lee tres números y di cuál de los tres es el menor.
 
-### Ejercicio 19
+### Ejercicio 19 — Calculadora básica
 
-Un socorrista de primeros auxilios debe decidir cómo actuar cuando llega a atender a una persona. Primero verifica si la persona está consciente. Si no responde, revisa si respira; si no respira, debe iniciar maniobras de reanimación de inmediato y pedir que alguien llame a emergencias. Si respira pero no responde, la ubica en posición de recuperación y espera ayuda. Si la persona está consciente, le pregunta qué le pasó y si tiene alguna herida visible, sangrado, o dolor fuerte en algún lugar, para decidir cómo atenderla mientras llega ayuda especializada.
+Lee dos números y un operador (`+`, `-`, `*`, `/`) como carácter, y según el operador leído, realiza la operación correspondiente y muestra el resultado. Si el carácter leído no es ninguno de los cuatro, muestra un mensaje de "operador no válido".
 
-### Ejercicio 20
+### Ejercicio 20 — Cajero simple
 
-Un profesor de laboratorio debe distribuir a los estudiantes en grupos de trabajo para una práctica. Primero revisa la lista de asistencia y separa a quienes llegaron tarde, porque ellos entran a un grupo aparte con instrucciones adicionales. A los que llegaron a tiempo, los organiza según si ya trabajaron juntos en una práctica anterior; si ya trabajaron juntos, intenta separarlos en distintos grupos para que conozcan otros compañeros. Si un grupo queda con un número impar de estudiantes al final, el profesor decide si agregarlo a otro grupo o dejarlo trabajar con uno menos, dependiendo de qué tan compleja sea la práctica de ese día.
+Lee el saldo actual de una cuenta y el valor que el cliente quiere retirar. Si el saldo alcanza, muestra el nuevo saldo después del retiro; si no alcanza, muestra un mensaje de fondos insuficientes.
