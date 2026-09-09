@@ -99,11 +99,6 @@ Todavía no hemos visto ciclos (`Para`), así que escribe las 6 filas de la tabl
 
 ## Ejercicios con condicionales
 
-```{admonition} Nota
-:class: note
-De aquí en adelante los ejercicios ya se resuelven directamente en PSeInt: piden datos por teclado con `Leer`, hacen algún cálculo, y usan `Si-Entonces` o `Si-Entonces-SiNo` para decidir qué mostrar. Ninguno necesita ciclos (`Para`, `Mientras`) — todavía no los hemos visto.
-```
-
 ### Ejercicio 6 — Mayoría de edad
 
 Escribe un algoritmo que lea la edad de una persona y diga si es mayor o menor de edad (mayor de edad a partir de los 18 años).
