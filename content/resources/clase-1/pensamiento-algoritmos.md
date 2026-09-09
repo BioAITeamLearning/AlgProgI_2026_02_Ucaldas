@@ -92,13 +92,6 @@ Intenta listar las Entradas, Salida(s) y Procesos. La tabla resultado debe ver a
     <img src="https://raw.githubusercontent.com/BioAITeamLearning/AlgProgI_2026_02_Ucaldas/main/content/imgs/img1-unid-1.png" alt="pensamiento1" width="600px"/>
 </div>
 
-```{admonition} Para PSeInt
-:class: tip
-Todavía no hemos visto ciclos (`Para`), así que escribe las 6 filas de la tabla como 6 bloques de código seguidos (Año1, Año2, ... Año6), cada uno calculando y escribiendo su propia depreciación acumulada y valor real. Es repetitivo, pero así se hace por ahora — con ciclos, más adelante, se reduce a unas pocas líneas.
-```
-
-## Ejercicios con condicionales
-
 ### Ejercicio 6 — Mayoría de edad
 
 Escribe un algoritmo que lea la edad de una persona y diga si es mayor o menor de edad (mayor de edad a partir de los 18 años).
