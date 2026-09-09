@@ -72,11 +72,6 @@ La persona sube y encuentra 8 pasajeros, luego se bajan 3, suben 10 pasajeros, v
 
 El conductor del bus además le dice que si hay más de 10 pasajeros en el bus le hace un descuento del 20\% del costo total.
 
-```{admonition} Para PSeInt
-:class: tip
-Este ejercicio no necesita ciclos: cada subida/bajada es una línea de código distinta (7 instrucciones seguidas de suma/resta), y el descuento es un único `Si-Entonces-SiNo` al final.
-```
-
 ### Ejercicio 5
 
 Se desea obtener **una tabla con las depreciaciones acumuladas y los valores reales de cada año**, de un automóvil comprado por 20.000 euros en el año 2005, durante los seis años siguientes suponiendo un valor de recuperación o
@@ -113,11 +108,6 @@ Escribe un algoritmo que lea la nota final de un estudiante (sobre 5.0) y diga s
 Escribe un algoritmo que lea dos números y diga cuál de los dos es mayor, o si son iguales.
 
 ## Tarea
-
-```{admonition} Para entregar
-:class: important
-Para cada ejercicio: identifica Entradas, Salida(s) y Proceso, resuélvelo en PSeInt (con `Leer`, cálculos y `Si-Entonces`/`Si-Entonces-SiNo`, sin ciclos) y dibuja su diagrama de flujo.
-```
 
 ### Ejercicio 11 — Par o impar
 
