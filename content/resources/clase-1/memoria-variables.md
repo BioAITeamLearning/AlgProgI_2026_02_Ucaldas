@@ -1,0 +1,359 @@
+# 🧮 Memoria, Variables y Sistemas de Numeración
+
+Ya escribiste `Definir edad Como Entero` muchas veces resolviendo los ejercicios de la clase anterior. Aquí vemos qué hace la computadora por dentro cuando ejecuta esa línea: dónde queda guardado el valor, qué es una dirección de memoria, cuánto pesa cada tipo de dato, y cómo se convierte un número entre binario, decimal y hexadecimal.
+
+## Gestión de variables en memoria
+
+Cuando declaras y usas una variable, pasan cuatro cosas en orden: se **reserva** espacio según el tipo, se **asigna** un valor, ese valor se **convierte** a binario (o al código ASCII si es texto), y se **guarda** en una dirección concreta. Recorre los pasos:
+
+<div class="mem-widget" id="widget1">
+<style>
+  #widget1 { --w1-bg:#F4F5F7; --w1-surface:#fff; --w1-surface2:#EAEDF3; --w1-text:#1B2430; --w1-muted:#5B6472; --w1-line:#D7DCE5;
+             --w1-int:#1D5FD6; --w1-int-soft:#E4ECFC; --w1-int-cell:#AFC8F2; --w1-char:#B45309; --w1-char-soft:#FBEBD9;
+             --w1-ok:#15803D; --w1-free:#C2C9D4; }
+  html[data-theme="dark"] #widget1 { --w1-bg:#14171D; --w1-surface:#1C2029; --w1-surface2:#262B36; --w1-text:#E8EAEE; --w1-muted:#98A0AE; --w1-line:#333A47;
+             --w1-int:#6E93E8; --w1-int-soft:#232D45; --w1-int-cell:#3A4C7A; --w1-char:#E0A458; --w1-char-soft:#33281A;
+             --w1-ok:#4ADE80; --w1-free:#454D5C; }
+  #widget1 { background: var(--w1-bg); border: 1px solid var(--w1-line); border-radius: 10px; padding: 20px; margin: 18px 0; font-family: ui-sans-serif, system-ui, sans-serif; }
+  #widget1 * { box-sizing: border-box; }
+  #widget1 .w1-mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  #widget1 .w1-stage { display: grid; grid-template-columns: 260px 1fr; gap: 16px; align-items: start; }
+  @media (max-width: 720px) { #widget1 .w1-stage { grid-template-columns: 1fr; } }
+  #widget1 .w1-panel { background: var(--w1-surface); border: 1px solid var(--w1-line); border-radius: 8px; }
+  #widget1 .w1-panel-label { font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--w1-muted); padding: 10px 14px 6px; }
+  #widget1 .w1-code-line { font-family: ui-monospace, monospace; font-size: 12.5px; padding: 5px 14px; color: var(--w1-muted); white-space: pre; border-left: 3px solid transparent; transition: all .3s ease; }
+  #widget1 .w1-code-line.active { background: var(--w1-int-soft); color: var(--w1-text); border-left-color: var(--w1-int); font-weight: 600; }
+  #widget1 .w1-code-line.active.is-char { background: var(--w1-char-soft); border-left-color: var(--w1-char); }
+  #widget1 .w1-mem-box { margin: 12px 14px 16px; padding: 14px; border-radius: 10px; background: var(--w1-surface2); border: 1px solid var(--w1-line); overflow-x: auto; }
+  #widget1 .w1-mem-title { text-align: center; font-size: 11.5px; font-weight: 700; margin-bottom: 12px; color: var(--w1-muted); }
+  #widget1 .w1-row { display: grid; grid-template-columns: 74px repeat(4, 1fr) 70px; gap: 6px; align-items: center; margin-bottom: 8px; min-width: 440px; }
+  #widget1 .w1-varlabel { font-family: ui-monospace, monospace; font-size: 11.5px; font-weight: 700; text-align: right; opacity: 0; transition: opacity .35s ease; white-space: nowrap; }
+  #widget1 .w1-varlabel.show { opacity: 1; }
+  #widget1 .w1-varlabel.int { color: var(--w1-int); }
+  #widget1 .w1-varlabel.char { color: var(--w1-char); }
+  #widget1 .w1-cell { height: 38px; border-radius: 8px; background: var(--w1-surface); border: 1.5px dashed var(--w1-free); display: flex; align-items: center; justify-content: center; font-family: ui-monospace, monospace; font-size: 12px; font-weight: 600; color: var(--w1-muted); transition: all .4s ease; }
+  #widget1 .w1-cell.r-int { background: var(--w1-int-cell); border: none; color: var(--w1-text); opacity: .55; }
+  #widget1 .w1-cell.r-int.hd { opacity: 1; font-weight: 700; }
+  #widget1 .w1-cell.r-char { background: var(--w1-char-soft); border: 1.5px solid var(--w1-char); color: var(--w1-text); }
+  #widget1 .w1-cell.r-char.hd { background: var(--w1-char); color: #fff; font-weight: 700; }
+  #widget1 .w1-cell.pulse { animation: w1pulse .6s ease; }
+  @keyframes w1pulse { 0%{transform:scale(.85)} 55%{transform:scale(1.08)} 100%{transform:scale(1)} }
+  #widget1 .w1-addr { font-family: ui-monospace, monospace; font-size: 11px; color: var(--w1-muted); text-align: right; }
+  #widget1 .w1-console { margin: 0 14px 14px; padding: 9px 12px; border-radius: 6px; background: var(--w1-surface2); border: 1px solid var(--w1-line); font-family: ui-monospace, monospace; font-size: 11.5px; color: var(--w1-muted); }
+  #widget1 .w1-console .out { color: var(--w1-ok); }
+  #widget1 .w1-narrative { margin-top: 14px; background: var(--w1-surface); border: 1px solid var(--w1-line); border-radius: 8px; padding: 14px 18px; font-size: 14.5px; min-height: 3em; }
+  #widget1 .w1-controls { margin-top: 12px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  #widget1 button { font-family: ui-monospace, monospace; font-size: 12px; padding: 7px 13px; border-radius: 6px; border: 1px solid var(--w1-line); background: var(--w1-surface); color: var(--w1-text); cursor: pointer; }
+  #widget1 button:hover { border-color: var(--w1-int); }
+  #widget1 button.primary { background: var(--w1-int); border-color: var(--w1-int); color: #fff; }
+  #widget1 button:disabled { opacity: .4; cursor: not-allowed; }
+  #widget1 .w1-dots { display: flex; gap: 6px; margin-left: auto; }
+  #widget1 .w1-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--w1-free); transition: all .3s ease; }
+  #widget1 .w1-dot.on { background: var(--w1-int); transform: scale(1.3); }
+</style>
+
+<div class="w1-stage">
+  <div class="w1-panel">
+    <div class="w1-panel-label">Pseudocódigo (PSeInt)</div>
+    <div id="w1codeLines">
+      <div class="w1-code-line" data-line="0">Definir edad Como Entero</div>
+      <div class="w1-code-line" data-line="1">Definir letra Como Caracter</div>
+      <div class="w1-code-line" data-line="2">edad &lt;- 20</div>
+      <div class="w1-code-line" data-line="3">letra &lt;- 'A'</div>
+      <div class="w1-code-line" data-line="5">Definir poblacion Como Entero</div>
+      <div class="w1-code-line" data-line="6">poblacion &lt;- 16909060</div>
+      <div class="w1-code-line" data-line="4">Escribir edad, letra, poblacion</div>
+    </div>
+    <div class="w1-console" id="w1console">— sin salida todavía —</div>
+  </div>
+  <div class="w1-panel">
+    <div class="w1-panel-label">Memoria RAM</div>
+    <div class="w1-mem-box">
+      <div class="w1-mem-title">MEMORIA (palabras de 32 bits)</div>
+      <div id="w1memRows"></div>
+    </div>
+  </div>
+</div>
+
+<div class="w1-narrative"><p id="w1narrativeText" style="margin:0;"></p></div>
+
+<div class="w1-controls">
+  <button id="w1prevBtn">← Anterior</button>
+  <button id="w1playBtn" class="primary">▶ Reproducir</button>
+  <button id="w1nextBtn">Siguiente →</button>
+  <div class="w1-dots" id="w1dots"></div>
+</div>
+</div>
+
+<script>
+(function () {
+  var rowsData = [{addr:0},{addr:4},{addr:8},{addr:12}];
+  var memRowsEl = document.getElementById('w1memRows');
+  var rowEls = [];
+  rowsData.forEach(function (r) {
+    var row = document.createElement('div'); row.className = 'w1-row';
+    var label = document.createElement('div'); label.className = 'w1-varlabel'; row.appendChild(label);
+    var cellEls = [];
+    for (var i = 0; i < 4; i++) { var c = document.createElement('div'); c.className = 'w1-cell'; row.appendChild(c); cellEls.push(c); }
+    var addr = document.createElement('div'); addr.className = 'w1-addr';
+    addr.textContent = '0x' + r.addr.toString(16).toUpperCase().padStart(4, '0');
+    row.appendChild(addr); memRowsEl.appendChild(row);
+    rowEls.push({ label: label, cells: cellEls });
+  });
+
+  var codeLines = document.querySelectorAll('#w1codeLines .w1-code-line');
+  var narrativeText = document.getElementById('w1narrativeText');
+  var consoleEl = document.getElementById('w1console');
+  var dotsEl = document.getElementById('w1dots');
+  var prevBtn = document.getElementById('w1prevBtn');
+  var nextBtn = document.getElementById('w1nextBtn');
+  var playBtn = document.getElementById('w1playBtn');
+
+  function hex2(n) { return n.toString(16).toUpperCase().padStart(2, '0'); }
+  function toBytes4(n) { var b = []; for (var i = 3; i >= 0; i--) b.push((n >>> (i * 8)) & 0xFF); return b; }
+  function fillIntWord(rowIdx, value) {
+    var bytes = toBytes4(value);
+    rowEls[rowIdx].cells.forEach(function (c, i) {
+      c.textContent = hex2(bytes[i]);
+      c.classList.toggle('hd', bytes[i] !== 0);
+      c.classList.remove('pulse'); void c.offsetWidth; c.classList.add('pulse');
+    });
+  }
+
+  var steps = [
+    { line: -1, text: 'Así empieza: cuatro palabras de memoria libres, cada una de 4 bytes (32 bits). El contenido se muestra en hexadecimal.', apply: function () {} },
+    { line: 0, text: 'Definir <b style="color:var(--w1-int)">edad</b> Como Entero — un Entero pesa <b style="color:var(--w1-int)">4 bytes</b>, se reserva toda la palabra en 0x0000.',
+      apply: function () { rowEls[0].cells.forEach(function (c) { c.classList.add('r-int'); c.textContent = '00'; }); rowEls[0].label.textContent = 'edad'; rowEls[0].label.classList.add('show', 'int'); } },
+    { line: 2, text: '<b style="color:var(--w1-int)">edad &lt;- 20</b> — 20 cabe en 7 bits, así que solo el último byte deja de ser <code>00</code> (<code>14</code> hex = 20 decimal). Los otros 3 bytes siguen reservados pero vacíos.',
+      apply: function () { fillIntWord(0, 20); } },
+    { line: 1, text: 'Definir <b style="color:var(--w1-char)">letra</b> Como Caracter — pesa <b style="color:var(--w1-char)">1 byte</b>: usa la primera casilla de la siguiente palabra libre, 0x0004.',
+      apply: function () { rowEls[1].cells[0].classList.add('r-char'); rowEls[1].label.textContent = 'letra'; rowEls[1].label.classList.add('show', 'char'); } },
+    { line: 3, text: "<b style=\"color:var(--w1-char)\">letra &lt;- 'A'</b> — se guarda su código ASCII (65 decimal = <code>41</code> hex), no la letra.",
+      apply: function () { var c = rowEls[1].cells[0]; c.textContent = hex2(65); c.classList.add('hd'); c.classList.remove('pulse'); void c.offsetWidth; c.classList.add('pulse'); } },
+    { line: 5, text: 'Definir <b style="color:var(--w1-int)">poblacion</b> Como Entero — otra palabra completa reservada en 0x0008.',
+      apply: function () { rowEls[2].cells.forEach(function (c) { c.classList.add('r-int'); c.textContent = '00'; }); rowEls[2].label.textContent = 'poblacion'; rowEls[2].label.classList.add('show', 'int'); } },
+    { line: 6, text: '<b style="color:var(--w1-int)">poblacion &lt;- 16909060</b> — este número sí necesita los <b style="color:var(--w1-int)">4 bytes</b>: en hex es <code>01 02 03 04</code>. A diferencia de "edad", aquí ningún byte reservado sobra vacío.',
+      apply: function () { fillIntWord(2, 16909060); } },
+    { line: 4, text: 'Escribir edad, letra, poblacion — se leen esas casillas y se traducen de vuelta: 20, \'A\' y 16909060.',
+      apply: function () { consoleEl.innerHTML = '<span class="out">20</span> &nbsp; <span class="out">A</span> &nbsp; <span class="out">16909060</span>'; } },
+    { line: -1, text: '"edad" y "letra" dejan casi todos sus bytes en 0x00 porque son valores chicos; "poblacion" usa los 4 bytes completos. Todavía queda libre la palabra en 0x000C.', apply: function () {} }
+  ];
+
+  function resetVisual() {
+    rowEls.forEach(function (r) { r.label.textContent = ''; r.label.className = 'w1-varlabel'; r.cells.forEach(function (c) { c.className = 'w1-cell'; c.textContent = ''; }); });
+    consoleEl.innerHTML = '— sin salida todavía —';
+  }
+  var dots = [];
+  steps.forEach(function () { var d = document.createElement('div'); d.className = 'w1-dot'; dotsEl.appendChild(d); dots.push(d); });
+  var current = 0, playing = false, playTimer = null;
+  function render() {
+    resetVisual();
+    for (var i = 0; i <= current; i++) steps[i].apply();
+    codeLines.forEach(function (l) { l.classList.remove('active', 'is-char'); });
+    var ln = steps[current].line;
+    if (ln >= 0) document.querySelectorAll('#w1codeLines .w1-code-line[data-line="' + ln + '"]').forEach(function (l) { l.classList.add('active'); if (ln === 1 || ln === 3) l.classList.add('is-char'); });
+    narrativeText.innerHTML = steps[current].text;
+    dots.forEach(function (d, i) { d.classList.toggle('on', i === current); });
+    prevBtn.disabled = current === 0; nextBtn.disabled = current === steps.length - 1;
+    if (current === steps.length - 1) stopPlay();
+  }
+  function goTo(i) { current = Math.max(0, Math.min(steps.length - 1, i)); render(); }
+  prevBtn.addEventListener('click', function () { stopPlay(); goTo(current - 1); });
+  nextBtn.addEventListener('click', function () { stopPlay(); goTo(current + 1); });
+  function startPlay() { playing = true; playBtn.textContent = '⏸ Pausar'; playTimer = setInterval(function () { if (current >= steps.length - 1) return stopPlay(); goTo(current + 1); }, 2500); }
+  function stopPlay() { playing = false; playBtn.textContent = '▶ Reproducir'; clearInterval(playTimer); }
+  playBtn.addEventListener('click', function () { playing ? stopPlay() : startPlay(); });
+  render();
+})();
+</script>
+
+## Direcciones de memoria
+
+Cada byte de la RAM tiene un número de "casa" único: su **dirección**. Se escribe en **hexadecimal** (base 16, prefijo `0x`) porque escribirla en binario sería larguísimo. El byte número 16 en binario es `00010000` (8 dígitos); en hexadecimal, cada dígito representa 4 bits, así que esos mismos 8 bits se escriben con solo 2 dígitos:
+
+$$
+\texttt{0x10} = (1 \times 16) + (0 \times 1) = 16
+$$
+
+$$
+\texttt{0x20} = (2 \times 16) + (0 \times 1) = 32
+$$
+
+Por eso `0x10` no es "diez": es **16** en decimal, y `0x20` es **32**.
+
+| Dirección (hex) | Binario (8 bits) | Decimal |
+|---|---|---|
+| `0x00` | `00000000` | 0 |
+| `0x04` | `00000100` | 4 |
+| `0x08` | `00001000` | 8 |
+| `0x0C` | `00001100` | 12 |
+| `0x10` | `00010000` | 16 |
+| `0x20` | `00100000` | 32 |
+
+```{admonition} ¿Por qué saltan de 4 en 4?
+:class: tip
+En la animación de arriba las direcciones van `0x0000, 0x0004, 0x0008, 0x000C`. Cada `Entero` ocupa 4 bytes seguidos, así que al reservar el siguiente, la dirección disponible avanza exactamente el tamaño de lo que acabas de guardar. Si en cambio guardaras `Caracter`es (1 byte) uno tras otro, las direcciones irían de 1 en 1: `0x00, 0x01, 0x02, 0x03...`
+```
+
+## Tipos de datos: peso y rango
+
+- **1 bit**: la unidad más pequeña de información posible. Solo puede valer **0** o **1** — un interruptor, con corriente o sin corriente.
+- **1 byte = 8 bits**: la memoria no direcciona bits sueltos, direcciona bytes. Por eso cada dirección de la sección anterior apunta a un grupo de 8 bits, no a 1 solo bit.
+
+| Tipo (PSeInt) | Tamaño | Bits | Combinaciones posibles | Rango de valores |
+|---|---|---|---|---|
+| Logico | 1 byte | 8 | 2 | Verdadero / Falso |
+| Caracter | 1 byte | 8 | 256 | 0 a 255 (código ASCII) |
+| Entero | 4 bytes | 32 | 4.294.967.296 | −2.147.483.648 a 2.147.483.647 |
+| Real | 4 u 8 bytes | 32 / 64 | — | usa otra codificación (punto flotante) |
+
+```{admonition} Ojo con el rango con signo
+:class: warning
+Con 8 bits hay exactamente 256 combinaciones posibles ($2^8$). Si una de ellas se reserva para el cero, el rango con signo queda **−128 a 127** — no "−128 a 128" (eso serían 257 valores, uno de más). Un bit siempre se separa para indicar el signo, y por eso el lado positivo tiene un valor menos que el negativo.
+```
+
+## Sistemas de numeración
+
+En decimal cada posición vale una potencia de 10 (1, 10, 100...). En binario, una potencia de 2 (1, 2, 4, 8, 16...). En hexadecimal, una potencia de 16.
+
+### Binario → Decimal
+
+Se suman las posiciones que están "encendidas" (en 1):
+
+$$
+00010100_2 = (0{\times}128) + (0{\times}64) + (0{\times}32) + (1{\times}16) + (0{\times}8) + (1{\times}4) + (0{\times}2) + (0{\times}1) = 16 + 4 = 20
+$$
+
+### Decimal → Binario (dividir entre 2)
+
+Se divide el número entre 2 repetidamente, anotando el residuo en cada paso, hasta llegar a 0. El binario se lee de **abajo hacia arriba**:
+
+```
+20 ÷ 2 = 10, residuo 0
+10 ÷ 2 =  5, residuo 0
+ 5 ÷ 2 =  2, residuo 1
+ 2 ÷ 2 =  1, residuo 0
+ 1 ÷ 2 =  0, residuo 1
+```
+
+Leyendo los residuos de abajo hacia arriba: `10100` → con 8 bits: `00010100`.
+
+### Practica: binario ↔ decimal
+
+<div class="mem-widget" id="widget2">
+<style>
+  #widget2 { --w2-bg:#F4F5F7; --w2-surface:#fff; --w2-surface2:#EAEDF3; --w2-text:#1B2430; --w2-muted:#5B6472; --w2-line:#D7DCE5; --w2-int:#1D5FD6; --w2-hex:#B45309; --w2-free:#C2C9D4; }
+  html[data-theme="dark"] #widget2 { --w2-bg:#14171D; --w2-surface:#1C2029; --w2-surface2:#262B36; --w2-text:#E8EAEE; --w2-muted:#98A0AE; --w2-line:#333A47; --w2-int:#6E93E8; --w2-hex:#E0A458; --w2-free:#454D5C; }
+  #widget2 { background: var(--w2-bg); border: 1px solid var(--w2-line); border-radius: 10px; padding: 20px 22px; margin: 16px 0; }
+  #widget2 * { box-sizing: border-box; }
+  #widget2 .w2-row { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+  #widget2 .w2-bit { width: 48px; height: 58px; border-radius: 8px; border: 2px solid var(--w2-free); background: var(--w2-surface2); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; font-family: ui-monospace, monospace; user-select: none; transition: all .25s ease; }
+  #widget2 .w2-bit .bv { font-size: 18px; font-weight: 700; color: var(--w2-muted); }
+  #widget2 .w2-bit .bp { font-size: 8.5px; color: var(--w2-muted); opacity: .7; margin-top: 3px; }
+  #widget2 .w2-bit.on { background: var(--w2-int); border-color: var(--w2-int); }
+  #widget2 .w2-bit.on .bv { color: #fff; }
+  #widget2 .w2-bit.on .bp { color: #fff; opacity: .85; }
+  #widget2 .w2-result { text-align: center; margin-top: 16px; font-family: ui-monospace, monospace; font-size: 14.5px; color: var(--w2-text); line-height: 2; }
+  #widget2 .w2-result .eq { color: var(--w2-int); font-weight: 700; }
+  #widget2 .w2-result .hx { color: var(--w2-hex); font-weight: 700; }
+  #widget2 .w2-input-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--w2-line); flex-wrap: wrap; }
+  #widget2 .w2-input-row label { font-family: ui-monospace, monospace; font-size: 12px; color: var(--w2-muted); }
+  #widget2 .w2-input-row input { font-family: ui-monospace, monospace; font-size: 15px; width: 80px; padding: 6px 9px; border-radius: 6px; border: 1px solid var(--w2-line); background: var(--w2-surface2); color: var(--w2-text); text-align: center; }
+</style>
+<div class="w2-row" id="w2bitRow"></div>
+<div class="w2-result" id="w2result"></div>
+<div class="w2-input-row">
+  <label>Decimal (0–255):</label><input type="number" id="w2decInput" min="0" max="255" value="20">
+  <label>Hex:</label><input type="text" id="w2hexInput" maxlength="2" value="14">
+</div>
+</div>
+
+<script>
+(function () {
+  var pv = [128,64,32,16,8,4,2,1];
+  var bits = [0,0,0,1,0,1,0,0];
+  var row = document.getElementById('w2bitRow');
+  var result = document.getElementById('w2result');
+  var decInput = document.getElementById('w2decInput');
+  var hexInput = document.getElementById('w2hexInput');
+  var toggles = [];
+  pv.forEach(function (p, i) {
+    var t = document.createElement('div'); t.className = 'w2-bit';
+    t.innerHTML = '<span class="bv">0</span><span class="bp">' + p + '</span>';
+    t.addEventListener('click', function () { bits[i] = bits[i] ? 0 : 1; syncFromBits(); });
+    row.appendChild(t); toggles.push(t);
+  });
+  function toDec() { var s = 0; for (var i = 0; i < 8; i++) s += bits[i] * pv[i]; return s; }
+  function renderBits() { toggles.forEach(function (t, i) { t.classList.toggle('on', !!bits[i]); t.querySelector('.bv').textContent = bits[i]; }); }
+  function renderResult() {
+    var d = toDec(); var h = d.toString(16).toUpperCase().padStart(2, '0');
+    result.innerHTML = bits.join('') + '<sub>2</sub> &nbsp;=&nbsp; <span class="eq">' + d + '</span><sub>10</sub> &nbsp;=&nbsp; <span class="hx">0x' + h + '</span><sub>16</sub>';
+  }
+  function setFromDecimal(n) {
+    if (isNaN(n) || n < 0) n = 0; if (n > 255) n = 255;
+    for (var i = 0; i < 8; i++) bits[i] = 0;
+    var rem = n; for (var i = 0; i < 8; i++) { if (rem >= pv[i]) { bits[i] = 1; rem -= pv[i]; } }
+    renderBits(); renderResult();
+    decInput.value = n; hexInput.value = n.toString(16).toUpperCase().padStart(2, '0');
+  }
+  function syncFromBits() { renderBits(); renderResult(); var d = toDec(); decInput.value = d; hexInput.value = d.toString(16).toUpperCase().padStart(2, '0'); }
+  decInput.addEventListener('input', function () { setFromDecimal(parseInt(decInput.value, 10)); });
+  hexInput.addEventListener('input', function () { var n = parseInt(hexInput.value, 16); setFromDecimal(isNaN(n) ? 0 : n); });
+  syncFromBits();
+})();
+</script>
+
+### Hexadecimal ↔ Decimal
+
+Cada dígito hexadecimal vale de 0 a 15 (usando las letras A–F para 10–15) y multiplica una potencia de 16 según su posición.
+
+**Hex → Decimal** (multiplicar cada dígito por su potencia de 16):
+
+$$
+\texttt{0x2F} = (2 \times 16^1) + (15 \times 16^0) = 32 + 15 = 47
+$$
+
+**Decimal → Hex** (dividir entre 16, igual que se dividía entre 2 para binario):
+
+```
+202 ÷ 16 = 12, residuo 10 (A)
+ 12 ÷ 16 =  0, residuo 12 (C)
+```
+
+Leyendo de abajo hacia arriba: `C`, `A` → `0xCA`.
+
+| Decimal | Hex | Decimal | Hex |
+|---|---|---|---|
+| 10 | A | 13 | D |
+| 11 | B | 14 | E |
+| 12 | C | 15 | F |
+
+### Binario ↔ Hexadecimal (el atajo que usa la memoria)
+
+No hace falta pasar por decimal: como $16 = 2^4$, **cada dígito hexadecimal representa exactamente 4 bits** (un "nibble"). Se agrupan los bits de 4 en 4 desde la derecha y se convierte cada grupo por separado.
+
+| 4 bits | Hex | 4 bits | Hex |
+|---|---|---|---|
+| `0000` | 0 | `1000` | 8 |
+| `0001` | 1 | `1001` | 9 |
+| `0010` | 2 | `1010` | A |
+| `0011` | 3 | `1011` | B |
+| `0100` | 4 | `1100` | C |
+| `0101` | 5 | `1101` | D |
+| `0110` | 6 | `1110` | E |
+| `0111` | 7 | `1111` | F |
+
+Con esta tabla, convertir un byte completo es directo — es justo lo que viste en la animación del principio:
+
+$$
+\underbrace{0001}_{1}\ \underbrace{0100}_{4} = \texttt{0x14} = 20_{10}
+$$
+
+$$
+\underbrace{0000}_{0}\underbrace{0001}_{1} \ \ \underbrace{0000}_{0}\underbrace{0010}_{2} \ \ \underbrace{0000}_{0}\underbrace{0011}_{3} \ \ \underbrace{0000}_{0}\underbrace{0100}_{4} = \texttt{0x01\ 02\ 03\ 04} = 16909060_{10}
+$$
+
+```{admonition} Por qué esto importa
+:class: note
+Por eso en la animación de la Sección 1 cada byte se mostró directamente en hexadecimal en vez de en binario: 8 bits en pantalla son difíciles de leer rápido, pero 2 dígitos hex se leen al instante — y convertirlos a binario es solo cuestión de mirar la tabla de arriba.
+```
