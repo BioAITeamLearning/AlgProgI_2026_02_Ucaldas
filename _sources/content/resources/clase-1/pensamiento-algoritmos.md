@@ -151,9 +151,9 @@ Lee el saldo actual de una cuenta y el valor que el cliente quiere retirar. Si e
 
 ## Siguiente paso: ¿dónde viven las variables?
 
-Ya escribiste `Definir edad Como Entero` muchas veces en estos ejercicios. La siguiente guía muestra qué hace la computadora por dentro cuando ejecuta esa línea: cómo se reserva espacio en la memoria RAM, qué es una dirección de memoria (y por qué se ve como `0x0010`), cuánto pesa cada tipo de dato, y cómo convertir entre binario y decimal.
+Ya escribiste `Definir edad Como Entero` muchas veces en estos ejercicios. La siguiente guía muestra qué hace la computadora por dentro cuando ejecuta esa línea: cómo se reserva espacio en la memoria RAM, qué es una dirección de memoria (y por qué se ve como `0x0010`), cuánto pesa cada tipo de dato, y cómo convertir entre binario, decimal y hexadecimal.
 
-```{admonition} Recurso interactivo
+```{admonition} Siguiente lectura
 :class: tip
-[Cómo Vive una Variable en RAM](https://claude.ai/code/artifact/aa419ac6-98bc-45c4-b45d-cbf37e691fd1) — guía con animación paso a paso y un conversor binario/decimal para practicar.
+[Memoria, Variables y Sistemas de Numeración](memoria-variables.md) — con animación paso a paso y conversores interactivos para practicar.
 ```
