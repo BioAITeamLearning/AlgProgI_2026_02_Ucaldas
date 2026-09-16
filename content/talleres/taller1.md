@@ -16,7 +16,7 @@ kernelspec:
 Programación I
 
 :::{note}
-Este Taller debe entregarse en formato `docx`, con sus respectivas pruebas de escritorio y diagrama de flujo realizado a mano y subido en forma de foto, a partir del Taller 3 deben entregarse desde Colaboratory, con un enlace con los permisos en público o el notebook adjunto, mil gracias.
+Este taller se resuelve a mano: pseudocódigo y diagrama de flujo en papel para cada ejercicio. Sube una foto legible de tu solución.
 :::
 
 ### Ejercicio 1
