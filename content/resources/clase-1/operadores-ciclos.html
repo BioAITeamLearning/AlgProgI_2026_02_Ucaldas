@@ -1,0 +1,862 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>🔁 Operadores Lógicos y Ciclos &#8212; Curso de Programación I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../../../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../../../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/resources/clase-1/operadores-ciclos';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../../search.html" />
+    <link rel="next" title="🧰 Recursos y Actividades" href="recursos-clase1.html" />
+    <link rel="prev" title="🧮 Memoria, Variables y Sistemas de Numeración" href="memoria-variables.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logosem.png" class="logo__image only-light" alt="Curso de Programación I - Home"/>
+    <img src="../../../_static/logosem.png" class="logo__image only-dark pst-js-only" alt="Curso de Programación I - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    📖 Programación I
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción al Curso</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../presentacion.html">🎥 Generalidades</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidades</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../Unidad1.html">📘 Introducción</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="memoria-variables.html">🧮 Memoria, Variables y Sistemas de Numeración</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">🔁 Operadores Lógicos y Ciclos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos-clase1.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller1.html">📄 Taller 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad2.html">📘 Tipos de Datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase2.html">📙 Tipos de Datos y Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller2.html">📄 Taller 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz1.html">🔨 Quiz 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad3.html">📘 Operadores</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase3-Java.html">📙 Operadores en Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase3-Python.html">📙 Operadores en Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-3/recursos-clase3.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller3.html">📄 Taller 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz2.html">🔨 Quiz 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad4.html">📘 Entrada/Salida de Variables</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase4-Java.html">📙 Strings y Entrada de Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-4/recursos-clase4.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller4.html">📄 Taller 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz3.html">🔨 Quiz 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad5.html">📘 Condicionales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase5-Java.html">📙 Condicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-5/recursos-clase5.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller5.html">📄 Taller 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz4.html">🔨 Quiz 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad6.html">📘 Estructura Repetitiva <code class="docutils literal notranslate"><span class="pre">for</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase6-Java.html">📙 Ciclo Repetitivo <code class="docutils literal notranslate"><span class="pre">for</span></code> - Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase6-Python.html">📙 Ciclo Repetitivo <code class="docutils literal notranslate"><span class="pre">for</span></code> - Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-6/recursos-clase6.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller6_A.html">📄 Taller 6 B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller6_B.html">📄 Taller 6 A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz5.html">🔨 Quiz 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad7.html">📘 Estructura Repetitiva <code class="docutils literal notranslate"><span class="pre">while</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase7-Java.html">📙 Ciclos <code class="docutils literal notranslate"><span class="pre">while</span></code> y <code class="docutils literal notranslate"><span class="pre">do-while</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-7/recursos-clase7.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller7.html">📄 Taller 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz6.html">🔨 Quiz 6</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad8.html">📘 Funciones</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase8-Java.html">📙 Funciones y Procedimientos - Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase8-Python.html">📙 Funciones - Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-8/recursos-clase8.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller8.html">📄 Taller 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz7.html">🔨 Quiz 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad9.html">📘 Arreglos y Listas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase9-Java.html">📙 Arrays - Java</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase9-Python.html">📙 Arrays - Python</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../clase-9/recursos-clase9.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller9.html">📄 Taller 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz8.html">🔨 Quiz 8</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad10.html">📘 Matrices</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase10-Java.html">📙 Matrices - Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/Clase10-Python.html">📙 Matrices - Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clase-10/recursos-clase10.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../talleres/taller10.html">📄 Taller 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quices/quiz9.html">🔨 Quiz 9</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/resources/clase-1/operadores-ciclos.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>🔁 Operadores Lógicos y Ciclos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores lógicos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-ano-bisiesto">Ejemplo resuelto — Año bisiesto</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores-y-acumuladores">Contadores y acumuladores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-contador-y-acumulador-juntos">Ejemplo resuelto — Contador y acumulador juntos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-para-se-sabe-cuantas-veces-se-repite">Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> (se sabe cuántas veces se repite)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> (se repite hasta que una condición deje de cumplirse)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-suma-con-centinela">Ejemplo resuelto — Suma con centinela</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banco-de-ejercicios">Banco de ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Operadores lógicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores">Contadores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acumuladores">Acumuladores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contador-y-acumulador-combinados">Contador y acumulador combinados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-y-centinelas">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> y centinelas</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="operadores-logicos-y-ciclos">
+<h1>🔁 Operadores Lógicos y Ciclos<a class="headerlink" href="#operadores-logicos-y-ciclos" title="Link to this heading">#</a></h1>
+<p>Hasta ahora resolviste problemas con pasos secuenciales y con una sola decisión (<code class="docutils literal notranslate"><span class="pre">Si-Entonces-SiNo</span></code>). Aquí se agregan dos herramientas que se van a usar todo el semestre: <strong>operadores lógicos</strong> para combinar varias condiciones en una sola, y <strong>ciclos</strong> para repetir instrucciones sin tener que escribirlas una y otra vez.</p>
+<section id="operadores-logicos">
+<h2>Operadores lógicos<a class="headerlink" href="#operadores-logicos" title="Link to this heading">#</a></h2>
+<p>Un operador lógico combina dos condiciones (o invierte una) y el resultado siempre es Verdadero o Falso.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operador</p></th>
+<th class="head"><p>Símbolo en PSeInt</p></th>
+<th class="head"><p>Es verdadero cuando…</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Y (AND)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Y</span></code></p></td>
+<td><p><strong>ambas</strong> condiciones son verdaderas</p></td>
+</tr>
+<tr class="row-odd"><td><p>O (OR)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">O</span></code></p></td>
+<td><p><strong>al menos una</strong> de las condiciones es verdadera</p></td>
+</tr>
+<tr class="row-even"><td><p>NO (NOT)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">NO</span></code></p></td>
+<td><p>invierte el valor: si la condición era verdadera, la vuelve falsa (y viceversa)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Tabla de verdad de Y:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A Y B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Verdadero</p></td>
+<td><p>Verdadero</p></td>
+<td><p>Verdadero</p></td>
+</tr>
+<tr class="row-odd"><td><p>Verdadero</p></td>
+<td><p>Falso</p></td>
+<td><p>Falso</p></td>
+</tr>
+<tr class="row-even"><td><p>Falso</p></td>
+<td><p>Verdadero</p></td>
+<td><p>Falso</p></td>
+</tr>
+<tr class="row-odd"><td><p>Falso</p></td>
+<td><p>Falso</p></td>
+<td><p>Falso</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Tabla de verdad de O:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A O B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Verdadero</p></td>
+<td><p>Verdadero</p></td>
+<td><p>Verdadero</p></td>
+</tr>
+<tr class="row-odd"><td><p>Verdadero</p></td>
+<td><p>Falso</p></td>
+<td><p>Verdadero</p></td>
+</tr>
+<tr class="row-even"><td><p>Falso</p></td>
+<td><p>Verdadero</p></td>
+<td><p>Verdadero</p></td>
+</tr>
+<tr class="row-odd"><td><p>Falso</p></td>
+<td><p>Falso</p></td>
+<td><p>Falso</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="ejemplo-resuelto-ano-bisiesto">
+<h3>Ejemplo resuelto — Año bisiesto<a class="headerlink" href="#ejemplo-resuelto-ano-bisiesto" title="Link to this heading">#</a></h3>
+<p>Un año es bisiesto si es divisible entre 4, <strong>excepto</strong> los divisibles entre 100, <strong>salvo</strong> que también sean divisibles entre 400.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">AnioBisiesto</span>
+	<span class="n">Definir</span> <span class="n">anio</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">Definir</span> <span class="n">esBisiesto</span> <span class="n">Como</span> <span class="n">Logico</span>
+	<span class="n">Leer</span> <span class="n">anio</span>
+	<span class="n">esBisiesto</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">anio</span> <span class="n">MOD</span> <span class="mi">4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">Y</span> <span class="p">((</span><span class="n">anio</span> <span class="n">MOD</span> <span class="mi">100</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="n">O</span> <span class="p">(</span><span class="n">anio</span> <span class="n">MOD</span> <span class="mi">400</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>
+	<span class="n">Si</span> <span class="n">esBisiesto</span> <span class="n">Entonces</span>
+		<span class="n">Escribir</span> <span class="n">anio</span><span class="p">,</span> <span class="s2">" es bisiesto"</span>
+	<span class="n">SiNo</span>
+		<span class="n">Escribir</span> <span class="n">anio</span><span class="p">,</span> <span class="s2">" no es bisiesto"</span>
+	<span class="n">FinSi</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+<p>Fíjate cómo la condición combina un <code class="docutils literal notranslate"><span class="pre">Y</span></code> con un <code class="docutils literal notranslate"><span class="pre">O</span></code> anidado entre paréntesis — así como en una expresión matemática, los paréntesis definen qué se evalúa primero.</p>
+</section>
+</section>
+<section id="contadores-y-acumuladores">
+<h2>Contadores y acumuladores<a class="headerlink" href="#contadores-y-acumuladores" title="Link to this heading">#</a></h2>
+<p>Ambos son variables que cambian dentro de un ciclo, pero cumplen funciones distintas:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Contador</p></th>
+<th class="head"><p>Acumulador</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Para qué sirve</strong></p></td>
+<td><p>Contar cuántas veces pasa algo</p></td>
+<td><p>Ir sumando (o multiplicando) valores</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Cómo cambia</strong></p></td>
+<td><p>Siempre en pasos fijos: <code class="docutils literal notranslate"><span class="pre">contador</span> <span class="pre">&lt;-</span> <span class="pre">contador</span> <span class="pre">+</span> <span class="pre">1</span></code></p></td>
+<td><p>En pasos variables: <code class="docutils literal notranslate"><span class="pre">acumulador</span> <span class="pre">&lt;-</span> <span class="pre">acumulador</span> <span class="pre">+</span> <span class="pre">numero</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Valor inicial típico</strong></p></td>
+<td><p>0</p></td>
+<td><p>0 (para sumas) o 1 (para productos)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Ejemplo de pregunta que responde</strong></p></td>
+<td><p>«¿Cuántos números pares hay?»</p></td>
+<td><p>«¿Cuánto suman los números pares?»</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="ejemplo-resuelto-contador-y-acumulador-juntos">
+<h3>Ejemplo resuelto — Contador y acumulador juntos<a class="headerlink" href="#ejemplo-resuelto-contador-y-acumulador-juntos" title="Link to this heading">#</a></h3>
+<p>Recorrer los números del 1 al 20 y, de los que son pares, contar cuántos hay y sumarlos.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">ContarYSumarPares</span>
+	<span class="n">Definir</span> <span class="n">i</span><span class="p">,</span> <span class="n">contador</span><span class="p">,</span> <span class="n">acumulador</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">contador</span> <span class="o">&lt;-</span> <span class="mi">0</span>
+	<span class="n">acumulador</span> <span class="o">&lt;-</span> <span class="mi">0</span>
+	<span class="n">Para</span> <span class="n">i</span> <span class="o">&lt;-</span> <span class="mi">1</span> <span class="n">Hasta</span> <span class="mi">20</span> <span class="n">Con</span> <span class="n">Paso</span> <span class="mi">1</span> <span class="n">Hacer</span>
+		<span class="n">Si</span> <span class="p">(</span><span class="n">i</span> <span class="n">MOD</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">Entonces</span>
+			<span class="n">contador</span> <span class="o">&lt;-</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+			<span class="n">acumulador</span> <span class="o">&lt;-</span> <span class="n">acumulador</span> <span class="o">+</span> <span class="n">i</span>
+		<span class="n">FinSi</span>
+	<span class="n">FinPara</span>
+	<span class="n">Escribir</span> <span class="s2">"Pares encontrados: "</span><span class="p">,</span> <span class="n">contador</span>
+	<span class="n">Escribir</span> <span class="s2">"Suma de esos pares: "</span><span class="p">,</span> <span class="n">acumulador</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="ciclo-para-se-sabe-cuantas-veces-se-repite">
+<h2>Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> (se sabe cuántas veces se repite)<a class="headerlink" href="#ciclo-para-se-sabe-cuantas-veces-se-repite" title="Link to this heading">#</a></h2>
+<p>Se usa cuando de antemano sabes cuántas veces se debe repetir algo (por ejemplo, «del 1 al 20»).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Para</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span> <span class="o">&lt;-</span> <span class="o">&lt;</span><span class="n">inicio</span><span class="o">&gt;</span> <span class="n">Hasta</span> <span class="o">&lt;</span><span class="n">fin</span><span class="o">&gt;</span> <span class="n">Con</span> <span class="n">Paso</span> <span class="o">&lt;</span><span class="n">incremento</span><span class="o">&gt;</span> <span class="n">Hacer</span>
+	<span class="o">...</span><span class="n">instrucciones</span><span class="o">...</span>
+<span class="n">FinPara</span>
+</pre></div>
+</div>
+</section>
+<section id="ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse">
+<h2>Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> (se repite hasta que una condición deje de cumplirse)<a class="headerlink" href="#ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse" title="Link to this heading">#</a></h2>
+<p>Se usa cuando <strong>no</strong> sabes de antemano cuántas veces se repetirá — depende de una condición, típicamente algo que el usuario escribe (un <strong>centinela</strong>: un valor especial que le indica al programa que debe parar).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mientras</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span> <span class="n">Hacer</span>
+	<span class="o">...</span><span class="n">instrucciones</span><span class="o">...</span>
+<span class="n">FinMientras</span>
+</pre></div>
+</div>
+<section id="ejemplo-resuelto-suma-con-centinela">
+<h3>Ejemplo resuelto — Suma con centinela<a class="headerlink" href="#ejemplo-resuelto-suma-con-centinela" title="Link to this heading">#</a></h3>
+<p>Sumar los números que el usuario vaya ingresando, hasta que ingrese un 0.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">SumaConCentinela</span>
+	<span class="n">Definir</span> <span class="n">num</span><span class="p">,</span> <span class="n">suma</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">suma</span> <span class="o">&lt;-</span> <span class="mi">0</span>
+	<span class="n">Escribir</span> <span class="s2">"Ingrese números (0 para terminar):"</span>
+	<span class="n">Leer</span> <span class="n">num</span>
+	<span class="n">Mientras</span> <span class="n">num</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span> <span class="n">Hacer</span>
+		<span class="n">suma</span> <span class="o">&lt;-</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">num</span>
+		<span class="n">Leer</span> <span class="n">num</span>
+	<span class="n">FinMientras</span>
+	<span class="n">Escribir</span> <span class="s2">"Suma total: "</span><span class="p">,</span> <span class="n">suma</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="banco-de-ejercicios">
+<h2>Banco de ejercicios<a class="headerlink" href="#banco-de-ejercicios" title="Link to this heading">#</a></h2>
+<p>Resuelve cada uno en PSeInt: identifica Entradas, Salidas y Proceso, escribe el pseudocódigo y su diagrama de flujo.</p>
+<section id="id1">
+<h3>Operadores lógicos<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p><strong>1.</strong> Lee tres lados de un triángulo y determina si son válidos (la suma de cualquier par de lados debe ser mayor que el tercero — necesitas combinar tres comparaciones con <code class="docutils literal notranslate"><span class="pre">Y</span></code>).</p>
+<p><strong>2.</strong> Lee la edad y el promedio de un estudiante. Es elegible para una beca si tiene menos de 25 años <strong>Y</strong> su promedio es mayor o igual a 4.0.</p>
+<p><strong>3.</strong> Lee un número y determina si está fuera del rango [10, 20] (usa <code class="docutils literal notranslate"><span class="pre">NO</span></code> sobre la condición de «estar dentro del rango», o usa <code class="docutils literal notranslate"><span class="pre">O</span></code> directamente).</p>
+<p><strong>4.</strong> Lee un carácter y determina si es una vocal (a, e, i, o, u), combinando comparaciones con <code class="docutils literal notranslate"><span class="pre">O</span></code>.</p>
+<p><strong>5.</strong> Lee el estrato socioeconómico (1 a 6) y si la persona tiene hermanos estudiando (Verdadero/Falso). Aplica a un subsidio si el estrato es menor o igual a 2 <strong>O</strong> tiene hermanos estudiando, <strong>Y</strong> además su estrato no es mayor a 4.</p>
+</section>
+<section id="contadores">
+<h3>Contadores<a class="headerlink" href="#contadores" title="Link to this heading">#</a></h3>
+<p><strong>6.</strong> Cuenta cuántos múltiplos de 5 hay entre 1 y 100.</p>
+<p><strong>7.</strong> Lee 10 números y cuenta cuántos son negativos.</p>
+<p><strong>8.</strong> Lee un número y cuenta cuántas veces se puede dividir entre 2 (usando la parte entera) hasta llegar a 1.</p>
+</section>
+<section id="acumuladores">
+<h3>Acumuladores<a class="headerlink" href="#acumuladores" title="Link to this heading">#</a></h3>
+<p><strong>9.</strong> Suma los primeros N números naturales, donde N lo ingresa el usuario.</p>
+<p><strong>10.</strong> Calcula el factorial de un número N (producto de 1 a N).</p>
+<p><strong>11.</strong> Suma únicamente los números impares entre 1 y 50.</p>
+<p><strong>12.</strong> Lee las notas de 5 estudiantes y calcula el promedio.</p>
+</section>
+<section id="contador-y-acumulador-combinados">
+<h3>Contador y acumulador combinados<a class="headerlink" href="#contador-y-acumulador-combinados" title="Link to this heading">#</a></h3>
+<p><strong>13.</strong> Lee 10 números y, en el mismo ciclo: cuenta cuántos son positivos y súmalos por separado.</p>
+<p><strong>14.</strong> Lee 10 números y cuenta por separado cuántos son pares y cuántos son impares (dos contadores).</p>
+</section>
+<section id="ciclo-mientras-y-centinelas">
+<h3>Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> y centinelas<a class="headerlink" href="#ciclo-mientras-y-centinelas" title="Link to this heading">#</a></h3>
+<p><strong>15.</strong> Suma los números que el usuario ingrese, hasta que ingrese un número negativo.</p>
+<p><strong>16.</strong> Un usuario tiene máximo 3 intentos para adivinar una contraseña fija. Cuenta los intentos y determina si acertó o si se quedó sin intentos.</p>
+<p><strong>17.</strong> Calcula cuántas veces hay que duplicar <span class="math notranslate nohighlight">\(1.000 para superar \)</span>1.000.000.</p>
+<p><strong>18.</strong> Simula un menú simple: mientras el usuario no ingrese «salir», sigue preguntando qué operación quiere hacer (solo simula la pregunta y la repetición, no hace falta implementar cada operación).</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/resources/clase-1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="memoria-variables.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">🧮 Memoria, Variables y Sistemas de Numeración</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="recursos-clase1.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">🧰 Recursos y Actividades</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores lógicos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-ano-bisiesto">Ejemplo resuelto — Año bisiesto</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores-y-acumuladores">Contadores y acumuladores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-contador-y-acumulador-juntos">Ejemplo resuelto — Contador y acumulador juntos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-para-se-sabe-cuantas-veces-se-repite">Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> (se sabe cuántas veces se repite)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> (se repite hasta que una condición deje de cumplirse)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-suma-con-centinela">Ejemplo resuelto — Suma con centinela</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banco-de-ejercicios">Banco de ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Operadores lógicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores">Contadores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acumuladores">Acumuladores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contador-y-acumulador-combinados">Contador y acumulador combinados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-y-centinelas">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> y centinelas</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Johan Piña & Santiago Barrero
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

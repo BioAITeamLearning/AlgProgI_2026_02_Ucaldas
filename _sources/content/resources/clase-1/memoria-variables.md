@@ -357,3 +357,10 @@ $$
 :class: note
 Por eso en la animación de la Sección 1 cada byte se mostró directamente en hexadecimal en vez de en binario: 8 bits en pantalla son difíciles de leer rápido, pero 2 dígitos hex se leen al instante — y convertirlos a binario es solo cuestión de mirar la tabla de arriba.
 ```
+
+## Siguiente paso: combinar condiciones y repetir instrucciones
+
+```{admonition} Siguiente lectura
+:class: tip
+[Operadores Lógicos y Ciclos](operadores-ciclos.md) — cómo combinar varias condiciones con `Y`/`O`/`NO`, y cómo repetir instrucciones con `Para` y `Mientras`.
+```
