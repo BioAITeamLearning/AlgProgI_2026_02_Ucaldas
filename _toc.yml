@@ -12,8 +12,10 @@ parts:
     - file: content/resources/clase-1/pensamiento-algoritmos
     - file: content/resources/clase-1/memoria-variables
     - file: content/resources/clase-1/operadores-ciclos
+    - file: content/resources/clase-1/pruebas-escritorio
     - file: content/resources/clase-1/recursos-clase1
     - file: content/talleres/taller1
+    - file: content/talleres/taller1_B
   - file: content/Unidad2
     sections:
     - file: content/notebooks/Clase2

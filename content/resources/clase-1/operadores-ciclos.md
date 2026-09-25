@@ -168,3 +168,8 @@ Resuelve cada uno en PSeInt: identifica Entradas, Salidas y Proceso, escribe el 
 **17.** Calcula cuántas veces hay que duplicar $1.000 para superar $1.000.000.
 
 **18.** Simula un menú simple: mientras el usuario no ingrese "salir", sigue preguntando qué operación quiere hacer (solo simula la pregunta y la repetición, no hace falta implementar cada operación).
+
+```{admonition} Siguiente lectura
+:class: tip
+[Pruebas de Escritorio](pruebas-escritorio.md) — cómo comprobar a mano, con una tabla, que un algoritmo con ciclos hace lo que debería.
+```
