@@ -36,29 +36,40 @@ Prueba de escritorio para `radio = 5`:
 
 ## Ejemplo 2 — Algoritmo con una decisión
 
+Aquí no hay ningún contexto del mundo real que te dé pistas del resultado — solo puedes saberlo siguiendo la tabla con cuidado, instrucción por instrucción.
+
 ```
-Algoritmo MayorEdad
-	Definir edad Como Entero
-	Leer edad
-	Si edad >= 18 Entonces
-		Escribir "Mayor de edad"
+Algoritmo EjemploPQR
+	Definir p, q, r Como Entero
+	p <- 8
+	q <- 3
+	r <- p - q
+	Si r > q Entonces
+		p <- r
 	SiNo
-		Escribir "Menor de edad"
+		p <- q
+		q <- r
 	FinSi
+	r <- p + q
+	Escribir p, " ", q, " ", r
 FinAlgoritmo
 ```
 
-Prueba de escritorio para `edad = 15`:
+Prueba de escritorio:
 
-| Instrucción | edad | ¿edad >= 18? | Salida |
+| Instrucción | p | q | r |
 |---|---|---|---|
-| Leer edad | 15 | | |
-| Si edad >= 18 | 15 | Falso | |
-| Escribir "Menor de edad" | 15 | | Menor de edad |
+| p <- 8 | 8 | — | — |
+| q <- 3 | 8 | 3 | — |
+| r <- p - q | 8 | 3 | 5 |
+| Si r > q (¿5 > 3?) → Verdadero | 8 | 3 | 5 |
+| p <- r | 5 | 3 | 5 |
+| r <- p + q | 5 | 3 | 8 |
+| Escribir p, q, r | 5 | 3 | 8 |
 
 ```{admonition} Importante
 :class: warning
-Esta tabla solo prueba el caso `edad = 15` (rama SiNo). Para confiar en que el algoritmo completo funciona, hace falta **otra** prueba de escritorio con un valor donde la condición sea verdadera (por ejemplo `edad = 20`), para recorrer también la rama Entonces.
+Esta tabla solo prueba el caso donde `r > q` es verdadero (rama Entonces). Para confiar en que el algoritmo completo funciona, hace falta **otra** prueba de escritorio con valores iniciales donde la condición sea falsa, para recorrer también la rama SiNo — por ejemplo empezando con `p <- 2` y `q <- 6`.
 ```
 
 ## Ejemplo 3 — Algoritmo con un ciclo
