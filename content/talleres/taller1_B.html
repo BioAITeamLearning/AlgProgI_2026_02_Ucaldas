@@ -514,6 +514,10 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6-ciclo-para-con-una-decision-adentro">Ejercicio 6 — Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> con una decisión adentro</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7-ciclo-mientras">Ejercicio 7 — Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8-ciclo-mientras-con-centinela">Ejercicio 8 — Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> con centinela</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9-secuencial">Ejercicio 9 — Secuencial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-10-con-una-decision">Ejercicio 10 — Con una decisión</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-11-ciclo-para">Ejercicio 11 — Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-12-ciclo-mientras">Ejercicio 12 — Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code></a></li>
 </ul>
             </nav>
         </div>
@@ -655,6 +659,71 @@
 </div>
 <p>Realiza la prueba de escritorio para la secuencia de entradas: <code class="docutils literal notranslate"><span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">2,</span> <span class="pre">0</span></code>.</p>
 </section>
+<section id="ejercicio-9-secuencial">
+<h2>Ejercicio 9 — Secuencial<a class="headerlink" href="#ejercicio-9-secuencial" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">EjercicioMN</span>
+	<span class="n">Definir</span> <span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">m</span> <span class="o">&lt;-</span> <span class="mi">10</span>
+	<span class="n">n</span> <span class="o">&lt;-</span> <span class="mi">4</span>
+	<span class="n">m</span> <span class="o">&lt;-</span> <span class="n">m</span> <span class="o">-</span> <span class="n">n</span>
+	<span class="n">n</span> <span class="o">&lt;-</span> <span class="n">n</span> <span class="o">+</span> <span class="n">m</span>
+	<span class="n">m</span> <span class="o">&lt;-</span> <span class="n">n</span> <span class="o">-</span> <span class="n">m</span>
+	<span class="n">Escribir</span> <span class="n">m</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">n</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+<p>Realiza la prueba de escritorio completa.</p>
+</section>
+<section id="ejercicio-10-con-una-decision">
+<h2>Ejercicio 10 — Con una decisión<a class="headerlink" href="#ejercicio-10-con-una-decision" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">EjercicioDEF</span>
+	<span class="n">Definir</span> <span class="n">d</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">f</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">d</span> <span class="o">&lt;-</span> <span class="mi">4</span>
+	<span class="n">e</span> <span class="o">&lt;-</span> <span class="mi">9</span>
+	<span class="n">f</span> <span class="o">&lt;-</span> <span class="n">d</span> <span class="o">+</span> <span class="n">e</span>
+	<span class="n">Si</span> <span class="n">f</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="n">Entonces</span>
+		<span class="n">d</span> <span class="o">&lt;-</span> <span class="n">e</span>
+		<span class="n">e</span> <span class="o">&lt;-</span> <span class="n">f</span>
+	<span class="n">SiNo</span>
+		<span class="n">e</span> <span class="o">&lt;-</span> <span class="n">d</span>
+	<span class="n">FinSi</span>
+	<span class="n">f</span> <span class="o">&lt;-</span> <span class="n">d</span> <span class="o">+</span> <span class="n">e</span>
+	<span class="n">Escribir</span> <span class="n">d</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">f</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+<p>Realiza la prueba de escritorio completa. Luego cambia mentalmente el valor inicial de <code class="docutils literal notranslate"><span class="pre">e</span></code> a <code class="docutils literal notranslate"><span class="pre">1</span></code> y vuelve a trazarlo — ¿por qué rama pasa esta vez?</p>
+</section>
+<section id="ejercicio-11-ciclo-para">
+<h2>Ejercicio 11 — Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code><a class="headerlink" href="#ejercicio-11-ciclo-para" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">EjercicioKS</span>
+	<span class="n">Definir</span> <span class="n">k</span><span class="p">,</span> <span class="n">s</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">s</span> <span class="o">&lt;-</span> <span class="mi">100</span>
+	<span class="n">Para</span> <span class="n">k</span> <span class="o">&lt;-</span> <span class="mi">1</span> <span class="n">Hasta</span> <span class="mi">5</span> <span class="n">Con</span> <span class="n">Paso</span> <span class="mi">1</span> <span class="n">Hacer</span>
+		<span class="n">s</span> <span class="o">&lt;-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">k</span>
+	<span class="n">FinPara</span>
+	<span class="n">Escribir</span> <span class="n">s</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+<p>Realiza la prueba de escritorio completa, mostrando el valor de <code class="docutils literal notranslate"><span class="pre">k</span></code> y de <code class="docutils literal notranslate"><span class="pre">s</span></code> en cada una de las 5 vueltas del ciclo.</p>
+</section>
+<section id="ejercicio-12-ciclo-mientras">
+<h2>Ejercicio 12 — Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code><a class="headerlink" href="#ejercicio-12-ciclo-mientras" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">EjercicioTC</span>
+	<span class="n">Definir</span> <span class="n">t</span><span class="p">,</span> <span class="n">c</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">t</span> <span class="o">&lt;-</span> <span class="mi">20</span>
+	<span class="n">c</span> <span class="o">&lt;-</span> <span class="mi">0</span>
+	<span class="n">Mientras</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="n">Hacer</span>
+		<span class="n">t</span> <span class="o">&lt;-</span> <span class="n">t</span> <span class="o">-</span> <span class="mi">3</span>
+		<span class="n">c</span> <span class="o">&lt;-</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span>
+	<span class="n">FinMientras</span>
+	<span class="n">Escribir</span> <span class="n">t</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">c</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+<p>Realiza la prueba de escritorio completa. Presta atención a la última vuelta: <code class="docutils literal notranslate"><span class="pre">t</span></code> puede terminar en un número negativo — sigue la condición del <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> tal como está escrita, sin adivinar cuándo «debería» parar.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -731,6 +800,10 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6-ciclo-para-con-una-decision-adentro">Ejercicio 6 — Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> con una decisión adentro</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7-ciclo-mientras">Ejercicio 7 — Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8-ciclo-mientras-con-centinela">Ejercicio 8 — Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> con centinela</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9-secuencial">Ejercicio 9 — Secuencial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-10-con-una-decision">Ejercicio 10 — Con una decisión</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-11-ciclo-para">Ejercicio 11 — Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-12-ciclo-mientras">Ejercicio 12 — Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code></a></li>
 </ul>
   </nav></div>
 

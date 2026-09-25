@@ -148,3 +148,72 @@ FinAlgoritmo
 ```
 
 Realiza la prueba de escritorio para la secuencia de entradas: `4, 6, 2, 0`.
+
+### Ejercicio 9 — Secuencial
+
+```
+Algoritmo EjercicioMN
+	Definir m, n Como Entero
+	m <- 10
+	n <- 4
+	m <- m - n
+	n <- n + m
+	m <- n - m
+	Escribir m, " ", n
+FinAlgoritmo
+```
+
+Realiza la prueba de escritorio completa.
+
+### Ejercicio 10 — Con una decisión
+
+```
+Algoritmo EjercicioDEF
+	Definir d, e, f Como Entero
+	d <- 4
+	e <- 9
+	f <- d + e
+	Si f > 10 Entonces
+		d <- e
+		e <- f
+	SiNo
+		e <- d
+	FinSi
+	f <- d + e
+	Escribir d, " ", e, " ", f
+FinAlgoritmo
+```
+
+Realiza la prueba de escritorio completa. Luego cambia mentalmente el valor inicial de `e` a `1` y vuelve a trazarlo — ¿por qué rama pasa esta vez?
+
+### Ejercicio 11 — Ciclo `Para`
+
+```
+Algoritmo EjercicioKS
+	Definir k, s Como Entero
+	s <- 100
+	Para k <- 1 Hasta 5 Con Paso 1 Hacer
+		s <- s - k
+	FinPara
+	Escribir s
+FinAlgoritmo
+```
+
+Realiza la prueba de escritorio completa, mostrando el valor de `k` y de `s` en cada una de las 5 vueltas del ciclo.
+
+### Ejercicio 12 — Ciclo `Mientras`
+
+```
+Algoritmo EjercicioTC
+	Definir t, c Como Entero
+	t <- 20
+	c <- 0
+	Mientras t > 1 Hacer
+		t <- t - 3
+		c <- c + 1
+	FinMientras
+	Escribir t, " ", c
+FinAlgoritmo
+```
+
+Realiza la prueba de escritorio completa. Presta atención a la última vuelta: `t` puede terminar en un número negativo — sigue la condición del `Mientras` tal como está escrita, sin adivinar cuándo "debería" parar.
