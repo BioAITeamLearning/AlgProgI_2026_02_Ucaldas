@@ -21,15 +21,19 @@ Este taller se resuelve a mano: construye la tabla de seguimiento completa para 
 ### Ejercicio 1 — Secuencial
 
 ```
-Algoritmo ConversionTemperatura
-	Definir celsius, fahrenheit Como Real
-	Leer celsius
-	fahrenheit <- celsius * 1.8 + 32
-	Escribir fahrenheit
+Algoritmo EjercicioABC
+	Definir a, b, c Como Entero
+	a <- 5
+	b <- 3
+	c <- a + b
+	a <- b
+	b <- c - a
+	c <- a * b
+	Escribir a, " ", b, " ", c
 FinAlgoritmo
 ```
 
-Realiza la prueba de escritorio para `celsius = 25`.
+Realiza la prueba de escritorio completa. No hay ningún contexto que te diga qué esperar — solo la tabla, instrucción por instrucción, te dirá los valores finales de `a`, `b` y `c`.
 
 ### Ejercicio 2 — Secuencial (varios pasos)
 
