@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>🔁 Operadores Lógicos y Ciclos &#8212; Curso de Programación I</title>
+    <title>📝 Pruebas de Escritorio &#8212; Curso de Programación I</title>
   
   
   
@@ -61,14 +61,12 @@
     <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/resources/clase-1/operadores-ciclos';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/resources/clase-1/pruebas-escritorio';</script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="📝 Pruebas de Escritorio" href="pruebas-escritorio.html" />
-    <link rel="prev" title="🧮 Memoria, Variables y Sistemas de Numeración" href="memoria-variables.html" />
+    <link rel="next" title="🧰 Recursos y Actividades" href="recursos-clase1.html" />
+    <link rel="prev" title="🔁 Operadores Lógicos y Ciclos" href="operadores-ciclos.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   <meta name="docsearch:version" content="" />
@@ -231,8 +229,8 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../Unidad1.html">📘 Introducción</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memoria-variables.html">🧮 Memoria, Variables y Sistemas de Numeración</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">🔁 Operadores Lógicos y Ciclos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pruebas-escritorio.html">📝 Pruebas de Escritorio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operadores-ciclos.html">🔁 Operadores Lógicos y Ciclos</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">📝 Pruebas de Escritorio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="recursos-clase1.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../talleres/taller1.html">📄 Taller 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../talleres/taller1_B.html">📄 Taller — Pruebas de Escritorio</a></li>
@@ -374,7 +372,7 @@
       
       
       
-      <li><a href="../../../_sources/content/resources/clase-1/operadores-ciclos.md" target="_blank"
+      <li><a href="../../../_sources/content/resources/clase-1/pruebas-escritorio.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -450,7 +448,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🔁 Operadores Lógicos y Ciclos</h1>
+    <h1>📝 Pruebas de Escritorio</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -460,27 +458,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores lógicos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-ano-bisiesto">Ejemplo resuelto — Año bisiesto</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores-y-acumuladores">Contadores y acumuladores</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-contador-y-acumulador-juntos">Ejemplo resuelto — Contador y acumulador juntos</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-para-se-sabe-cuantas-veces-se-repite">Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> (se sabe cuántas veces se repite)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> (se repite hasta que una condición deje de cumplirse)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-suma-con-centinela">Ejemplo resuelto — Suma con centinela</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banco-de-ejercicios">Banco de ejercicios</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Operadores lógicos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores">Contadores</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acumuladores">Acumuladores</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contador-y-acumulador-combinados">Contador y acumulador combinados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-y-centinelas">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> y centinelas</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-construye-la-tabla">Cómo se construye la tabla</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-algoritmo-secuencial">Ejemplo 1 — Algoritmo secuencial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2-algoritmo-con-una-decision">Ejemplo 2 — Algoritmo con una decisión</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3-algoritmo-con-un-ciclo">Ejemplo 3 — Algoritmo con un ciclo</a></li>
 </ul>
             </nav>
         </div>
@@ -492,235 +473,161 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="operadores-logicos-y-ciclos">
-<h1>🔁 Operadores Lógicos y Ciclos<a class="headerlink" href="#operadores-logicos-y-ciclos" title="Link to this heading">#</a></h1>
-<p>Hasta ahora resolviste problemas con pasos secuenciales y con una sola decisión (<code class="docutils literal notranslate"><span class="pre">Si-Entonces-SiNo</span></code>). Aquí se agregan dos herramientas que se van a usar todo el semestre: <strong>operadores lógicos</strong> para combinar varias condiciones en una sola, y <strong>ciclos</strong> para repetir instrucciones sin tener que escribirlas una y otra vez.</p>
-<section id="operadores-logicos">
-<h2>Operadores lógicos<a class="headerlink" href="#operadores-logicos" title="Link to this heading">#</a></h2>
-<p>Un operador lógico combina dos condiciones (o invierte una) y el resultado siempre es Verdadero o Falso.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="pruebas-de-escritorio">
+<h1>📝 Pruebas de Escritorio<a class="headerlink" href="#pruebas-de-escritorio" title="Link to this heading">#</a></h1>
+<p>Antes de tener una computadora para ejecutar un algoritmo, hay una forma de comprobar si funciona: simularlo a mano, línea por línea, anotando en una tabla cómo cambia cada variable. Eso es una <strong>prueba de escritorio</strong> (o tabla de seguimiento).</p>
+<div class="note admonition">
+<p class="admonition-title">¿Para qué sirve?</p>
+<p>Te permite encontrar errores de lógica antes de programar, y te obliga a entender exactamente qué hace cada instrucción — no lo que crees que hace.</p>
+</div>
+<section id="como-se-construye-la-tabla">
+<h2>Cómo se construye la tabla<a class="headerlink" href="#como-se-construye-la-tabla" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Una columna por cada variable del algoritmo (en el orden en que aparecen).</p></li>
+<li><p>Una fila por cada instrucción que se ejecuta (no por cada línea escrita — si una línea no se ejecuta, no tiene fila).</p></li>
+<li><p>Cuando una variable cambia de valor, se anota el nuevo valor en su columna; si no cambió, se repite el valor anterior o se deja igual.</p></li>
+<li><p>Si el algoritmo tiene una decisión (<code class="docutils literal notranslate"><span class="pre">Si-Entonces-SiNo</span></code>), la tabla <strong>solo sigue el camino que realmente se toma</strong> según los valores de esa prueba — el otro camino no aparece.</p></li>
+<li><p>Si el algoritmo tiene un ciclo, cada vuelta del ciclo es una fila (o un grupo de filas) nueva.</p></li>
+</ol>
+</section>
+<section id="ejemplo-1-algoritmo-secuencial">
+<h2>Ejemplo 1 — Algoritmo secuencial<a class="headerlink" href="#ejemplo-1-algoritmo-secuencial" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">AreaCirculo</span>
+	<span class="n">Definir</span> <span class="n">radio</span><span class="p">,</span> <span class="n">area</span> <span class="n">Como</span> <span class="n">Real</span>
+	<span class="n">Leer</span> <span class="n">radio</span>
+	<span class="n">area</span> <span class="o">&lt;-</span> <span class="mf">3.1416</span> <span class="o">*</span> <span class="n">radio</span><span class="o">^</span><span class="mi">2</span>
+	<span class="n">Escribir</span> <span class="s2">"El área es: "</span><span class="p">,</span> <span class="n">area</span>
+<span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+<p>Prueba de escritorio para <code class="docutils literal notranslate"><span class="pre">radio</span> <span class="pre">=</span> <span class="pre">5</span></code>:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Operador</p></th>
-<th class="head"><p>Símbolo en PSeInt</p></th>
-<th class="head"><p>Es verdadero cuando…</p></th>
+<tr class="row-odd"><th class="head"><p>Instrucción</p></th>
+<th class="head"><p>radio</p></th>
+<th class="head"><p>area</p></th>
+<th class="head"><p>Salida</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Y (AND)</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Y</span></code></p></td>
-<td><p><strong>ambas</strong> condiciones son verdaderas</p></td>
+<tr class="row-even"><td><p>Leer radio</p></td>
+<td><p>5</p></td>
+<td><p>—</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>O (OR)</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">O</span></code></p></td>
-<td><p><strong>al menos una</strong> de las condiciones es verdadera</p></td>
+<tr class="row-odd"><td><p>area &lt;- 3.1416 * radio^2</p></td>
+<td><p>5</p></td>
+<td><p>78.54</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p>NO (NOT)</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">NO</span></code></p></td>
-<td><p>invierte el valor: si la condición era verdadera, la vuelve falsa (y viceversa)</p></td>
+<tr class="row-even"><td><p>Escribir area</p></td>
+<td><p>5</p></td>
+<td><p>78.54</p></td>
+<td><p>El área es: 78.54</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><strong>Tabla de verdad de Y:</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>A</p></th>
-<th class="head"><p>B</p></th>
-<th class="head"><p>A Y B</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Verdadero</p></td>
-<td><p>Verdadero</p></td>
-<td><p>Verdadero</p></td>
-</tr>
-<tr class="row-odd"><td><p>Verdadero</p></td>
-<td><p>Falso</p></td>
-<td><p>Falso</p></td>
-</tr>
-<tr class="row-even"><td><p>Falso</p></td>
-<td><p>Verdadero</p></td>
-<td><p>Falso</p></td>
-</tr>
-<tr class="row-odd"><td><p>Falso</p></td>
-<td><p>Falso</p></td>
-<td><p>Falso</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Tabla de verdad de O:</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>A</p></th>
-<th class="head"><p>B</p></th>
-<th class="head"><p>A O B</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Verdadero</p></td>
-<td><p>Verdadero</p></td>
-<td><p>Verdadero</p></td>
-</tr>
-<tr class="row-odd"><td><p>Verdadero</p></td>
-<td><p>Falso</p></td>
-<td><p>Verdadero</p></td>
-</tr>
-<tr class="row-even"><td><p>Falso</p></td>
-<td><p>Verdadero</p></td>
-<td><p>Verdadero</p></td>
-</tr>
-<tr class="row-odd"><td><p>Falso</p></td>
-<td><p>Falso</p></td>
-<td><p>Falso</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<section id="ejemplo-resuelto-ano-bisiesto">
-<h3>Ejemplo resuelto — Año bisiesto<a class="headerlink" href="#ejemplo-resuelto-ano-bisiesto" title="Link to this heading">#</a></h3>
-<p>Un año es bisiesto si es divisible entre 4, <strong>excepto</strong> los divisibles entre 100, <strong>salvo</strong> que también sean divisibles entre 400.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">AnioBisiesto</span>
-	<span class="n">Definir</span> <span class="n">anio</span> <span class="n">Como</span> <span class="n">Entero</span>
-	<span class="n">Definir</span> <span class="n">esBisiesto</span> <span class="n">Como</span> <span class="n">Logico</span>
-	<span class="n">Leer</span> <span class="n">anio</span>
-	<span class="n">esBisiesto</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">anio</span> <span class="n">MOD</span> <span class="mi">4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">Y</span> <span class="p">((</span><span class="n">anio</span> <span class="n">MOD</span> <span class="mi">100</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="n">O</span> <span class="p">(</span><span class="n">anio</span> <span class="n">MOD</span> <span class="mi">400</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>
-	<span class="n">Si</span> <span class="n">esBisiesto</span> <span class="n">Entonces</span>
-		<span class="n">Escribir</span> <span class="n">anio</span><span class="p">,</span> <span class="s2">" es bisiesto"</span>
+</section>
+<section id="ejemplo-2-algoritmo-con-una-decision">
+<h2>Ejemplo 2 — Algoritmo con una decisión<a class="headerlink" href="#ejemplo-2-algoritmo-con-una-decision" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">MayorEdad</span>
+	<span class="n">Definir</span> <span class="n">edad</span> <span class="n">Como</span> <span class="n">Entero</span>
+	<span class="n">Leer</span> <span class="n">edad</span>
+	<span class="n">Si</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="n">Entonces</span>
+		<span class="n">Escribir</span> <span class="s2">"Mayor de edad"</span>
 	<span class="n">SiNo</span>
-		<span class="n">Escribir</span> <span class="n">anio</span><span class="p">,</span> <span class="s2">" no es bisiesto"</span>
+		<span class="n">Escribir</span> <span class="s2">"Menor de edad"</span>
 	<span class="n">FinSi</span>
 <span class="n">FinAlgoritmo</span>
 </pre></div>
 </div>
-<p>Fíjate cómo la condición combina un <code class="docutils literal notranslate"><span class="pre">Y</span></code> con un <code class="docutils literal notranslate"><span class="pre">O</span></code> anidado entre paréntesis — así como en una expresión matemática, los paréntesis definen qué se evalúa primero.</p>
-</section>
-</section>
-<section id="contadores-y-acumuladores">
-<h2>Contadores y acumuladores<a class="headerlink" href="#contadores-y-acumuladores" title="Link to this heading">#</a></h2>
-<p>Ambos son variables que cambian dentro de un ciclo, pero cumplen funciones distintas:</p>
+<p>Prueba de escritorio para <code class="docutils literal notranslate"><span class="pre">edad</span> <span class="pre">=</span> <span class="pre">15</span></code>:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p></p></th>
-<th class="head"><p>Contador</p></th>
-<th class="head"><p>Acumulador</p></th>
+<tr class="row-odd"><th class="head"><p>Instrucción</p></th>
+<th class="head"><p>edad</p></th>
+<th class="head"><p>¿edad &gt;= 18?</p></th>
+<th class="head"><p>Salida</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Para qué sirve</strong></p></td>
-<td><p>Contar cuántas veces pasa algo</p></td>
-<td><p>Ir sumando (o multiplicando) valores</p></td>
+<tr class="row-even"><td><p>Leer edad</p></td>
+<td><p>15</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Cómo cambia</strong></p></td>
-<td><p>Siempre en pasos fijos: <code class="docutils literal notranslate"><span class="pre">contador</span> <span class="pre">&lt;-</span> <span class="pre">contador</span> <span class="pre">+</span> <span class="pre">1</span></code></p></td>
-<td><p>En pasos variables: <code class="docutils literal notranslate"><span class="pre">acumulador</span> <span class="pre">&lt;-</span> <span class="pre">acumulador</span> <span class="pre">+</span> <span class="pre">numero</span></code></p></td>
+<tr class="row-odd"><td><p>Si edad &gt;= 18</p></td>
+<td><p>15</p></td>
+<td><p>Falso</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Valor inicial típico</strong></p></td>
-<td><p>0</p></td>
-<td><p>0 (para sumas) o 1 (para productos)</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Ejemplo de pregunta que responde</strong></p></td>
-<td><p>«¿Cuántos números pares hay?»</p></td>
-<td><p>«¿Cuánto suman los números pares?»</p></td>
+<tr class="row-even"><td><p>Escribir «Menor de edad»</p></td>
+<td><p>15</p></td>
+<td><p></p></td>
+<td><p>Menor de edad</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<section id="ejemplo-resuelto-contador-y-acumulador-juntos">
-<h3>Ejemplo resuelto — Contador y acumulador juntos<a class="headerlink" href="#ejemplo-resuelto-contador-y-acumulador-juntos" title="Link to this heading">#</a></h3>
-<p>Recorrer los números del 1 al 20 y, de los que son pares, contar cuántos hay y sumarlos.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">ContarYSumarPares</span>
-	<span class="n">Definir</span> <span class="n">i</span><span class="p">,</span> <span class="n">contador</span><span class="p">,</span> <span class="n">acumulador</span> <span class="n">Como</span> <span class="n">Entero</span>
-	<span class="n">contador</span> <span class="o">&lt;-</span> <span class="mi">0</span>
-	<span class="n">acumulador</span> <span class="o">&lt;-</span> <span class="mi">0</span>
-	<span class="n">Para</span> <span class="n">i</span> <span class="o">&lt;-</span> <span class="mi">1</span> <span class="n">Hasta</span> <span class="mi">20</span> <span class="n">Con</span> <span class="n">Paso</span> <span class="mi">1</span> <span class="n">Hacer</span>
-		<span class="n">Si</span> <span class="p">(</span><span class="n">i</span> <span class="n">MOD</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">Entonces</span>
-			<span class="n">contador</span> <span class="o">&lt;-</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
-			<span class="n">acumulador</span> <span class="o">&lt;-</span> <span class="n">acumulador</span> <span class="o">+</span> <span class="n">i</span>
-		<span class="n">FinSi</span>
-	<span class="n">FinPara</span>
-	<span class="n">Escribir</span> <span class="s2">"Pares encontrados: "</span><span class="p">,</span> <span class="n">contador</span>
-	<span class="n">Escribir</span> <span class="s2">"Suma de esos pares: "</span><span class="p">,</span> <span class="n">acumulador</span>
-<span class="n">FinAlgoritmo</span>
-</pre></div>
+<div class="warning admonition">
+<p class="admonition-title">Importante</p>
+<p>Esta tabla solo prueba el caso <code class="docutils literal notranslate"><span class="pre">edad</span> <span class="pre">=</span> <span class="pre">15</span></code> (rama SiNo). Para confiar en que el algoritmo completo funciona, hace falta <strong>otra</strong> prueba de escritorio con un valor donde la condición sea verdadera (por ejemplo <code class="docutils literal notranslate"><span class="pre">edad</span> <span class="pre">=</span> <span class="pre">20</span></code>), para recorrer también la rama Entonces.</p>
 </div>
 </section>
-</section>
-<section id="ciclo-para-se-sabe-cuantas-veces-se-repite">
-<h2>Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> (se sabe cuántas veces se repite)<a class="headerlink" href="#ciclo-para-se-sabe-cuantas-veces-se-repite" title="Link to this heading">#</a></h2>
-<p>Se usa cuando de antemano sabes cuántas veces se debe repetir algo (por ejemplo, «del 1 al 20»).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Para</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span> <span class="o">&lt;-</span> <span class="o">&lt;</span><span class="n">inicio</span><span class="o">&gt;</span> <span class="n">Hasta</span> <span class="o">&lt;</span><span class="n">fin</span><span class="o">&gt;</span> <span class="n">Con</span> <span class="n">Paso</span> <span class="o">&lt;</span><span class="n">incremento</span><span class="o">&gt;</span> <span class="n">Hacer</span>
-	<span class="o">...</span><span class="n">instrucciones</span><span class="o">...</span>
-<span class="n">FinPara</span>
-</pre></div>
-</div>
-</section>
-<section id="ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse">
-<h2>Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> (se repite hasta que una condición deje de cumplirse)<a class="headerlink" href="#ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse" title="Link to this heading">#</a></h2>
-<p>Se usa cuando <strong>no</strong> sabes de antemano cuántas veces se repetirá — depende de una condición, típicamente algo que el usuario escribe (un <strong>centinela</strong>: un valor especial que le indica al programa que debe parar).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mientras</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span> <span class="n">Hacer</span>
-	<span class="o">...</span><span class="n">instrucciones</span><span class="o">...</span>
-<span class="n">FinMientras</span>
-</pre></div>
-</div>
-<section id="ejemplo-resuelto-suma-con-centinela">
-<h3>Ejemplo resuelto — Suma con centinela<a class="headerlink" href="#ejemplo-resuelto-suma-con-centinela" title="Link to this heading">#</a></h3>
-<p>Sumar los números que el usuario vaya ingresando, hasta que ingrese un 0.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">SumaConCentinela</span>
-	<span class="n">Definir</span> <span class="n">num</span><span class="p">,</span> <span class="n">suma</span> <span class="n">Como</span> <span class="n">Entero</span>
+<section id="ejemplo-3-algoritmo-con-un-ciclo">
+<h2>Ejemplo 3 — Algoritmo con un ciclo<a class="headerlink" href="#ejemplo-3-algoritmo-con-un-ciclo" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algoritmo</span> <span class="n">SumaHasta5</span>
+	<span class="n">Definir</span> <span class="n">i</span><span class="p">,</span> <span class="n">suma</span> <span class="n">Como</span> <span class="n">Entero</span>
 	<span class="n">suma</span> <span class="o">&lt;-</span> <span class="mi">0</span>
-	<span class="n">Escribir</span> <span class="s2">"Ingrese números (0 para terminar):"</span>
-	<span class="n">Leer</span> <span class="n">num</span>
-	<span class="n">Mientras</span> <span class="n">num</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span> <span class="n">Hacer</span>
-		<span class="n">suma</span> <span class="o">&lt;-</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">num</span>
-		<span class="n">Leer</span> <span class="n">num</span>
-	<span class="n">FinMientras</span>
-	<span class="n">Escribir</span> <span class="s2">"Suma total: "</span><span class="p">,</span> <span class="n">suma</span>
+	<span class="n">Para</span> <span class="n">i</span> <span class="o">&lt;-</span> <span class="mi">1</span> <span class="n">Hasta</span> <span class="mi">5</span> <span class="n">Con</span> <span class="n">Paso</span> <span class="mi">1</span> <span class="n">Hacer</span>
+		<span class="n">suma</span> <span class="o">&lt;-</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">i</span>
+	<span class="n">FinPara</span>
+	<span class="n">Escribir</span> <span class="s2">"Suma: "</span><span class="p">,</span> <span class="n">suma</span>
 <span class="n">FinAlgoritmo</span>
 </pre></div>
 </div>
-</section>
-</section>
-<section id="banco-de-ejercicios">
-<h2>Banco de ejercicios<a class="headerlink" href="#banco-de-ejercicios" title="Link to this heading">#</a></h2>
-<p>Resuelve cada uno en PSeInt: identifica Entradas, Salidas y Proceso, escribe el pseudocódigo y su diagrama de flujo.</p>
-<section id="id1">
-<h3>Operadores lógicos<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p><strong>1.</strong> Lee tres lados de un triángulo y determina si son válidos (la suma de cualquier par de lados debe ser mayor que el tercero — necesitas combinar tres comparaciones con <code class="docutils literal notranslate"><span class="pre">Y</span></code>).</p>
-<p><strong>2.</strong> Lee la edad y el promedio de un estudiante. Es elegible para una beca si tiene menos de 25 años <strong>Y</strong> su promedio es mayor o igual a 4.0.</p>
-<p><strong>3.</strong> Lee un número y determina si está fuera del rango [10, 20] (usa <code class="docutils literal notranslate"><span class="pre">NO</span></code> sobre la condición de «estar dentro del rango», o usa <code class="docutils literal notranslate"><span class="pre">O</span></code> directamente).</p>
-<p><strong>4.</strong> Lee un carácter y determina si es una vocal (a, e, i, o, u), combinando comparaciones con <code class="docutils literal notranslate"><span class="pre">O</span></code>.</p>
-<p><strong>5.</strong> Lee el estrato socioeconómico (1 a 6) y si la persona tiene hermanos estudiando (Verdadero/Falso). Aplica a un subsidio si el estrato es menor o igual a 2 <strong>O</strong> tiene hermanos estudiando, <strong>Y</strong> además su estrato no es mayor a 4.</p>
-</section>
-<section id="contadores">
-<h3>Contadores<a class="headerlink" href="#contadores" title="Link to this heading">#</a></h3>
-<p><strong>6.</strong> Cuenta cuántos múltiplos de 5 hay entre 1 y 100.</p>
-<p><strong>7.</strong> Lee 10 números y cuenta cuántos son negativos.</p>
-<p><strong>8.</strong> Lee un número y cuenta cuántas veces se puede dividir entre 2 (usando la parte entera) hasta llegar a 1.</p>
-</section>
-<section id="acumuladores">
-<h3>Acumuladores<a class="headerlink" href="#acumuladores" title="Link to this heading">#</a></h3>
-<p><strong>9.</strong> Suma los primeros N números naturales, donde N lo ingresa el usuario.</p>
-<p><strong>10.</strong> Calcula el factorial de un número N (producto de 1 a N).</p>
-<p><strong>11.</strong> Suma únicamente los números impares entre 1 y 50.</p>
-<p><strong>12.</strong> Lee las notas de 5 estudiantes y calcula el promedio.</p>
-</section>
-<section id="contador-y-acumulador-combinados">
-<h3>Contador y acumulador combinados<a class="headerlink" href="#contador-y-acumulador-combinados" title="Link to this heading">#</a></h3>
-<p><strong>13.</strong> Lee 10 números y, en el mismo ciclo: cuenta cuántos son positivos y súmalos por separado.</p>
-<p><strong>14.</strong> Lee 10 números y cuenta por separado cuántos son pares y cuántos son impares (dos contadores).</p>
-</section>
-<section id="ciclo-mientras-y-centinelas">
-<h3>Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> y centinelas<a class="headerlink" href="#ciclo-mientras-y-centinelas" title="Link to this heading">#</a></h3>
-<p><strong>15.</strong> Suma los números que el usuario ingrese, hasta que ingrese un número negativo.</p>
-<p><strong>16.</strong> Un usuario tiene máximo 3 intentos para adivinar una contraseña fija. Cuenta los intentos y determina si acertó o si se quedó sin intentos.</p>
-<p><strong>17.</strong> Calcula cuántas veces hay que duplicar <span class="math notranslate nohighlight">\(1.000 para superar \)</span>1.000.000.</p>
-<p><strong>18.</strong> Simula un menú simple: mientras el usuario no ingrese «salir», sigue preguntando qué operación quiere hacer (solo simula la pregunta y la repetición, no hace falta implementar cada operación).</p>
-<div class="tip admonition">
-<p class="admonition-title">Siguiente lectura</p>
-<p><a class="reference internal" href="pruebas-escritorio.html"><span class="std std-doc">Pruebas de Escritorio</span></a> — cómo comprobar a mano, con una tabla, que un algoritmo con ciclos hace lo que debería.</p>
+<p>Prueba de escritorio (cada vuelta del ciclo es una fila):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Iteración</p></th>
+<th class="head"><p>i</p></th>
+<th class="head"><p>suma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Inicio</p></td>
+<td><p>—</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>5</p></td>
+<td><p>15</p></td>
+</tr>
+</tbody>
+</table>
 </div>
-</section>
+<p>Salida: <code class="docutils literal notranslate"><span class="pre">Suma:</span> <span class="pre">15</span></code></p>
+<div class="tip admonition">
+<p class="admonition-title">Siguiente paso</p>
+<p>Ahora practica construyendo tú mismo estas tablas: <a class="reference internal" href="../../talleres/taller1_B.html"><span class="std std-doc">Taller — Pruebas de Escritorio</span></a>.</p>
+</div>
 </section>
 </section>
 
@@ -755,20 +662,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="memoria-variables.html"
+       href="operadores-ciclos.html"
        title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">🧮 Memoria, Variables y Sistemas de Numeración</p>
+        <p class="prev-next-title">🔁 Operadores Lógicos y Ciclos</p>
       </div>
     </a>
     <a class="right-next"
-       href="pruebas-escritorio.html"
+       href="recursos-clase1.html"
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">📝 Pruebas de Escritorio</p>
+        <p class="prev-next-title">🧰 Recursos y Actividades</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -790,27 +697,10 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores lógicos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-ano-bisiesto">Ejemplo resuelto — Año bisiesto</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores-y-acumuladores">Contadores y acumuladores</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-contador-y-acumulador-juntos">Ejemplo resuelto — Contador y acumulador juntos</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-para-se-sabe-cuantas-veces-se-repite">Ciclo <code class="docutils literal notranslate"><span class="pre">Para</span></code> (se sabe cuántas veces se repite)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-se-repite-hasta-que-una-condicion-deje-de-cumplirse">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> (se repite hasta que una condición deje de cumplirse)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-resuelto-suma-con-centinela">Ejemplo resuelto — Suma con centinela</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banco-de-ejercicios">Banco de ejercicios</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Operadores lógicos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contadores">Contadores</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acumuladores">Acumuladores</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contador-y-acumulador-combinados">Contador y acumulador combinados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-mientras-y-centinelas">Ciclo <code class="docutils literal notranslate"><span class="pre">Mientras</span></code> y centinelas</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-construye-la-tabla">Cómo se construye la tabla</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-algoritmo-secuencial">Ejemplo 1 — Algoritmo secuencial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2-algoritmo-con-una-decision">Ejemplo 2 — Algoritmo con una decisión</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3-algoritmo-con-un-ciclo">Ejemplo 3 — Algoritmo con un ciclo</a></li>
 </ul>
   </nav></div>
 
