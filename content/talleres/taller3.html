@@ -228,14 +228,17 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Introducción</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/memoria-variables.html">🧮 Memoria, Variables y Sistemas de Numeración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/operadores-ciclos.html">🔁 Operadores Lógicos y Ciclos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pruebas-escritorio.html">📝 Pruebas de Escritorio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="taller1.html">📄 Taller 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller1_B.html">📄 Taller — Pruebas de Escritorio</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Tipos de Datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase2.html">📙 Tipos de Datos y Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
-<li class="toctree-l2"><a class="reference internal" href="taller2.html">📄 Taller 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
 </ul>
 </details></li>
@@ -510,6 +513,10 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6">Ejercicio 6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7">Ejercicio 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8">Ejercicio 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9">Ejercicio 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-10">Ejercicio 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-11">Ejercicio 11</a></li>
 </ul>
 </li>
 </ul>
@@ -740,6 +747,135 @@ FinAlgoritmo
 </pre></div>
 </div>
 </section>
+<section id="ejercicio-8">
+<h3>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Link to this heading">#</a></h3>
+<p>Evaluar las siguientes expresiones teniendo en cuenta que:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>boolean p = true;
+boolean q = true;
+boolean r = false;
+boolean s = true;
+</pre></div>
+</div>
+<p>Recuerda el orden de precedencia: primero <code class="docutils literal notranslate"><span class="pre">!</span></code>, luego <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>, y por último <code class="docutils literal notranslate"><span class="pre">||</span></code>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Expresión</p></th>
+<th class="head"><p>Resultado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code> (p &amp;&amp; q) || (r &amp;&amp; !s) &amp;&amp; (p || s) </code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code> !(p &amp;&amp; q) || (!r &amp;&amp; s) || (p &amp;&amp; !q &amp;&amp; r) </code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code> (p || q) &amp;&amp; (r || s) &amp;&amp; !(q &amp;&amp; s) </code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code> ((p &amp;&amp; !q) || (r &amp;&amp; s)) &amp;&amp; (p || r || s) </code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ejercicio-9">
+<h3>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Link to this heading">#</a></h3>
+<p>De las siguientes expresiones decir ¿cuáles son válidas?, ¿cuál es el resultado de su ejecución? y ¿de qué tipo de dato queda el resultado? Tenga en cuenta que:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>int a = 7;
+int b = 2;
+float f = 2.0f;
+int resultado;
+float resultadoF;
+</pre></div>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Expresión</p></th>
+<th class="head"><p>¿Es válida?</p></th>
+<th class="head"><p>Resultado</p></th>
+<th class="head"><p>Tipo de dato</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">resultado</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">/</span> <span class="pre">b;</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">resultado</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">/</span> <span class="pre">f;</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">resultadoF</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">/</span> <span class="pre">b;</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">resultadoF</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">/</span> <span class="pre">f;</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">resultado</span> <span class="pre">=</span> <span class="pre">(int)(a</span> <span class="pre">/</span> <span class="pre">f);</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">resultadoF</span> <span class="pre">=</span> <span class="pre">(float)a</span> <span class="pre">/</span> <span class="pre">b;</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">resultado</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">%</span> <span class="pre">b;</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">resultadoF</span> <span class="pre">=</span> <span class="pre">f</span> <span class="pre">%</span> <span class="pre">a;</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Pista</p>
+<p>Fíjate bien en <code class="docutils literal notranslate"><span class="pre">resultado</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">/</span> <span class="pre">b;</span></code> comparado con <code class="docutils literal notranslate"><span class="pre">resultadoF</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">/</span> <span class="pre">b;</span></code> — en los dos casos <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code> son <code class="docutils literal notranslate"><span class="pre">int</span></code>, así que la división ocurre <strong>primero</strong> en enteros, y solo después el resultado se convierte al tipo de la variable donde se guarda. El orden importa.</p>
+</div>
+</section>
+<section id="ejercicio-10">
+<h3>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Link to this heading">#</a></h3>
+<p>Dado el siguiente pseudocódigo describa cuáles son los errores y reescriba el pseudocódigo de la manera correcta.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Algoritmo AreaTriangulo
+    Definir base, altura Como Entero
+    Definir area Como Entero
+    area &lt;- base * altura / 2
+    Leer base
+    Escribir "El área es: ", area
+    altura &lt;- 6
+FinAlgoritmo
+</pre></div>
+</div>
+</section>
+<section id="ejercicio-11">
+<h3>Ejercicio 11<a class="headerlink" href="#ejercicio-11" title="Link to this heading">#</a></h3>
+<p>El siguiente pseudocódigo calcula el volumen de un cilindro. ¿Cuál es el resultado de la variable <code class="docutils literal notranslate"><span class="pre">volumen</span></code>? ¿Qué tipo de dato contiene?</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">radio</span> <span class="pre">=</span> <span class="pre">3</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">altura</span> <span class="pre">=</span> <span class="pre">5.0</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PI</span> <span class="pre">=</span> <span class="pre">3.1416</span></code></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Algoritmo</span> <span class="n">VolumenCilindro</span>
+      <span class="n">volumen</span> <span class="o">=</span> <span class="n">PI</span> <span class="o">*</span> <span class="p">(</span><span class="n">radio</span> <span class="o">*</span> <span class="n">radio</span><span class="p">)</span> <span class="o">*</span> <span class="n">altura</span>
+      <span class="n">Escribir</span> <span class="s2">"El volumen del cilindro es:"</span><span class="p">,</span> <span class="n">volumen</span>
+    <span class="n">FinAlgoritmo</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -817,6 +953,10 @@ FinAlgoritmo
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6">Ejercicio 6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7">Ejercicio 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8">Ejercicio 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9">Ejercicio 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-10">Ejercicio 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-11">Ejercicio 11</a></li>
 </ul>
 </li>
 </ul>

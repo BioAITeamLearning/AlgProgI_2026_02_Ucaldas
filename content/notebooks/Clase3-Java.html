@@ -228,14 +228,17 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Introducción</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/memoria-variables.html">🧮 Memoria, Variables y Sistemas de Numeración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/operadores-ciclos.html">🔁 Operadores Lógicos y Ciclos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pruebas-escritorio.html">📝 Pruebas de Escritorio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../talleres/taller1.html">📄 Taller 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller1_B.html">📄 Taller — Pruebas de Escritorio</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Tipos de Datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="Clase2.html">📙 Tipos de Datos y Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../talleres/taller2.html">📄 Taller 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
 </ul>
 </details></li>
@@ -485,8 +488,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido">Tabla de Contenido</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido-1-instalar-java-2-formas-de-imprimir-datos-3-cadena-de-caracteres-4-operadores-logicos-5-operadores-aritmeticos-6-operadores-relacionales-7-operadores-unarios-8-jerarquia-de-operadores-9-ejercicio">Tabla de Contenido- <span class="xref myst">1 - Instalar Java</span>- <span class="xref myst">2 - Formas de Imprimir Datos</span>- <span class="xref myst">3 - Cadena de Caracteres</span>- <span class="xref myst">4 - Operadores Lógicos</span>- <span class="xref myst">5 - Operadores Aritméticos</span>- <span class="xref myst">6 - Operadores Relacionales</span>- <span class="xref myst">7 - Operadores Unarios</span>- <span class="xref myst">8 - Jerarquia de Operadores</span>- <span class="xref myst">9 - Ejercicio</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuidado-al-sumar-dentro-de-un-printlncuando-usas-dentro-de-system-out-println-java-lo-evalua-de-izquierda-a-derecha-si-lo-primero-que-encuentra-es-un-texto-string-el-deja-de-sumar-y-empieza-a-concatenar-pegar-todo-lo-que-sigue-como-texto-aunque-sean-numeros">Cuidado al «sumar» dentro de un <code class="docutils literal notranslate"><span class="pre">println</span></code>Cuando usas <code class="docutils literal notranslate"><span class="pre">+</span></code> dentro de <code class="docutils literal notranslate"><span class="pre">System.out.println</span></code>, Java lo evalúa de <strong>izquierda a derecha</strong>. Si lo primero que encuentra es un texto (<code class="docutils literal notranslate"><span class="pre">String</span></code>), el <code class="docutils literal notranslate"><span class="pre">+</span></code> deja de sumar y empieza a <strong>concatenar</strong> (pegar) todo lo que sigue como texto — aunque sean números.</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores Lógicos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos">Operadores Aritméticos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-relacionales">Operadores Relacionales</a></li>
@@ -506,17 +512,8 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="operadores-en-java">
 <h1>📙 Operadores en Java<a class="headerlink" href="#operadores-en-java" title="Link to this heading">#</a></h1>
-<section id="tabla-de-contenido">
-<h2>Tabla de Contenido<a class="headerlink" href="#tabla-de-contenido" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="#1"><span class="xref myst">1 - Instalar Java</span></a></p></li>
-<li><p><a class="reference internal" href="#2"><span class="xref myst">2 - Operadores Lógicos</span></a></p></li>
-<li><p><a class="reference internal" href="#3"><span class="xref myst">3 - Operadores Aritméticos</span></a></p></li>
-<li><p><a class="reference internal" href="#4"><span class="xref myst">4 - Operadores Relacionales</span></a></p></li>
-<li><p><a class="reference internal" href="#5"><span class="xref myst">5 - Operadores Unarios</span></a></p></li>
-<li><p><a class="reference internal" href="#6"><span class="xref myst">6 - Jerarquia de Operadores</span></a></p></li>
-<li><p><a class="reference internal" href="#7"><span class="xref myst">7 - Ejercicio</span></a></p></li>
-</ul>
+<section id="tabla-de-contenido-1-instalar-java-2-formas-de-imprimir-datos-3-cadena-de-caracteres-4-operadores-logicos-5-operadores-aritmeticos-6-operadores-relacionales-7-operadores-unarios-8-jerarquia-de-operadores-9-ejercicio">
+<h2>Tabla de Contenido- <a class="reference internal" href="#1"><span class="xref myst">1 - Instalar Java</span></a>- <a class="reference internal" href="#print"><span class="xref myst">2 - Formas de Imprimir Datos</span></a>- <a class="reference internal" href="#cadenas"><span class="xref myst">3 - Cadena de Caracteres</span></a>- <a class="reference internal" href="#2"><span class="xref myst">4 - Operadores Lógicos</span></a>- <a class="reference internal" href="#3"><span class="xref myst">5 - Operadores Aritméticos</span></a>- <a class="reference internal" href="#4"><span class="xref myst">6 - Operadores Relacionales</span></a>- <a class="reference internal" href="#5"><span class="xref myst">7 - Operadores Unarios</span></a>- <a class="reference internal" href="#6"><span class="xref myst">8 - Jerarquia de Operadores</span></a>- <a class="reference internal" href="#7"><span class="xref myst">9 - Ejercicio</span></a><a class="headerlink" href="#tabla-de-contenido-1-instalar-java-2-formas-de-imprimir-datos-3-cadena-de-caracteres-4-operadores-logicos-5-operadores-aritmeticos-6-operadores-relacionales-7-operadores-unarios-8-jerarquia-de-operadores-9-ejercicio" title="Link to this heading">#</a></h2>
 <p><a name='1'></a></p>
 </section>
 <section id="instalar-java">
@@ -558,7 +555,96 @@ Proxy kernel installed. Go to 'Runtime &gt; Change runtime type' and select 'jav
 <p class="admonition-title">Instrucciones para activar el kernel</p>
 <p>Dirigite a <code>Entorno de ejecución</code> &gt; <code>Cambiar tipo de entorno de ejecución</code> &gt; Elige la opción <code>Java</code> &gt; Da click en <code>Guardar</code></p>
 </div>
+<p><a name='print'></a>## Formas de Imprimir Datos</p>
+<p>Java tiene varias formas de mostrar resultados en pantalla:- <code class="docutils literal notranslate"><span class="pre">System.out.println(...)</span></code>: imprime y salta a la siguiente línea.- <code class="docutils literal notranslate"><span class="pre">System.out.print(...)</span></code>: imprime <strong>sin</strong> saltar de línea (lo siguiente que imprimas queda pegado).- <code class="docutils literal notranslate"><span class="pre">System.out.printf(...)</span></code>: imprime con un formato controlado, usando marcadores como <code class="docutils literal notranslate"><span class="pre">%d</span></code> (entero), <code class="docutils literal notranslate"><span class="pre">%f</span></code> (decimal) y <code class="docutils literal notranslate"><span class="pre">%s</span></code> (texto).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>System.out.print("Hola ");
+System.out.print("Mundo");
+System.out.println();
+System.out.println("Esto sí salta de línea");
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hola Mundo
+Esto sí salta de línea
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>int edad = 20;
+double promedio = 4.5;
+System.out.printf("Edad: %d, Promedio: %.2f%n", edad, promedio);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Edad: 20, Promedio: 4.50
+</pre></div>
+</div>
+</div>
+</div>
+<section id="cuidado-al-sumar-dentro-de-un-printlncuando-usas-dentro-de-system-out-println-java-lo-evalua-de-izquierda-a-derecha-si-lo-primero-que-encuentra-es-un-texto-string-el-deja-de-sumar-y-empieza-a-concatenar-pegar-todo-lo-que-sigue-como-texto-aunque-sean-numeros">
+<h3>Cuidado al «sumar» dentro de un <code class="docutils literal notranslate"><span class="pre">println</span></code>Cuando usas <code class="docutils literal notranslate"><span class="pre">+</span></code> dentro de <code class="docutils literal notranslate"><span class="pre">System.out.println</span></code>, Java lo evalúa de <strong>izquierda a derecha</strong>. Si lo primero que encuentra es un texto (<code class="docutils literal notranslate"><span class="pre">String</span></code>), el <code class="docutils literal notranslate"><span class="pre">+</span></code> deja de sumar y empieza a <strong>concatenar</strong> (pegar) todo lo que sigue como texto — aunque sean números.<a class="headerlink" href="#cuidado-al-sumar-dentro-de-un-printlncuando-usas-dentro-de-system-out-println-java-lo-evalua-de-izquierda-a-derecha-si-lo-primero-que-encuentra-es-un-texto-string-el-deja-de-sumar-y-empieza-a-concatenar-pegar-todo-lo-que-sigue-como-texto-aunque-sean-numeros" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>int a = 5;
+int b = 3;
+System.out.println("La suma es: " + a + b);
+System.out.println("La suma es: " + (a + b));
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>La suma es: 53
+La suma es: 8
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='cadenas'></a>## Cadena de Caracteres (<code class="docutils literal notranslate"><span class="pre">String</span></code>)</p>
+<p>Un <code class="docutils literal notranslate"><span class="pre">char</span></code> guarda un solo carácter, entre comillas simples (<code class="docutils literal notranslate"><span class="pre">'A'</span></code>). Un <code class="docutils literal notranslate"><span class="pre">String</span></code> guarda texto (una cadena de varios caracteres), entre comillas dobles (<code class="docutils literal notranslate"><span class="pre">&quot;Hola&quot;</span></code>) — y, a diferencia de <code class="docutils literal notranslate"><span class="pre">char</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, etc., un <code class="docutils literal notranslate"><span class="pre">String</span></code> no es un tipo primitivo: es una clase, pero se usa de forma muy parecida.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>String nombre = "Ana";
+char inicial = 'A';
+System.out.println(nombre);
+System.out.println(inicial);
+System.out.println("Hola, " + nombre + "!");
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ana
+A
+Hola, Ana!
+</pre></div>
+</div>
+</div>
+</div>
+<p>Igual que antes, si concatenas un <code class="docutils literal notranslate"><span class="pre">String</span></code> con números usando <code class="docutils literal notranslate"><span class="pre">+</span></code>, Java los convierte todos a texto:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>String etiqueta = "Total: ";
+int cantidad = 4;
+double precio = 2.5;
+System.out.println(etiqueta + cantidad + precio);
+System.out.println(etiqueta + (cantidad * precio));
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total: 42.5
+Total: 10.0
+</pre></div>
+</div>
+</div>
+</div>
 <p><a name='2'></a></p>
+</section>
 </section>
 <section id="operadores-logicos">
 <h2>Operadores Lógicos<a class="headerlink" href="#operadores-logicos" title="Link to this heading">#</a></h2>
@@ -1060,8 +1146,11 @@ System.out.println( a %  b + c * a &gt; 3 || c * c &lt; 5 );
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido">Tabla de Contenido</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido-1-instalar-java-2-formas-de-imprimir-datos-3-cadena-de-caracteres-4-operadores-logicos-5-operadores-aritmeticos-6-operadores-relacionales-7-operadores-unarios-8-jerarquia-de-operadores-9-ejercicio">Tabla de Contenido- <span class="xref myst">1 - Instalar Java</span>- <span class="xref myst">2 - Formas de Imprimir Datos</span>- <span class="xref myst">3 - Cadena de Caracteres</span>- <span class="xref myst">4 - Operadores Lógicos</span>- <span class="xref myst">5 - Operadores Aritméticos</span>- <span class="xref myst">6 - Operadores Relacionales</span>- <span class="xref myst">7 - Operadores Unarios</span>- <span class="xref myst">8 - Jerarquia de Operadores</span>- <span class="xref myst">9 - Ejercicio</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuidado-al-sumar-dentro-de-un-printlncuando-usas-dentro-de-system-out-println-java-lo-evalua-de-izquierda-a-derecha-si-lo-primero-que-encuentra-es-un-texto-string-el-deja-de-sumar-y-empieza-a-concatenar-pegar-todo-lo-que-sigue-como-texto-aunque-sean-numeros">Cuidado al «sumar» dentro de un <code class="docutils literal notranslate"><span class="pre">println</span></code>Cuando usas <code class="docutils literal notranslate"><span class="pre">+</span></code> dentro de <code class="docutils literal notranslate"><span class="pre">System.out.println</span></code>, Java lo evalúa de <strong>izquierda a derecha</strong>. Si lo primero que encuentra es un texto (<code class="docutils literal notranslate"><span class="pre">String</span></code>), el <code class="docutils literal notranslate"><span class="pre">+</span></code> deja de sumar y empieza a <strong>concatenar</strong> (pegar) todo lo que sigue como texto — aunque sean números.</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores Lógicos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos">Operadores Aritméticos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-relacionales">Operadores Relacionales</a></li>
