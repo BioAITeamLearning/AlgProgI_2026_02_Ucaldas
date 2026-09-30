@@ -119,3 +119,75 @@ El siguiente pseudocódigo calcula la fuerza gravitatoria (fórmula establecida 
     FinAlgoritmo
 ```
 
+### Ejercicio 8
+
+Evaluar las siguientes expresiones teniendo en cuenta que:
+
+    boolean p = true;
+    boolean q = true;
+    boolean r = false;
+    boolean s = true;
+
+Recuerda el orden de precedencia: primero `!`, luego `&&`, y por último `||`.
+
+|      Expresión     | Resultado |
+| ------------------ | --------- |
+| <code> (p && q) \|\| (r && !s) && (p \|\| s) </code> | |
+| <code> !(p && q) \|\| (!r && s) \|\| (p && !q && r) </code> | |
+| <code> (p \|\| q) && (r \|\| s) && !(q && s) </code> | |
+| <code> ((p && !q) \|\| (r && s)) && (p \|\| r \|\| s) </code> | |
+
+### Ejercicio 9
+
+De las siguientes expresiones decir ¿cuáles son válidas?, ¿cuál es el resultado de su ejecución? y ¿de qué tipo de dato queda el resultado? Tenga en cuenta que:
+
+    int a = 7;
+    int b = 2;
+    float f = 2.0f;
+    int resultado;
+    float resultadoF;
+
+|          Expresión          | ¿Es válida? | Resultado | Tipo de dato |
+| ---------------------------- | ----------- | --------- | ------------ |
+| `resultado = a / b;`         |             |           |              |
+| `resultado = a / f;`         |             |           |              |
+| `resultadoF = a / b;`        |             |           |              |
+| `resultadoF = a / f;`        |             |           |              |
+| `resultado = (int)(a / f);`  |             |           |              |
+| `resultadoF = (float)a / b;` |             |           |              |
+| `resultado = a % b;`         |             |           |              |
+| `resultadoF = f % a;`        |             |           |              |
+
+```{admonition} Pista
+:class: tip
+Fíjate bien en `resultado = a / b;` comparado con `resultadoF = a / b;` — en los dos casos `a` y `b` son `int`, así que la división ocurre **primero** en enteros, y solo después el resultado se convierte al tipo de la variable donde se guarda. El orden importa.
+```
+
+### Ejercicio 10
+
+Dado el siguiente pseudocódigo describa cuáles son los errores y reescriba el pseudocódigo de la manera correcta.
+
+    Algoritmo AreaTriangulo
+        Definir base, altura Como Entero
+        Definir area Como Entero
+        area <- base * altura / 2
+        Leer base
+        Escribir "El área es: ", area
+        altura <- 6
+    FinAlgoritmo
+
+### Ejercicio 11
+
+El siguiente pseudocódigo calcula el volumen de un cilindro. ¿Cuál es el resultado de la variable `volumen`? ¿Qué tipo de dato contiene?
+
+* `radio = 3`
+* `altura = 5.0`
+* `PI = 3.1416`
+
+```
+    Algoritmo VolumenCilindro
+      volumen = PI * (radio * radio) * altura
+      Escribir "El volumen del cilindro es:", volumen
+    FinAlgoritmo
+```
+
