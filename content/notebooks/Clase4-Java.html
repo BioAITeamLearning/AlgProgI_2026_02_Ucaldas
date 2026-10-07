@@ -230,14 +230,17 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Introducción</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/memoria-variables.html">🧮 Memoria, Variables y Sistemas de Numeración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/operadores-ciclos.html">🔁 Operadores Lógicos y Ciclos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pruebas-escritorio.html">📝 Pruebas de Escritorio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../talleres/taller1.html">📄 Taller 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller1_B.html">📄 Taller — Pruebas de Escritorio</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Tipos de Datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="Clase2.html">📙 Tipos de Datos y Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../talleres/taller2.html">📄 Taller 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
 </ul>
 </details></li>
@@ -501,7 +504,24 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-7">Ejemplo 7</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-clase">Ejemplo de Clase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-clase">Ejemplo de Clase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuanto-pesa-un-dataset">¿Cuánto pesa un dataset?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#y-si-usamos-int-en-lugar-de-long">¿Y si usamos <code class="docutils literal notranslate"><span class="pre">int</span></code> en lugar de <code class="docutils literal notranslate"><span class="pre">long</span></code>?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-en-clase">Práctica en Clase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-1">Práctica 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-2">Práctica 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-3">Práctica 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-4">Práctica 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-5">Práctica 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-6">Práctica 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-7">Práctica 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-8">Práctica 8</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -524,6 +544,7 @@
 <li><p><a class="reference internal" href="#4"><span class="xref myst">4 - Entrada de Valores</span></a></p></li>
 <li><p><a class="reference internal" href="#5"><span class="xref myst">5 - Ejemplos</span></a></p></li>
 <li><p><a class="reference internal" href="#6"><span class="xref myst">6 - Ejemplo de clase</span></a></p></li>
+<li><p><a class="reference internal" href="#7"><span class="xref myst">7 - Práctica en clase</span></a></p></li>
 </ul>
 <p><a name='1'></a></p>
 </section>
@@ -687,12 +708,22 @@ Proxy kernel installed. Go to 'Runtime &gt; Change runtime type' and select 'jav
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Libreria para utilizar exponenciación:</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">java.lang.Math</span><span class="p">;</span>
 <span class="c1">// Por el momento diremos que una libreria es una herramienta para dar más funcionalidad al programa</span>
-
-<span class="c1">// Math.pow(4, 2) realiza 4 elevado a 2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Math.pow(4, 2) realiza 4 elevado a 2</span>
 <span class="c1">// Math.pow(4, 3) realiza 4 elevado a 3</span>
 <span class="c1">// Math.pow(1, 3) realiza 1 elevado a 3</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">);</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="p">);</span>
 </pre></div>
 </div>
@@ -752,11 +783,21 @@ true
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Libreria para ingresar un dato (clase Scanner)</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
-
-<span class="c1">//Declaramos la clase Scanner en una variable 'scanner'</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">//Declaramos la clase Scanner en una variable 'scanner'</span>
 <span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">//Pedimos los datos}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">//Pedimos los datos</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Ingresa tu nombre: "</span><span class="p">);</span>
 <span class="n">String</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Nombre: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombre</span><span class="p">);</span>
@@ -810,20 +851,17 @@ Decimal: 12.5
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Ingresar valores</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Ingresar valores</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el valor del producto: "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">precioInicial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el porcentaje de descuento: "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">pctDescuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
-
-<span class="c1">// Realizar operación</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">valorDescontar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">precioInicial</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pctDescuento</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">precioFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">precioInicial</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">valorDescontar</span><span class="p">;</span>
-
-<span class="c1">// Imprimir precios</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Precio original del producto: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">precioInicial</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Precio del producto con descuento: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">precioFinal</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -832,7 +870,29 @@ Decimal: 12.5
 234000
 Ingrese el porcentaje de descuento: 
 15
-Precio original del producto: 234000.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Realizar operación</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">valorDescontar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">precioInicial</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pctDescuento</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">precioFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">precioInicial</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">valorDescontar</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Imprimir precios</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Precio original del producto: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">precioInicial</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Precio del producto con descuento: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">precioFinal</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Precio original del producto: 234000.0
 Precio del producto con descuento: 198900.0
 </pre></div>
 </div>
@@ -846,8 +906,13 @@ Precio del producto con descuento: 198900.0
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Ingresar valores</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Ingresar valores</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese la calificación #1: "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">nota1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese la calificación #2: "</span><span class="p">);</span>
@@ -858,16 +923,6 @@ Precio del producto con descuento: 198900.0
 <span class="kt">float</span><span class="w"> </span><span class="n">nota4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese la calificación #5: "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">nota5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
-
-<span class="c1">// Promediar</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">promedio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">nota1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota5</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">;</span>
-
-<span class="c1">// Umbral para aprobar</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">umbral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.0f</span><span class="p">;</span>
-
-<span class="c1">// Imprimir</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Tu promedio es: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">promedio</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">promedio</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">umbral</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -882,7 +937,36 @@ Ingrese la calificación #4:
 3
 Ingrese la calificación #5: 
 2.5
-Tu promedio es: 3.5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Promediar</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">promedio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">nota1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota5</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Umbral para aprobar</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">umbral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.0f</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Imprimir</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Tu promedio es: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">promedio</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">promedio</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">umbral</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tu promedio es: 3.5
 true
 </pre></div>
 </div>
@@ -895,19 +979,17 @@ true
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Ingresar valores</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Ingresar valores</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el precio de la tarifa (precio normal): "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">valorTarifa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el valor pagado: "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">valorPagado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
-
-<span class="c1">// Realizar operaciones</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">Descuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valorTarifa</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">valorPagado</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">pctjDescuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Descuento</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="n">valorTarifa</span><span class="p">;</span>
-
-<span class="c1">// Imprimir porcentaje descontado</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Porcentaje descontado: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pctjDescuento</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"%"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -916,7 +998,28 @@ true
 450000
 Ingrese el valor pagado: 
 45000
-Porcentaje descontado: 90.0%
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Realizar operaciones</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">Descuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valorTarifa</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">valorPagado</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">pctjDescuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Descuento</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="n">valorTarifa</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Imprimir porcentaje descontado</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Porcentaje descontado: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pctjDescuento</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"%"</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Porcentaje descontado: 90.0%
 </pre></div>
 </div>
 </div>
@@ -928,23 +1031,42 @@ Porcentaje descontado: 90.0%
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Ingresar valores</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Ingresar valores</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese un número entero: "</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">numeroEntero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="c1">// Realizar operación</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">ultimoDigito</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numeroEntero</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-
-<span class="c1">// Imprimir</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El ultimo digito del numero "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numeroEntero</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" es "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ultimoDigito</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese un número entero: 
 34864
-El ultimo digito del numero 34864 es 4
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Realizar operación</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ultimoDigito</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numeroEntero</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Imprimir</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El ultimo digito del numero "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numeroEntero</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" es "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ultimoDigito</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El ultimo digito del numero 34864 es 4
 </pre></div>
 </div>
 </div>
@@ -958,26 +1080,45 @@ El ultimo digito del numero 34864 es 4
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Ingresar valores</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Ingresar valores</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese la cantidad total de segundos: "</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="c1">// Operaciones</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">horas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3600</span><span class="p">;</span><span class="w">   </span><span class="c1">// Cantidad de horas</span>
-<span class="n">segundos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3600</span><span class="p">;</span><span class="w">    </span><span class="c1">// Resto o Modulo de segundos</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">minutos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">   </span><span class="c1">// Cantidad de minutos</span>
-<span class="n">segundos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">      </span><span class="c1">// Resto o Modulo de segundos</span>
-
-<span class="c1">// Imprimir</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">horas</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" hora(s): "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutos</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" minuto(s): "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" segundo(s)"</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese la cantidad total de segundos: 
 3660
-1 hora(s): 1 minuto(s): 0 segundo(s)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Operaciones</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">horas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3600</span><span class="p">;</span><span class="w">   </span><span class="c1">// Cantidad de horas</span>
+<span class="n">segundos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3600</span><span class="p">;</span><span class="w">    </span><span class="c1">// Resto o Modulo de segundos</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">minutos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">   </span><span class="c1">// Cantidad de minutos</span>
+<span class="n">segundos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">      </span><span class="c1">// Resto o Modulo de segundos</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Imprimir</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">horas</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" hora(s): "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutos</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" minuto(s): "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" segundo(s)"</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 hora(s): 1 minuto(s): 0 segundo(s)
 </pre></div>
 </div>
 </div>
@@ -989,23 +1130,48 @@ El ultimo digito del numero 34864 es 4
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Ingresar valores</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Ingresar valores</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el numero de comensales: "</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">comensales</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el precio (por Kg) del ingrediente P: "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">precioP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el precio (por Kg) del ingrediente T: "</span><span class="p">);</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">precioT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
-
-<span class="c1">// Operaciones</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el numero de comensales: 
+4
+Ingrese el precio (por Kg) del ingrediente P: 
+4500
+Ingrese el precio (por Kg) del ingrediente T: 
+6000
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Operaciones</span>
 <span class="kt">double</span><span class="w"> </span><span class="n">cantidadP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">comensales</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mf">0.5</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span><span class="w">        </span><span class="c1">// Cantidad necesaria del ingrediente P</span>
 <span class="kt">double</span><span class="w"> </span><span class="n">cantidadT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">comensales</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mf">0.25</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span><span class="w">       </span><span class="c1">// Cantidad necesaria del ingrediente T</span>
 <span class="kt">double</span><span class="w"> </span><span class="n">costeP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cantidadP</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">precioP</span><span class="p">;</span><span class="w">            </span><span class="c1">// Coste del ingrediente P</span>
 <span class="kt">double</span><span class="w"> </span><span class="n">costeT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cantidadT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">precioT</span><span class="p">;</span><span class="w">            </span><span class="c1">// Coste del ingrediente T</span>
 <span class="kt">double</span><span class="w"> </span><span class="n">costeTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costeT</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">costeP</span><span class="p">;</span><span class="w">            </span><span class="c1">// Coste Total</span>
-
-<span class="c1">// Imprimir</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Imprimir</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Para "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">comensales</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" comensales se necesita:"</span><span class="p">);</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cantidadP</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" Kg del ingrediente P"</span><span class="p">);</span>
@@ -1018,14 +1184,7 @@ El ultimo digito del numero 34864 es 4
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el numero de comensales: 
-4
-Ingrese el precio (por Kg) del ingrediente P: 
-4500
-Ingrese el precio (por Kg) del ingrediente T: 
-6000
-
-Para 4 comensales se necesita:
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Para 4 comensales se necesita:
       0.5 Kg del ingrediente P
       0.25 Kg del ingrediente T
 Costos: 
@@ -1042,72 +1201,133 @@ Coste Total:
 </section>
 <section id="ejemplo-de-clase">
 <h2>Ejemplo de Clase<a class="headerlink" href="#ejemplo-de-clase" title="Link to this heading">#</a></h2>
-<p>Clase Calculadora</p>
+<section id="cuanto-pesa-un-dataset">
+<h3>¿Cuánto pesa un dataset?<a class="headerlink" href="#cuanto-pesa-un-dataset" title="Link to this heading">#</a></h3>
+<p>Un dataset tiene un número de filas y de columnas, y todos sus datos son numéricos de tipo <code class="docutils literal notranslate"><span class="pre">double</span></code> (8 bytes cada uno, como vimos en la sesión de memoria). Pide por teclado el número de filas y de columnas y calcula cuántos bytes, KB, MB y GB ocupa en memoria.</p>
+<p>Recuerda: 1 KB = 1024 bytes, 1 MB = 1024 KB y 1 GB = 1024 MB.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">OperacionesAritmeticas</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Método para sumar dos números</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">suma</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">num1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">num2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="c1">// Método para restar dos números</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">resta</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">num1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">num2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="c1">// Método para multiplicar dos números</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">multiplicacion</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">num1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">num2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="c1">// Método para dividir dos números</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">division</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">num1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">num2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Declaramos la clase OperacionesAritmeticas</span>
-<span class="n">OperacionesAritmeticas</span><span class="w"> </span><span class="n">operaciones</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">OperacionesAritmeticas</span><span class="p">();</span>
-
-<span class="c1">// Utilizamos el método suma</span>
-<span class="kt">double</span><span class="w"> </span><span class="n">resultadoSuma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">operaciones</span><span class="p">.</span><span class="na">suma</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Suma: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">resultadoSuma</span><span class="p">);</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Ingresar valores</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el número de filas del dataset: "</span><span class="p">);</span>
+<span class="kt">long</span><span class="w"> </span><span class="n">filas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextLong</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el número de columnas: "</span><span class="p">);</span>
+<span class="kt">long</span><span class="w"> </span><span class="n">columnas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextLong</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Suma: 15.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el número de filas del dataset: 
+2000000
+Ingrese el número de columnas: 
+30
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La división es: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">operaciones</span><span class="p">.</span><span class="na">division</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>La división es: 2.0
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Operaciones (cada dato double pesa 8 bytes)</span>
+<span class="kt">long</span><span class="w"> </span><span class="n">bytesTotales</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">filas</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">columnas</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">kilobytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bytesTotales</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1024.0</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">megabytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kilobytes</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1024.0</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">gigabytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">megabytes</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1024.0</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La multiplicación es: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">operaciones</span><span class="p">.</span><span class="na">multiplicacion</span><span class="p">(</span><span class="mi">45</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">))</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Imprimir</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El dataset pesa "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">bytesTotales</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" bytes"</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Eso equivale a "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">kilobytes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" KB, "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">megabytes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" MB o "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">gigabytes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" GB"</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>La multiplicación es: 270.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El dataset pesa 480000000 bytes
+Eso equivale a 468750.0 KB, 457.763671875 MB o 0.4470348358154297 GB
 </pre></div>
 </div>
 </div>
 </div>
+<section id="y-si-usamos-int-en-lugar-de-long">
+<h4>¿Y si usamos <code class="docutils literal notranslate"><span class="pre">int</span></code> en lugar de <code class="docutils literal notranslate"><span class="pre">long</span></code>?<a class="headerlink" href="#y-si-usamos-int-en-lugar-de-long" title="Link to this heading">#</a></h4>
+<p>Probemos con un dataset más grande: 20.000.000 de filas y 30 columnas. El resultado real es 4.800.000.000 bytes, pero un <code class="docutils literal notranslate"><span class="pre">int</span></code> ocupa 32 bits y su valor máximo es 2.147.483.647.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">filasInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20000000</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">columnasInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">bytesInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">filasInt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">columnasInt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bytesInt</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>505032704
+</pre></div>
+</div>
+</div>
+</div>
+<p>Java no muestra ningún error: el resultado se «desbordó» y quedó en un número que no tiene sentido. Para evitarlo, al menos uno de los operandos debe ser <code class="docutils literal notranslate"><span class="pre">long</span></code> antes de multiplicar:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">long</span><span class="w"> </span><span class="n">bytesLong</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="w"> </span><span class="n">filasInt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">columnasInt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bytesLong</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4800000000
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='7'></a></p>
+</section>
+</section>
+</section>
+<section id="practica-en-clase">
+<h2>Práctica en Clase<a class="headerlink" href="#practica-en-clase" title="Link to this heading">#</a></h2>
+<p>Implementa cada ejercicio en su propia celda. Antes de escribir código, identifica qué datos necesitas (entradas), qué te piden mostrar (salidas) y qué operaciones conectan unos con otros.</p>
+<section id="practica-1">
+<h3>Práctica 1<a class="headerlink" href="#practica-1" title="Link to this heading">#</a></h3>
+<p>Muestra tu nombre completo, tu programa académico y tu semestre en tres líneas distintas. Luego muestra los mismos tres datos en una sola línea.</p>
+</section>
+<section id="practica-2">
+<h3>Práctica 2<a class="headerlink" href="#practica-2" title="Link to this heading">#</a></h3>
+<p>Declara dos variables <code class="docutils literal notranslate"><span class="pre">String</span></code> con tu nombre y tu apellido, y muéstralas con el formato <code class="docutils literal notranslate"><span class="pre">Apellido,</span> <span class="pre">Nombre</span></code>.</p>
+</section>
+<section id="practica-3">
+<h3>Práctica 3<a class="headerlink" href="#practica-3" title="Link to this heading">#</a></h3>
+<p>Declara dos variables <code class="docutils literal notranslate"><span class="pre">int</span></code> con los valores que quieras y muestra el mensaje <code class="docutils literal notranslate"><span class="pre">La</span> <span class="pre">suma</span> <span class="pre">de</span> <span class="pre">12</span> <span class="pre">y</span> <span class="pre">30</span> <span class="pre">es</span> <span class="pre">42</span></code> (con tus valores). El resultado debe ser la suma real, no los dígitos pegados.</p>
+</section>
+<section id="practica-4">
+<h3>Práctica 4<a class="headerlink" href="#practica-4" title="Link to this heading">#</a></h3>
+<p>Pide por teclado tu nombre y tu edad, y muestra: <code class="docutils literal notranslate"><span class="pre">Hola</span> <span class="pre">Luis,</span> <span class="pre">el</span> <span class="pre">próximo</span> <span class="pre">año</span> <span class="pre">tendrás</span> <span class="pre">20</span> <span class="pre">años</span></code> (con tus datos).</p>
+</section>
+<section id="practica-5">
+<h3>Práctica 5<a class="headerlink" href="#practica-5" title="Link to this heading">#</a></h3>
+<p>Pide dos números decimales y muestra su promedio.</p>
+</section>
+<section id="practica-6">
+<h3>Práctica 6<a class="headerlink" href="#practica-6" title="Link to this heading">#</a></h3>
+<p>Pide la base y la altura de un rectángulo (pueden tener decimales) y muestra su perímetro y su área.</p>
+</section>
+<section id="practica-7">
+<h3>Práctica 7<a class="headerlink" href="#practica-7" title="Link to this heading">#</a></h3>
+<p>Pide un número entero de tres cifras (por ejemplo <code class="docutils literal notranslate"><span class="pre">472</span></code>) y muestra cada cifra por separado: <code class="docutils literal notranslate"><span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">7</span></code> y <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p>
+</section>
+<section id="practica-8">
+<h3>Práctica 8<a class="headerlink" href="#practica-8" title="Link to this heading">#</a></h3>
+<p>Pide los días de vida de una mascota (un número entero) y muestra a cuántas semanas completas y cuántos días sobrantes equivale.</p>
+</section>
 </section>
 </section>
 
@@ -1191,7 +1411,24 @@ Coste Total:
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-7">Ejemplo 7</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-clase">Ejemplo de Clase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-clase">Ejemplo de Clase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuanto-pesa-un-dataset">¿Cuánto pesa un dataset?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#y-si-usamos-int-en-lugar-de-long">¿Y si usamos <code class="docutils literal notranslate"><span class="pre">int</span></code> en lugar de <code class="docutils literal notranslate"><span class="pre">long</span></code>?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-en-clase">Práctica en Clase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-1">Práctica 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-2">Práctica 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-3">Práctica 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-4">Práctica 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-5">Práctica 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-6">Práctica 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-7">Práctica 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practica-8">Práctica 8</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
