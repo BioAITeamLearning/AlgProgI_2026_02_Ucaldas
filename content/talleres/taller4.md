@@ -16,54 +16,67 @@ kernelspec:
 Programación I
 
 :::{note}
-Este Taller debe entregarse en formato `docx`, con sus respectivas pruebas de escritorio y diagrama de flujo realizado a mano y subido en forma de foto.
+Este taller se resuelve en Java, en un notebook de Colaboratory. Entrega el enlace al notebook con permisos de lectura públicos.
 
-Los notebooks de Colaboratory (tanto Java como Python) deben tener su respectivo enlace en el `.docx` con los permisos en público.
-
-Los ejercicios en PSeInt deben estar contenidos en una carpeta y deben nombrarse de las siguientes formas `ejercicio1`, `ejercicio-1` (no utilizar nombres como `ejercicioCalculadoraNumeros`, `calcularIVAeImpuestos`)
+Para dos ejercicios a tu elección, adjunta además la prueba de escritorio hecha a mano (foto), con los valores de entrada que prefieras.
 :::
 
 ### Ejercicio 1
-Realizar un programa que calcule el sueldo de un trabajador. El programa va a solicitar el número de horas que has trabajado en un mes, las horas se pagan a 10€. (`PSeInt`, `Java` y `Python`)
+Un monitor de la universidad trabaja varias horas al mes y le pagan \$12.500 por hora (el valor por hora debe ser una constante). Del pago bruto le descuentan el $4\%$ para salud y el $4\%$ para pensión.
+
+Pide por teclado las horas trabajadas y muestra el pago bruto, cada descuento y lo que realmente recibe.
 
 ### Ejercicio 2
-Declara dos variables numéricas (con el valor que desees), muestra por consola la suma, resta, multiplicación, división y módulo (resto de la división). (`Java` y `Python`)
+Un grupo de amigos termina de comer en un restaurante. Pide por teclado el valor total de la cuenta, el porcentaje de propina que quieren dejar y cuántas personas son.
+
+Muestra el valor de la propina, el total a pagar y cuánto debe poner cada persona.
 
 ### Ejercicio 3
-Realiza una aplicación que calcule el área de un círculo ($\pi \cdot r^2$). El radio se pedirá por teclado (usar `nextDouble()`). Usa la constante `PI` y el método `pow` de `Math`. (`Java`)
+Un compañero te envía un mensaje secreto de cuatro letras, pero en lugar de letras te manda sus códigos ASCII. Pide por teclado los cuatro códigos y muestra el mensaje.
+
+Prueba con `72`, `111`, `108` y `97`.
+
+*Pista: si en pantalla ves números en vez de letras, revisa cómo se está evaluando el `+`.*
 
 ### Ejercicio 4
-Lee un número por teclado e indica si es divisible entre 2 (resto = 0). Si no lo es, también debemos indicarlo. (`Java` y `Python`)
+Un terreno tiene forma triangular y conoces la medida de sus tres lados. Pide los tres lados y muestra su perímetro, su área y la altura que corresponde al primer lado.
+
+Para el área usa la fórmula de Herón, donde $s$ es el semiperímetro:
+
+$$
+s = \frac{a + b + c}{2} \qquad A = \sqrt{s(s-a)(s-b)(s-c)} \qquad h_a = \frac{2A}{a}
+$$
+
+Asume que los lados sí forman un triángulo. Recuerda que una raíz cuadrada es lo mismo que elevar a la $0.5$. Prueba con `13`, `14` y `15`.
 
 ### Ejercicio 5
-Lee un número por teclado y muestra por consola, el carácter al que pertenece en la tabla ASCII. Por ejemplo: si introduzco un `97`, me muestre una `a`. (`Java` y `Python`)
-
-- **a.** Modifica el ejercicio anterior, para que en lugar de pedir un número, pida un carácter (char) y muestre su código en la tabla ASCII.
-
-*Contexto:* El código ASCII ([ver código ASCII completo](https://www.google.com/url?q=https://elcodigoascii.com.ar/&sa=D&source=docs&ust=1693448792138024&usg=AOvVaw2v6IfNkNQ0Cwhv77GRDpHP)) es una forma de codificación tanto decimal como hexadecimal, que se utilizaba para codificar mensajes durante la guerra, también tuvo su aplicación en programación e incluso se utiliza en mensajes de codificación espacial debido a su simplicidad, a continuación un enlace con información más detallada.
+Entrenar un modelo de *machine learning* tardó cierta cantidad de minutos (por ejemplo, `10000`). Pide los minutos totales y muestra ese tiempo expresado en días, horas y minutos.
 
 ### Ejercicio 6
-Lee por teclado el precio de un producto (puede tener decimales) y calcule el precio final con IVA. El IVA será una constante que será del $18\%$. (`Java` y `Python`)
+En una materia la nota final se calcula con tres cortes: el primero vale $30\%$, el segundo $30\%$ y el tercero $40\%$. Ya tienes las notas de los dos primeros cortes.
 
-- **a.** Haga una lista de productos, pida al usuario el nombre del producto, el precio, genere una factura con el valor total del producto y el valor más el IVA.
+Pide esas dos notas y calcula qué nota necesitas sacar en el tercer corte para que tu nota final sea exactamente $3.0$.
 
 ### Ejercicio 7
-Mediante la construcción de un algoritmo genere la decodificación del siguiente mensaje del binario a ASCII:
+En una caja registradora hay billetes de \$50.000, \$20.000, \$10.000, \$5.000, \$2.000 y \$1.000. Pide el valor del cambio que hay que devolver (siempre es múltiplo de \$1.000) y muestra cuántos billetes de cada denominación se deben entregar, usando la menor cantidad de billetes posible.
 
-    01101101 01100101 00100000 01100111 01110101 01110011 01110100 01100001 00100000 01101100 01100001 00100000 01100011 01101100 01100001 01110011 01100101 00100000 01100100 01100101 00100000 01110000 01110010 01101111 01100111 01110010 01100001 01101101 01100001 01100011 01101001 01101111 01101110
+Prueba con `187000`.
 
 ### Ejercicio 8
-Realiza un programa donde se pida por teclado al usuario que ingrese 8 valores diferentes (`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`) y realice las siguientes operaciones:
+Una foto de un celular de $4000 \times 3000$ píxeles guarda 3 bytes por píxel (rojo, verde y azul), sin comprimir.
 
-| Nombre Variables de Operaciones | Operaciones |
-| ------------------------ | ----------- |
-| operacion1 | <code> (A*B)/(C+H)^2 </code> |
-| operacion2 | <code> B!=F </code> |
-| operacion3 | <code> (C++)*E-G+(D--) </code> |
-| operacion4 | Convierte a Hexadecimal, Octal y Binario el valor de la variable `E` |
-| operacion5 | <code> (sqrt(A*B)/C+B)+E </code> |
-| operacion6 | <code> ((H+B+C)*(G-C-E))/A </code> |
-| operacion7 | Multiplica `G` por todos los valores, incluido el valor de `G` (debes tener 8 valores), luego realiza la sumatoria de estos valores y dividide la sumatoria entre `G` |
-| operacion8 | Suma/agrega valores aleatorios a las 8 variables (ver método `.rand()`), luego realiza la sumatoria de los nuevos valores y dividelos por el promedio de los mismos nuevos valores|
+Pide el ancho, el alto y la capacidad de la memoria del celular en GB, y muestra cuántas fotos completas caben y cuántos MB de espacio sobran.
 
+Prueba con `4000`, `3000` y `64`.
 
+### Ejercicio 9
+Una tienda en línea tuvo 12.000 visitas el mes pasado y 15.000 este mes. Pide ambas cantidades y muestra el porcentaje de crecimiento y cuántas visitas tendría dentro de tres meses si el crecimiento mensual se mantiene igual.
+
+### Ejercicio 10
+En ciencia de datos, para saber qué tan parecidos son dos clientes se calcula la "distancia" entre ellos. Cada cliente se describe con tres números: edad, ingreso mensual (en millones de pesos) y compras al mes. La distancia euclidiana entre $A = (a_1, a_2, a_3)$ y $B = (b_1, b_2, b_3)$ es:
+
+$$
+d = \sqrt{(a_1 - b_1)^2 + (a_2 - b_2)^2 + (a_3 - b_3)^2}
+$$
+
+Pide los datos de ambos clientes y muestra la distancia entre ellos. Prueba con $A = (25, 3.5, 8)$ y $B = (31, 4.0, 5)$.
