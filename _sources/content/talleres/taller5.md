@@ -112,23 +112,3 @@ Imprimir el promedio del estudiante, el descuento aplicado y el valor final de l
 
 ### Ejercicio 17
 Diseñar un algoritmo que lea tres números y encuentre si uno de ellos es la suma de los otros dos, en este caso mostrar `Iguales` de lo contrario mostrar `Son distintos`.
-
-### Ejercicio 18
-Juan cuenta con una pequeña laptop que está muy desactualizada y no cuenta con la aplicación de calculadora, sin embargo, es un pelao muy fino y ve que el ordenador tiene instalado tanto un compilador de Java como de Python, entonces decide realizar una calculadora de forma manual, para esto Juan debe como mínimo cumplir con los siguientes requisitos:
-
-- Leer mínimo dos números por teclado.
-- Hacer sumas entre los dos números.
-- Hacer restas entre los dos números.
-- Hacer multiplicaciones entre los dos números.
-- Hacer divisiones entre los dos números.
-- Mostrar el resultado después de cada operación.
-
-**Pista:** Se sugiere utilizar la estructura `switch case` en Java para mayor eficiencia y utilizar `elif` en Python.
-
-
-
-
-
-
-
-
