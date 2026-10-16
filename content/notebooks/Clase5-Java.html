@@ -230,14 +230,17 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Introducción</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/memoria-variables.html">🧮 Memoria, Variables y Sistemas de Numeración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/operadores-ciclos.html">🔁 Operadores Lógicos y Ciclos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pruebas-escritorio.html">📝 Pruebas de Escritorio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../talleres/taller1.html">📄 Taller 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller1_B.html">📄 Taller — Pruebas de Escritorio</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Tipos de Datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="Clase2.html">📙 Tipos de Datos y Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../talleres/taller2.html">📄 Taller 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
 </ul>
 </details></li>
@@ -514,9 +517,12 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-switch-case">Ejemplos Switch Case</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-12">Ejemplo 12:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-13">Ejemplo 13:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-14">Ejemplo 14:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-12-switch-con-string">Ejemplo 12: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">String</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-13-switch-con-int">Ejemplo 13: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">int</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-14-que-hace-break">Ejemplo 14: ¿Qué hace <code class="docutils literal notranslate"><span class="pre">break</span></code>?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-15-switch-con-char-y-varios-case-juntos">Ejemplo 15: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">char</span></code> y varios <code class="docutils literal notranslate"><span class="pre">case</span></code> juntos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-16-una-expresion-dentro-del-switch">Ejemplo 16: una expresión dentro del <code class="docutils literal notranslate"><span class="pre">switch</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-en-clase-calculadora">Actividad en clase: Calculadora</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
@@ -549,7 +555,11 @@
 <li><p><a class="reference internal" href="#2.3"><span class="xref myst">2.3 - Ejemplos else if</span></a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#3"><span class="xref myst">3 - Ejemplos Switch Case</span></a></p></li>
+<li><p><a class="reference internal" href="#3"><span class="xref myst">3 - Ejemplos Switch Case</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#3.1"><span class="xref myst">3.1 - Actividad en clase</span></a></p></li>
+</ul>
+</li>
 <li><p><a class="reference internal" href="#4"><span class="xref myst">4 - Ejercicios</span></a></p></li>
 </ul>
 <p><a name='1'></a></p>
@@ -1068,30 +1078,51 @@ La semana solo tiene 7 dias
 </section>
 <section id="ejemplos-switch-case">
 <h2>Ejemplos Switch Case<a class="headerlink" href="#ejemplos-switch-case" title="Link to this heading">#</a></h2>
-<section id="ejemplo-12">
-<h3>Ejemplo 12:<a class="headerlink" href="#ejemplo-12" title="Link to this heading">#</a></h3>
+<p>Usa <code class="docutils literal notranslate"><span class="pre">switch</span></code> cuando necesitas comparar <strong>una misma variable (o expresión)</strong> contra varios valores exactos. Puede ser de tipo <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">char</span></code> o <code class="docutils literal notranslate"><span class="pre">String</span></code> (no admite <code class="docutils literal notranslate"><span class="pre">double</span></code>, <code class="docutils literal notranslate"><span class="pre">boolean</span></code> ni rangos como <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">5</span></code>).</p>
+<ul class="simple">
+<li><p>Cada <code class="docutils literal notranslate"><span class="pre">case</span></code> es un valor posible.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">break</span></code> termina el <code class="docutils literal notranslate"><span class="pre">switch</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">default</span></code> se ejecuta cuando ningún <code class="docutils literal notranslate"><span class="pre">case</span></code> coincide.</p></li>
+</ul>
+<section id="ejemplo-12-switch-con-string">
+<h3>Ejemplo 12: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">String</span></code><a class="headerlink" href="#ejemplo-12-switch-con-string" title="Link to this heading">#</a></h3>
 <p>Realizar un programa que pida al usuario un tipo de vehiculo (<code class="docutils literal notranslate"><span class="pre">Carro</span></code>, <code class="docutils literal notranslate"><span class="pre">Camion</span></code>, <code class="docutils literal notranslate"><span class="pre">Moto</span></code>) y que imprima a que hora del dia puede circular dependiendo del tipo ingresado. Si el usuario ingresa un tipo de vehiculo distinto debe mostrar un mensaje indicando el error.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer el tipo de vehiculo</span>
-<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Leer el vehiculo (String)</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Leer el vehiculo (String)</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"En que vehiculo se desplaza (Carro/Camion/Moto)"</span><span class="p">);</span>
 <span class="n">String</span><span class="w"> </span><span class="n">tipoVehiculo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
-
-<span class="c1">// Lógica</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>En que vehiculo se desplaza (Carro/Camion/Moto)
+Carro
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Lógica</span>
 <span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">tipoVehiculo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="s">"Carro"</span><span class="p">:</span>
 <span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Puedes pasar de 00:00 a 08:00"</span><span class="p">);</span>
 <span class="w">      </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">"Camion"</span><span class="p">:</span>
+<span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="s">"Camion"</span><span class="p">:</span>
 <span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Puedes pasar de 08:00 a 16:00"</span><span class="p">);</span>
 <span class="w">      </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">"Moto"</span><span class="p">:</span>
+<span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="s">"Moto"</span><span class="p">:</span>
 <span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Puedes pasar de 16:00 a 24:00"</span><span class="p">);</span>
 <span class="w">      </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">   </span><span class="k">default</span><span class="p">:</span>
 <span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"No se puede pasar con un "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tipoVehiculo</span><span class="p">);</span>
 <span class="w">      </span><span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1099,169 +1130,250 @@ La semana solo tiene 7 dias
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>En que vehiculo se desplaza (Carro/Camion/Moto)
-Carro
-Puedes pasar de 00:00 a 08:00
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Puedes pasar de 00:00 a 08:00
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="ejemplo-13">
-<h3>Ejemplo 13:<a class="headerlink" href="#ejemplo-13" title="Link to this heading">#</a></h3>
-<p>Realizar un programa que simule el juego “Piedra, Papel o Tijera”. El usuario debe ingresar <code class="docutils literal notranslate"><span class="pre">Piedra</span></code>, <code class="docutils literal notranslate"><span class="pre">Papel</span></code> o <code class="docutils literal notranslate"><span class="pre">Tijera</span></code>, y competirá con la computadora.</p>
-<p>El usuario debe ingresar un numero entero (<code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">Piedra</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">=</span> <span class="pre">Papel</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">=</span> <span class="pre">Tijera</span></code>) e imprimir uno de los tres posibles resultados (ganar, perder o empatar).</p>
+<section id="ejemplo-13-switch-con-int">
+<h3>Ejemplo 13: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">int</span></code><a class="headerlink" href="#ejemplo-13-switch-con-int" title="Link to this heading">#</a></h3>
+<p>Realizar un programa que pida al usuario el plan de almacenamiento en la nube que desea (<code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span></code> o <code class="docutils literal notranslate"><span class="pre">3</span></code>) y que imprima sus características. Si ingresa otro número debe indicar que el plan no existe.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"----------- Piedra, Papel o Tijera -----------"</span><span class="p">);</span>
-
-<span class="c1">// Math.random() genera un numero decimal al azar entre 0.0 y 1.0</span>
-<span class="c1">// la expresión (int) al inicio redondea el numero (lo convierte a entero)</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">seleccionCompu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable de tipo entero (1, 2 o 3) al azar</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La computadora ya escogió..."</span><span class="p">);</span>
-
-<span class="c1">// Leer opción del usuario</span>
-<span class="n">Scanner</span><span class="w"> </span><span class="n">teclado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese su opción [1=Piedra, 2=Papel, 3=Tijera]: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">seleccionUsuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="c1">// Lógica</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La computadora habia escogido: "</span><span class="p">);</span>
-<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionCompu</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Piedra"</span><span class="p">);</span>
-<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionUsuario</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Empate!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Usted gana!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La computadora gana!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">default</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Su opción no es valida, vuelva a intentarlo"</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Papel"</span><span class="p">);</span>
-<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionUsuario</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La computadora gana!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Empate!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Usted gana!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">default</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Su opción no es valida, vuelva a intentarlo"</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Tijera"</span><span class="p">);</span>
-<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionUsuario</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Usted gana!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La computadora gana!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Empate!"</span><span class="p">);</span>
-<span class="w">                </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="k">default</span><span class="p">:</span>
-<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Su opción no es valida, vuelva a intentarlo"</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Leer el plan (int)</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Elige tu plan de almacenamiento (1 = Gratis, 2 = Estándar, 3 = Premium)"</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">plan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----------- Piedra, Papel o Tijera -----------
-La computadora ya escogió...
-Ingrese su opción [1=Piedra, 2=Papel, 3=Tijera]: 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elige tu plan de almacenamiento (1 = Gratis, 2 = Estándar, 3 = Premium)
 2
-La computadora habia escogido: 
-Papel
-Empate!
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="ejemplo-14">
-<h3>Ejemplo 14:<a class="headerlink" href="#ejemplo-14" title="Link to this heading">#</a></h3>
-<p>Hacer un programa que simule un cajero automático con un saldo inicial de <span class="math notranslate nohighlight">\(1000\)</span> dólares, con el siguiente menú de opciones:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Ingresar dinero a la cuenta.
-2. Retirar dinero de la cuenta.
-3. Salir.
-</pre></div>
-</div>
-<p>Para cada opción debe imprimir un mensaje. Si el saldo a retirar es mayor al que tiene en la cuenta tambien debe indicarlo en pantalla.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Definir variables</span>
-<span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">opcion</span><span class="p">;</span>
-<span class="kt">double</span><span class="w"> </span><span class="n">ingreso</span><span class="p">,</span><span class="w"> </span><span class="n">saldoActual</span><span class="p">,</span><span class="w"> </span><span class="n">retiro</span><span class="p">;</span>
-
-<span class="c1">// Mostrar menú</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"1. Ingresar dinero a la cuenta"</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"2. Retirar dinero de la cuenta."</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"3. Salir."</span><span class="p">);</span>
-
-<span class="c1">// Variable de tipo Scanner para leer otras variables</span>
-<span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Leer la opción (1, 2 o 3)</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Ingresar la opción: "</span><span class="p">);</span>
-<span class="n">opcion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="c1">// Lógica</span>
-<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">opcion</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Lógica</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">plan</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese la cantidad que desea ingresar en la cuenta: "</span><span class="p">);</span>
-<span class="w">        </span><span class="n">ingreso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-<span class="w">        </span><span class="n">saldoActual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ingreso</span><span class="p">;</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El saldo actual es: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">saldoActual</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Gratis: 15 GB por $0 al mes"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">:</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Ingrese la cantidad que desea retirar: "</span><span class="p">);</span>
-<span class="w">        </span><span class="n">retiro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">retiro</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">saldoActual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">retiro</span><span class="p">;</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Dinero en la cuenta: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">saldoActual</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"No cuenta con el saldo suficiente"</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Estándar: 100 GB por $9.900 al mes"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">break</span><span class="p">;</span>
 <span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hasta luego..."</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Premium: 1 TB por $29.900 al mes"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">break</span><span class="p">;</span>
 <span class="w">    </span><span class="k">default</span><span class="p">:</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Opción no valida, intente de nuevo."</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El plan "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">plan</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" no existe"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1. Ingresar dinero a la cuenta
-2. Retirar dinero de la cuenta.
-3. Salir.
-Ingresar la opción: 1
-Ingrese la cantidad que desea ingresar en la cuenta: 
-12300
-El saldo actual es: 13300.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Plan Estándar: 100 GB por $9.900 al mes
 </pre></div>
 </div>
 </div>
 </div>
+</section>
+<section id="ejemplo-14-que-hace-break">
+<h3>Ejemplo 14: ¿Qué hace <code class="docutils literal notranslate"><span class="pre">break</span></code>?<a class="headerlink" href="#ejemplo-14-que-hace-break" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">break</span></code> le dice a Java que <strong>salga del <code class="docutils literal notranslate"><span class="pre">switch</span></code></strong>. Si lo olvidas, Java no se detiene: sigue ejecutando todos los <code class="docutils literal notranslate"><span class="pre">case</span></code> que vienen después, aunque no coincidan (esto se llama <em>fall-through</em>, o «caída»).</p>
+<p>Tomemos el <code class="docutils literal notranslate"><span class="pre">switch</span></code> del ejemplo anterior y quitémosle todos los <code class="docutils literal notranslate"><span class="pre">break</span></code>. Elegimos el plan 2:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// SIN break</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">planElegido</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">planElegido</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Gratis: 15 GB por $0 al mes"</span><span class="p">);</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Estándar: 100 GB por $9.900 al mes"</span><span class="p">);</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Premium: 1 TB por $29.900 al mes"</span><span class="p">);</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El plan "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">planElegido</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" no existe"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Plan Estándar: 100 GB por $9.900 al mes
+Plan Premium: 1 TB por $29.900 al mes
+El plan 2 no existe
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se eligió el plan 2 y se imprimieron <strong>tres</strong> mensajes: Java entró al <code class="docutils literal notranslate"><span class="pre">case</span> <span class="pre">2</span></code> y, como no había <code class="docutils literal notranslate"><span class="pre">break</span></code>, siguió con el <code class="docutils literal notranslate"><span class="pre">case</span> <span class="pre">3</span></code> e incluso con el <code class="docutils literal notranslate"><span class="pre">default</span></code>.</p>
+<p>Ahora el mismo <code class="docutils literal notranslate"><span class="pre">switch</span></code> <strong>con</strong> <code class="docutils literal notranslate"><span class="pre">break</span></code> en cada <code class="docutils literal notranslate"><span class="pre">case</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// CON break</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">opcionElegida</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">opcionElegida</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Gratis: 15 GB por $0 al mes"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Estándar: 100 GB por $9.900 al mes"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Plan Premium: 1 TB por $29.900 al mes"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El plan "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">opcionElegida</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" no existe"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Plan Estándar: 100 GB por $9.900 al mes
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-15-switch-con-char-y-varios-case-juntos">
+<h3>Ejemplo 15: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">char</span></code> y varios <code class="docutils literal notranslate"><span class="pre">case</span></code> juntos<a class="headerlink" href="#ejemplo-15-switch-con-char-y-varios-case-juntos" title="Link to this heading">#</a></h3>
+<p>Realizar un programa que pida al usuario confirmar una operación con <code class="docutils literal notranslate"><span class="pre">S</span></code> (sí) o <code class="docutils literal notranslate"><span class="pre">N</span></code> (no). Debe aceptar la letra en mayúscula o en minúscula. Si ingresa otra letra debe indicar que la respuesta no es válida.</p>
+<p>Para leer un <code class="docutils literal notranslate"><span class="pre">char</span></code> se usa <code class="docutils literal notranslate"><span class="pre">scn.next().charAt(0)</span></code>: toma el primer carácter de lo que escribe el usuario. Y cuando varios <code class="docutils literal notranslate"><span class="pre">case</span></code> deben hacer lo mismo se escriben seguidos, <strong>sin <code class="docutils literal notranslate"><span class="pre">break</span></code> entre ellos</strong> (a propósito); el <code class="docutils literal notranslate"><span class="pre">break</span></code> va al final del grupo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Leer la respuesta (char)</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"¿Desea confirmar la operación? (S/N)"</span><span class="p">);</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">next</span><span class="p">().</span><span class="na">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>¿Desea confirmar la operación? (S/N)
+s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Lógica</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">respuesta</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="sc">'s'</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="sc">'S'</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Operación confirmada"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="sc">'n'</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="sc">'N'</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Operación cancelada"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Respuesta no válida, use S o N"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Operación confirmada
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-16-una-expresion-dentro-del-switch">
+<h3>Ejemplo 16: una expresión dentro del <code class="docutils literal notranslate"><span class="pre">switch</span></code><a class="headerlink" href="#ejemplo-16-una-expresion-dentro-del-switch" title="Link to this heading">#</a></h3>
+<p>Entre los paréntesis del <code class="docutils literal notranslate"><span class="pre">switch</span></code> no solo puede ir una variable: también una expresión. Realizar un programa que pida la nota de un estudiante (de <span class="math notranslate nohighlight">\(0.0\)</span> a <span class="math notranslate nohighlight">\(5.0\)</span>) y muestre su desempeño según la parte entera de la nota: <code class="docutils literal notranslate"><span class="pre">5</span></code> es Excelente, <code class="docutils literal notranslate"><span class="pre">4</span></code> es Bueno, <code class="docutils literal notranslate"><span class="pre">3</span></code> es Aceptable y cualquier otro valor es Insuficiente.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Leer la nota (double)</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese la nota (0.0 a 5.0): "</span><span class="p">);</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">nota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese la nota (0.0 a 5.0): 
+4.7
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// (int) nota descarta los decimales: 4.7 se convierte en 4</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">nota</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Excelente"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Bueno"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Aceptable"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Insuficiente"</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bueno
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='3.1'></a></p>
+</section>
+<section id="actividad-en-clase-calculadora">
+<h3>Actividad en clase: Calculadora<a class="headerlink" href="#actividad-en-clase-calculadora" title="Link to this heading">#</a></h3>
+<p>Implementa una calculadora que pida <strong>dos números</strong> (<code class="docutils literal notranslate"><span class="pre">double</span></code>) y un <strong>operador</strong> (<code class="docutils literal notranslate"><span class="pre">char</span></code>), y muestre el resultado de la operación.</p>
+<p>Los operadores válidos son <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">/</span></code>, <code class="docutils literal notranslate"><span class="pre">%</span></code> y <code class="docutils literal notranslate"><span class="pre">^</span></code> (potencia).</p>
+<ul class="simple">
+<li><p>Si el operador no es ninguno de esos, muestra un mensaje indicándolo.</p></li>
+<li><p>Si el operador es <code class="docutils literal notranslate"><span class="pre">/</span></code> y el segundo número es <code class="docutils literal notranslate"><span class="pre">0</span></code>, muestra <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">se</span> <span class="pre">puede</span> <span class="pre">dividir</span> <span class="pre">entre</span> <span class="pre">cero</span></code> en lugar del resultado.</p></li>
+<li><p>Para leer el operador usa <code class="docutils literal notranslate"><span class="pre">scn.next().charAt(0)</span></code>, como en el Ejemplo 15. Para la potencia usa <code class="docutils literal notranslate"><span class="pre">Math.pow</span></code>.</p></li>
+</ul>
+<p>Prueba tu programa con estos datos: <code class="docutils literal notranslate"><span class="pre">8</span> <span class="pre">+</span> <span class="pre">5</span></code>, <code class="docutils literal notranslate"><span class="pre">17</span> <span class="pre">%</span> <span class="pre">5</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">^</span> <span class="pre">10</span></code>, <code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">/</span> <span class="pre">0</span></code> y <code class="docutils literal notranslate"><span class="pre">9</span> <span class="pre">x</span> <span class="pre">3</span></code>.</p>
 <p><a name='4'></a></p>
 </section>
 </section>
@@ -1381,9 +1493,12 @@ El saldo actual es: 13300.0
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-switch-case">Ejemplos Switch Case</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-12">Ejemplo 12:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-13">Ejemplo 13:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-14">Ejemplo 14:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-12-switch-con-string">Ejemplo 12: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">String</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-13-switch-con-int">Ejemplo 13: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">int</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-14-que-hace-break">Ejemplo 14: ¿Qué hace <code class="docutils literal notranslate"><span class="pre">break</span></code>?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-15-switch-con-char-y-varios-case-juntos">Ejemplo 15: <code class="docutils literal notranslate"><span class="pre">switch</span></code> con <code class="docutils literal notranslate"><span class="pre">char</span></code> y varios <code class="docutils literal notranslate"><span class="pre">case</span></code> juntos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-16-una-expresion-dentro-del-switch">Ejemplo 16: una expresión dentro del <code class="docutils literal notranslate"><span class="pre">switch</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-en-clase-calculadora">Actividad en clase: Calculadora</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
