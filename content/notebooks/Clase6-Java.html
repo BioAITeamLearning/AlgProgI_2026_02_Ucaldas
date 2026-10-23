@@ -230,14 +230,17 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Introducción</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pensamiento-algoritmos.html">🧠 Resolución de Problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/memoria-variables.html">🧮 Memoria, Variables y Sistemas de Numeración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/operadores-ciclos.html">🔁 Operadores Lógicos y Ciclos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/pruebas-escritorio.html">📝 Pruebas de Escritorio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../talleres/taller1.html">📄 Taller 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller1_B.html">📄 Taller — Pruebas de Escritorio</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Tipos de Datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="Clase2.html">📙 Tipos de Datos y Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../talleres/taller2.html">📄 Taller 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
 </ul>
 </details></li>
@@ -502,16 +505,10 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-for-con-condicionales">Ejemplos <code class="docutils literal notranslate"><span class="pre">for</span></code> con condicionales</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-6">Ejemplo 6:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-7">Ejemplo 7:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-8">Ejemplo 8:</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-for-anidados">Ejemplos <code class="docutils literal notranslate"><span class="pre">for</span></code> anidados</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-9">Ejemplo 9:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-10">Ejemplo 10:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otra-forma">Otra forma</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-11">Ejemplo 11:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-8">Ejemplo 8:</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recorrer-un-string-en-java">Recorrer un String en Java</a></li>
@@ -521,7 +518,6 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio 3:</a></li>
 </ul>
 </li>
 </ul>
@@ -624,66 +620,11 @@ Proxy kernel installed. Go to 'Runtime &gt; Change runtime type' and select 'jav
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-50
--48
--46
--44
--42
--40
--38
--36
--34
--32
--30
--28
--26
--24
--22
--20
--18
--16
--14
--12
--10
--8
--6
--4
--2
-0
-2
-4
-6
-8
-10
-12
-14
-16
-18
-20
-22
-24
-26
-28
-30
-32
-34
-36
-38
-40
-42
-44
-46
-48
-50
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="ejemplo-2">
 <h4>Ejemplo 2:<a class="headerlink" href="#ejemplo-2" title="Link to this heading">#</a></h4>
-<p>Realizar un programa que dado un rango de numeros ingresado por el usuario imprima con paso igual a <span class="math notranslate nohighlight">\(5\)</span>.</p>
+<p>Realizar un programa que dado un rango de numeros ingresado por el usuario, imprima desde el numero incial hasta el final con un paso de iteración igual a <span class="math notranslate nohighlight">\(5\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
@@ -694,35 +635,10 @@ Proxy kernel installed. Go to 'Runtime &gt; Change runtime type' and select 'jav
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el numero final del rango: "</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
 
-<span class="c1">// Validación con ciclo while (se explica en la siguiente clase)</span>
-<span class="k">while</span><span class="p">(</span><span class="n">start</span><span class="o">&gt;=</span><span class="n">end</span><span class="p">){</span>
-<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese NUEVAMENTE el numero inicial del rango: "</span><span class="p">);</span>
-<span class="w">  </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese NUEVAMENTE el numero final del rango: "</span><span class="p">);</span>
-<span class="w">  </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-<span class="p">}</span>
 <span class="c1">// Ciclo</span>
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="o">=</span><span class="n">start</span><span class="p">;</span><span class="w"> </span><span class="n">num</span><span class="o">&lt;=</span><span class="n">end</span><span class="p">;</span><span class="w"> </span><span class="n">num</span><span class="o">+=</span><span class="mi">5</span><span class="p">){</span>
 <span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
 <span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el numero inicial del rango: 
-19
-Ingrese el numero final del rango: 
-9
-Ingrese NUEVAMENTE el numero inicial del rango: 
-20
-Ingrese NUEVAMENTE el numero final del rango: 
-1
-Ingrese NUEVAMENTE el numero inicial del rango: 
-3
-Ingrese NUEVAMENTE el numero final del rango: 
-10
-3
-8
 </pre></div>
 </div>
 </div>
@@ -742,33 +658,32 @@ Ingrese NUEVAMENTE el numero final del rango:
 
 <span class="c1">// Ciclo</span>
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" x "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="o">*</span><span class="n">num</span><span class="p">);</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" x "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="o">*</span><span class="n">num</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el numero de la tabla: 
-5
-1 x 5 = 5
-2 x 5 = 10
-3 x 5 = 15
-4 x 5 = 20
-5 x 5 = 25
-6 x 5 = 30
-7 x 5 = 35
-8 x 5 = 40
-9 x 5 = 45
-10 x 5 = 50
+2
+1 x 2 = 2
+2 x 2 = 4
+3 x 2 = 6
+4 x 2 = 8
+5 x 2 = 10
+6 x 2 = 12
+7 x 2 = 14
+8 x 2 = 16
+9 x 2 = 18
+10 x 2 = 20
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">;</span>
-<span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
-<span class="n">m</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="n">m</span><span class="p">);</span>
 <span class="n">String</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
 <span class="n">String</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
@@ -796,38 +711,12 @@ Ingrese NUEVAMENTE el numero final del rango:
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
 
 <span class="c1">// Leer numeros</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el numero de la tabla: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el numero final: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">//TU CODIGO ACÁ</span>
 
 <span class="c1">// Ciclo</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">end</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">){</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" x "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="o">*</span><span class="n">num</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el numero de la tabla: 
-6
-Ingrese el numero final: 
-15
-15 x 6 = 90
-14 x 6 = 84
-13 x 6 = 78
-12 x 6 = 72
-11 x 6 = 66
-10 x 6 = 60
-9 x 6 = 54
-8 x 6 = 48
-7 x 6 = 42
-6 x 6 = 36
-5 x 6 = 30
-4 x 6 = 24
-3 x 6 = 18
-2 x 6 = 12
-1 x 6 = 6
+
+<span class="c1">// TU CODIGO ACÁ</span>
 </pre></div>
 </div>
 </div>
@@ -932,54 +821,6 @@ Numeros pares entre 2 y 10:
 </section>
 <section id="ejemplo-7">
 <h4>Ejemplo 7:<a class="headerlink" href="#ejemplo-7" title="Link to this heading">#</a></h4>
-<p>Realizar un programa que imprima el cubo de los numeros entre 15 y 30. Si el cubo es mayor a <span class="math notranslate nohighlight">\(20000\)</span> debe comenzar a imprimir <code class="docutils literal notranslate"><span class="pre">&quot;¿Capital</span> <span class="pre">de</span> <span class="pre">Bangladesh?&quot;</span></code> y ademas si es mayor a <span class="math notranslate nohighlight">\(20000\)</span> y el numero es impar debe imprimir <code class="docutils literal notranslate"><span class="pre">&quot;Crunchis&quot;</span></code>.</p>
-<p><strong>Nota.</strong> Debe imprimir el cubo de <code class="docutils literal notranslate"><span class="pre">i</span></code> es <code class="docutils literal notranslate"><span class="pre">x</span></code>. Donde <code class="docutils literal notranslate"><span class="pre">i</span></code> es la variable indice y <code class="docutils literal notranslate"><span class="pre">x</span></code> es el resultado de la operación para cada <code class="docutils literal notranslate"><span class="pre">i</span></code>.</p>
-<ul class="simple">
-<li><p>La expresión <code class="docutils literal notranslate"><span class="pre">(int)</span></code> en <code class="docutils literal notranslate"><span class="pre">(int)</span> <span class="pre">Math.pow(i,</span> <span class="pre">3)</span></code> se realiza para convertir un tipo de dato <code class="docutils literal notranslate"><span class="pre">double</span></code> retornado por <code class="docutils literal notranslate"><span class="pre">Math.pow(i,</span> <span class="pre">3)</span></code> a un entero. A esto se le denomina casteo o casting.</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">15</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">30</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">cubo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"El cubo de "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" es "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cubo</span><span class="p">);</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cubo</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">20000</span><span class="p">){</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  ¿Capital de Bangladesh?"</span><span class="p">);</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cubo</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  Crunchis"</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El cubo de 15 es 3375
-El cubo de 16 es 4096
-El cubo de 17 es 4913
-El cubo de 18 es 5832
-El cubo de 19 es 6859
-El cubo de 20 es 8000
-El cubo de 21 es 9261
-El cubo de 22 es 10648
-El cubo de 23 es 12167
-El cubo de 24 es 13824
-El cubo de 25 es 15625
-El cubo de 26 es 17576
-El cubo de 27 es 19683
-El cubo de 28 es 21952
-  ¿Capital de Bangladesh?
-El cubo de 29 es 24389
-  ¿Capital de Bangladesh?
-  Crunchis
-El cubo de 30 es 27000
-  ¿Capital de Bangladesh?
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="ejemplo-8">
-<h4>Ejemplo 8:<a class="headerlink" href="#ejemplo-8" title="Link to this heading">#</a></h4>
 <p>Realizar un programa que calcule la siguiente sumatoria:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1017,8 +858,8 @@ El resultado final es 2275
 </section>
 <section id="ejemplos-for-anidados">
 <h3>Ejemplos <code class="docutils literal notranslate"><span class="pre">for</span></code> anidados<a class="headerlink" href="#ejemplos-for-anidados" title="Link to this heading">#</a></h3>
-<section id="ejemplo-9">
-<h4>Ejemplo 9:<a class="headerlink" href="#ejemplo-9" title="Link to this heading">#</a></h4>
+<section id="ejemplo-8">
+<h4>Ejemplo 8:<a class="headerlink" href="#ejemplo-8" title="Link to this heading">#</a></h4>
 <p>Realice un programa que imprima un cuadrado de celdas blancas y negras como la siguiente figura.</p>
 <img src="https://www.w3resource.com/w3r_images/chess-board.png" width=150>
 <p>Las celdas blancas se representan con <span class="math notranslate nohighlight">\(1\)</span> y las celdas negras con <span class="math notranslate nohighlight">\(0\)</span>. El usuario debe ingresar el tamaño del cuadrado.</p>
@@ -1059,185 +900,6 @@ El resultado final es 2275
 </div>
 </div>
 </div>
-<p>Otra forma</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Leer numero</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el tamaño del cuadrado: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="n">String</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
-
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">fil</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">fil</span><span class="o">&lt;=</span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="n">fil</span><span class="o">++</span><span class="p">){</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">&lt;=</span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">++</span><span class="p">){</span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">fil</span><span class="w"> </span><span class="o">%</span><span class="mi">2</span><span class="o">!=</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="k">if</span><span class="p">(</span><span class="n">col</span><span class="w"> </span><span class="o">%</span><span class="mi">2</span><span class="o">!=</span><span class="mi">0</span><span class="p">){</span>
-<span class="w">            </span><span class="n">line</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">"0 "</span><span class="p">;</span>
-<span class="w">          </span><span class="p">}</span>
-<span class="w">          </span><span class="k">else</span><span class="p">{</span>
-<span class="w">            </span><span class="n">line</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">"1 "</span><span class="p">;</span>
-<span class="w">          </span><span class="p">}</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">         </span><span class="k">else</span><span class="p">{</span>
-<span class="w">           </span><span class="k">if</span><span class="p">(</span><span class="n">col</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
-<span class="w">             </span><span class="n">line</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">"0 "</span><span class="p">;</span>
-<span class="w">           </span><span class="p">}</span>
-<span class="w">           </span><span class="k">else</span><span class="p">{</span>
-<span class="w">             </span><span class="n">line</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">"1 "</span><span class="p">;</span>
-<span class="w">           </span><span class="p">}</span>
-<span class="w">         </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
-<span class="w">    </span><span class="n">line</span><span class="o">=</span><span class="s">""</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el tamaño del cuadrado: 
-4
-0 1 0 1 
-1 0 1 0 
-0 1 0 1 
-1 0 1 0 
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="ejemplo-10">
-<h4>Ejemplo 10:<a class="headerlink" href="#ejemplo-10" title="Link to this heading">#</a></h4>
-<p>Realice un programa que imprima la siguiente figura. El usuario debe ingresar el ancho de la figura, en este caso el ancho es igual a <span class="math notranslate nohighlight">\(11\)</span>.</p>
-<p><img alt="image.png" src="data:image/png;base64,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" /></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Leer numero</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el ancho de la figura: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">ancho</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="n">String</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
-
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">fil</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">fil</span><span class="o">&lt;=</span><span class="n">ancho</span><span class="p">;</span><span class="w"> </span><span class="n">fil</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="n">fil</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">&lt;=</span><span class="n">fil</span><span class="o">*</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">+=</span><span class="n">fil</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">line</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"  "</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
-<span class="w">    </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el ancho de la figura: 
-11
-1  2  3  4  5  6  7  8  9  10  
-2  4  6  8  10  12  14  16  18  20  
-3  6  9  12  15  18  21  24  27  30  
-4  8  12  16  20  24  28  32  36  40  
-5  10  15  20  25  30  35  40  45  50  
-6  12  18  24  30  36  42  48  54  60  
-7  14  21  28  35  42  49  56  63  70  
-8  16  24  32  40  48  56  64  72  80  
-9  18  27  36  45  54  63  72  81  90  
-10  20  30  40  50  60  70  80  90  100  
-11  22  33  44  55  66  77  88  99  110  
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="otra-forma">
-<h3>Otra forma<a class="headerlink" href="#otra-forma" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Leer numero</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese el ancho de la figura: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">ancho</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="n">String</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
-
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">fil</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">fil</span><span class="o">&lt;=</span><span class="n">ancho</span><span class="p">;</span><span class="w"> </span><span class="n">fil</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">&lt;=</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">line</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">fil</span><span class="o">*</span><span class="n">col</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"  "</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
-<span class="w">    </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el ancho de la figura: 
-11
-1  2  3  4  5  6  7  8  9  10  
-2  4  6  8  10  12  14  16  18  20  
-3  6  9  12  15  18  21  24  27  30  
-4  8  12  16  20  24  28  32  36  40  
-5  10  15  20  25  30  35  40  45  50  
-6  12  18  24  30  36  42  48  54  60  
-7  14  21  28  35  42  49  56  63  70  
-8  16  24  32  40  48  56  64  72  80  
-9  18  27  36  45  54  63  72  81  90  
-10  20  30  40  50  60  70  80  90  100  
-11  22  33  44  55  66  77  88  99  110  
-</pre></div>
-</div>
-</div>
-</div>
-<section id="ejemplo-11">
-<h4>Ejemplo 11:<a class="headerlink" href="#ejemplo-11" title="Link to this heading">#</a></h4>
-<p>Realizar un programa que imprima la siguiente figura</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1
-2 3
-4 5 6
-7 8 9 10
-11 12 13 14 15
-</pre></div>
-</div>
-<p>El usuario debe ingresar el numero de filas/lineas que se van a imprimir.</p>
-<p>En este ejemplo se usa <code class="docutils literal notranslate"><span class="pre">System.out.print()</span></code>, que es similar a <code class="docutils literal notranslate"><span class="pre">System.out.println()</span></code>, con la diferencia que no da un salto de linea.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-
-<span class="c1">// Leer numero</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ingrese las filas: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">filas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">cont</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">filas</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">&lt;=</span><span class="n">filas</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">cont</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" "</span><span class="p">);</span>
-<span class="w">        </span><span class="n">cont</span><span class="o">++</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">	  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese las filas: 
-6
-
-1 
-2 3 
-4 5 6 
-7 8 9 10 
-11 12 13 14 15 
-16 17 18 19 20 21 
-</pre></div>
-</div>
-</div>
-</div>
 <p><a name="3"></a></p>
 </section>
 </section>
@@ -1263,18 +925,6 @@ nombre.toCharArray()
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C
-u
-a
-d
-r
-a
-d
-o
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1286,26 +936,6 @@ o
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">letra</span><span class="p">:</span><span class="w"> </span><span class="n">frase</span><span class="p">.</span><span class="na">toCharArray</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">letra</span><span class="p">);</span>
 <span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese una frase: 
-Hola rei lindo
-H
-o
-l
-a
- 
-r
-e
-i
- 
-l
-i
-n
-d
-o
 </pre></div>
 </div>
 </div>
@@ -1335,17 +965,6 @@ o
 </section>
 <section id="ejercicio-3">
 <h3>Ejercicio 3:<a class="headerlink" href="#ejercicio-3" title="Link to this heading">#</a></h3>
-<p>Realizar un programa que imprima la siguiente figura</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1
-2 2
-3 3 3
-4 4 4 4
-</pre></div>
-</div>
-<p>El usuario debe ingresar el numero de filas que se imprimirán.</p>
-</section>
-<section id="id1">
-<h3>Ejercicio 3:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Realizar un programa que imprima la siguiente figura</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1
 2 2
@@ -1439,16 +1058,10 @@ o
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-for-con-condicionales">Ejemplos <code class="docutils literal notranslate"><span class="pre">for</span></code> con condicionales</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-6">Ejemplo 6:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-7">Ejemplo 7:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-8">Ejemplo 8:</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-for-anidados">Ejemplos <code class="docutils literal notranslate"><span class="pre">for</span></code> anidados</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-9">Ejemplo 9:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-10">Ejemplo 10:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otra-forma">Otra forma</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-11">Ejemplo 11:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-8">Ejemplo 8:</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recorrer-un-string-en-java">Recorrer un String en Java</a></li>
@@ -1458,7 +1071,6 @@ o
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio 3:</a></li>
 </ul>
 </li>
 </ul>
