@@ -51,6 +51,7 @@ parts:
   - file: content/Unidad7
     sections:
     - file: content/notebooks/Clase7-Java
+    - file: content/notebooks/Clase7-Anidados-Java
     - file: content/resources/clase-7/recursos-clase7
     - file: content/talleres/taller7
     - file: content/quices/quiz6
