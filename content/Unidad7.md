@@ -17,6 +17,7 @@ kernelspec:
 - Estructura `Foreach` para optimizar y abordar problemas más especificos
 - Estructura `While` y su diagrama de flujo
 - Estructura `Do-While` y `Ciclos anhidados`
+- Ciclos infinitos y la instrucción `break`
 
 
 ## Estructura `foreach` para optimizar y abordar problemas más especificos

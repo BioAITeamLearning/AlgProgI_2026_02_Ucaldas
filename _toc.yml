@@ -54,6 +54,7 @@ parts:
     - file: content/notebooks/Clase7-Anidados-Java
     - file: content/resources/clase-7/recursos-clase7
     - file: content/talleres/taller7
+    - file: content/talleres/taller7_anidados
     - file: content/quices/quiz6
   - file: content/Unidad8
     sections:
