@@ -97,7 +97,7 @@ De hecho existen una infinidad de posibilidades, cada vez es más común encontr
 
 
 :::{note}
-Puedes acceder al notebook en la siguiente página (*Ciclos `while` y `do-while`*)
+Puedes acceder a los notebooks en las siguientes páginas (*Ciclos `while` y `do-while`* y *Ciclos anidados*)
 :::
 
 ## Presentación Completa
