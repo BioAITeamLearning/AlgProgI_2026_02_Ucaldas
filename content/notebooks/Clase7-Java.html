@@ -805,116 +805,16 @@ while (i &lt;= 5) {
 <p class="admonition-title">Si tu ciclo no termina</p>
 <p>En Colab detén la ejecución con el botón cuadrado de la celda o con <code>Entorno de ejecución</code> &gt; <code>Interrumpir la ejecución</code>.</p>
 </div>
-<p><strong>Ejemplo 1.</strong></p>
+<p><strong>Ejercicio 1.</strong></p>
 <p>Realiza un programa que sume los números que ingrese el usuario y que termine cuando el usuario ingrese <span class="math notranslate nohighlight">\(0\)</span>. Al final debe mostrar la suma total.</p>
-<p>No sabemos cuántos números va a ingresar, así que usamos <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">(true)</span></code> y salimos con <code class="docutils literal notranslate"><span class="pre">break</span></code> cuando llegue el <span class="math notranslate nohighlight">\(0\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Ingrese un número (0 para terminar): "</span><span class="p">);</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">numero</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="n">suma</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">numero</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"La suma total es: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">suma</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese un número (0 para terminar): 5
-Ingrese un número (0 para terminar): 10
-Ingrese un número (0 para terminar): 3
-Ingrese un número (0 para terminar): 0
-La suma total es: 18
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Ejemplo 2.</strong></p>
+<p><strong>Ejercicio 2.</strong></p>
 <p>Validar datos: pide la edad de una persona y vuelve a pedirla mientras no esté entre <span class="math notranslate nohighlight">\(0\)</span> y <span class="math notranslate nohighlight">\(120\)</span>. Cuando la edad sea válida, el programa debe mostrarla.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">edad</span><span class="p">;</span>
-
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Ingrese su edad: "</span><span class="p">);</span>
-<span class="w">    </span><span class="n">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">120</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Edad no válida, intente de nuevo."</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Edad registrada: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">edad</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese su edad: -5
-Edad no válida, intente de nuevo.
-Ingrese su edad: 200
-Edad no válida, intente de nuevo.
-Ingrese su edad: 25
-Edad registrada: 25
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Ejemplo 3.</strong></p>
+<p><strong>Ejercicio 3.</strong></p>
 <p>Simula un cajero automático. La cuenta empieza con un saldo de <span class="math notranslate nohighlight">\(\$100.000\)</span>. El programa pide el valor a retirar y repite hasta que el usuario ingrese <span class="math notranslate nohighlight">\(0\)</span>.</p>
 <ul class="simple">
 <li><p>Si el valor es mayor al saldo, muestra <code class="docutils literal notranslate"><span class="pre">Fondos</span> <span class="pre">insuficientes</span></code>.</p></li>
 <li><p>Si no, descuenta el valor y muestra el saldo restante.</p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100000</span><span class="p">;</span>
-
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Valor a retirar (0 para salir): "</span><span class="p">);</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">retiro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">retiro</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">retiro</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">saldo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Fondos insuficientes"</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">saldo</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">retiro</span><span class="p">;</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Saldo restante: $"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">saldo</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Gracias por usar el cajero. Saldo final: $"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">saldo</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Valor a retirar (0 para salir): 30000
-Saldo restante: $70000
-Valor a retirar (0 para salir): 90000
-Fondos insuficientes
-Valor a retirar (0 para salir): 50000
-Saldo restante: $20000
-Valor a retirar (0 para salir): 0
-Gracias por usar el cajero. Saldo final: $20000
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 </section>
 

@@ -280,6 +280,7 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">📙 Ciclos anidados</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-7/recursos-clase7.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../talleres/taller7.html">📄 Taller 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller7_anidados.html">📄 Taller — Ciclos anidados</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quices/quiz6.html">🔨 Quiz 6</a></li>
 </ul>
 </details></li>
@@ -495,6 +496,14 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-librerias">Importar Librerias</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-ciclos-anidados">Ejemplos de ciclos anidados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5:</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -513,6 +522,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="#1"><span class="xref myst">1 - Instalar Java</span></a></p></li>
 <li><p><a class="reference internal" href="#2"><span class="xref myst">2 - Ejemplos de ciclos anidados</span></a></p></li>
+<li><p><a class="reference internal" href="#3"><span class="xref myst">3 - Ejercicios</span></a></p></li>
 </ul>
 <p><a name='1'></a></p>
 </section>
@@ -576,132 +586,69 @@ Proxy kernel installed. Go to 'Runtime &gt; Change runtime type' and select 'jav
 <p>Un ciclo anidado es un ciclo dentro de otro. Por cada vuelta del ciclo de afuera, el ciclo de adentro se ejecuta completo.</p>
 <p><strong>Ejemplo 1.</strong></p>
 <p>Realiza un programa que imprima las tablas de multiplicar desde la del <span class="math notranslate nohighlight">\(1\)</span> hasta la del número que ingrese el usuario. Cada tabla debe llegar hasta <span class="math notranslate nohighlight">\(\times 10\)</span>.</p>
-<p>El ciclo de afuera recorre las tablas y el ciclo de adentro recorre los multiplicadores de <span class="math notranslate nohighlight">\(1\)</span> a <span class="math notranslate nohighlight">\(10\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Ingrese hasta qué tabla desea ver: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">tabla</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">tabla</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">tabla</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Tabla del "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tabla</span><span class="p">);</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">tabla</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" x "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" = "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">tabla</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="p">));</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese hasta qué tabla desea ver: 2
-Tabla del 1
-1 x 1 = 1
-1 x 2 = 2
-1 x 3 = 3
-1 x 4 = 4
-1 x 5 = 5
-1 x 6 = 6
-1 x 7 = 7
-1 x 8 = 8
-1 x 9 = 9
-1 x 10 = 10
-
-Tabla del 2
-2 x 1 = 2
-2 x 2 = 4
-2 x 3 = 6
-2 x 4 = 8
-2 x 5 = 10
-2 x 6 = 12
-2 x 7 = 14
-2 x 8 = 16
-2 x 9 = 18
-2 x 10 = 20
-</pre></div>
-</div>
-</div>
-</div>
 <p><strong>Ejemplo 2.</strong></p>
 <p>Un profesor de ciencia de datos quiere calcular el promedio de notas de sus estudiantes. El usuario debe ingresar cuántos estudiantes hay y cuántas notas tiene cada uno. Luego el programa pide las notas y muestra el promedio de cada estudiante.</p>
-<p>El ciclo de afuera recorre los estudiantes y el ciclo de adentro recorre las notas de ese estudiante. Fíjate que la suma se reinicia en <span class="math notranslate nohighlight">\(0\)</span> para cada estudiante.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Número de estudiantes: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">estudiantes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Notas por estudiante: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">notas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">estudiantes</span><span class="p">;</span><span class="w"> </span><span class="n">e</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">notas</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Estudiante "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">", nota "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">": "</span><span class="p">);</span>
-<span class="w">        </span><span class="n">suma</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Promedio del estudiante "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">": "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">notas</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Número de estudiantes: 2
-Notas por estudiante: 3
-Estudiante 1, nota 1: 4.0
-Estudiante 1, nota 2: 3.5
-Estudiante 1, nota 3: 4.5
-Promedio del estudiante 1: 4.0
-Estudiante 2, nota 1: 2.0
-Estudiante 2, nota 2: 3.0
-Estudiante 2, nota 3: 4.0
-Promedio del estudiante 2: 3.0
-</pre></div>
-</div>
-</div>
-</div>
 <p><strong>Ejemplo 3.</strong></p>
 <p>Los ciclos anidados no tienen que ser del mismo tipo. Realiza un programa que, para cada número desde <span class="math notranslate nohighlight">\(1\)</span> hasta <span class="math notranslate nohighlight">\(n\)</span>, imprima la suma de sus dígitos. El usuario ingresa <span class="math notranslate nohighlight">\(n\)</span>.</p>
 <p>Por ejemplo, para <span class="math notranslate nohighlight">\(12\)</span> la suma de dígitos es <span class="math notranslate nohighlight">\(1 + 2 = 3\)</span>.</p>
-<p>El ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code> recorre los números y el ciclo <code class="docutils literal notranslate"><span class="pre">while</span></code> separa los dígitos de cada uno: <code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">10</span></code> obtiene el último dígito y <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">10</span></code> lo elimina.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Scanner</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Ingrese n: "</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">numero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">numero</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">numero</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numero</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sumaDigitos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">temp</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">sumaDigitos</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-<span class="w">        </span><span class="n">temp</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numero</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" -&gt; suma de dígitos: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sumaDigitos</span><span class="p">);</span>
-<span class="p">}</span>
+<p><strong>Tip.</strong> <code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">10</span></code> obtiene el último dígito de un número y <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">10</span></code> lo elimina.</p>
+<p><a name='3'></a></p>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<section id="ejercicio-1">
+<h3>Ejercicio 1:<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h3>
+<p>Realiza un programa que pida el número de filas y de columnas e imprima un rectángulo de asteriscos de ese tamaño. Por ejemplo, con <span class="math notranslate nohighlight">\(3\)</span> filas y <span class="math notranslate nohighlight">\(5\)</span> columnas:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* * * * *
+* * * * *
+* * * * *
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese n: 15
-1 -&gt; suma de dígitos: 1
-2 -&gt; suma de dígitos: 2
-3 -&gt; suma de dígitos: 3
-4 -&gt; suma de dígitos: 4
-5 -&gt; suma de dígitos: 5
-6 -&gt; suma de dígitos: 6
-7 -&gt; suma de dígitos: 7
-8 -&gt; suma de dígitos: 8
-9 -&gt; suma de dígitos: 9
-10 -&gt; suma de dígitos: 1
-11 -&gt; suma de dígitos: 2
-12 -&gt; suma de dígitos: 3
-13 -&gt; suma de dígitos: 4
-14 -&gt; suma de dígitos: 5
-15 -&gt; suma de dígitos: 6
+</section>
+<section id="ejercicio-2">
+<h3>Ejercicio 2:<a class="headerlink" href="#ejercicio-2" title="Link to this heading">#</a></h3>
+<p>Realiza un programa que pida un número <span class="math notranslate nohighlight">\(n\)</span> e imprima el siguiente triángulo invertido. Por ejemplo, con <span class="math notranslate nohighlight">\(n = 4\)</span>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1 2 3 4
+1 2 3
+1 2
+1
 </pre></div>
 </div>
+</section>
+<section id="ejercicio-3">
+<h3>Ejercicio 3:<a class="headerlink" href="#ejercicio-3" title="Link to this heading">#</a></h3>
+<p>Realiza un programa que imprima una tabla de potencias. El usuario ingresa <span class="math notranslate nohighlight">\(n\)</span> (número de filas) y <span class="math notranslate nohighlight">\(m\)</span> (número de columnas); la fila <span class="math notranslate nohighlight">\(i\)</span> y la columna <span class="math notranslate nohighlight">\(j\)</span> contienen <span class="math notranslate nohighlight">\(i^j\)</span>. Por ejemplo, con <span class="math notranslate nohighlight">\(n = 4\)</span> y <span class="math notranslate nohighlight">\(m = 3\)</span>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1   1   1
+2   4   8
+3   9   27
+4   16  64
+</pre></div>
 </div>
+</section>
+<section id="ejercicio-4">
+<h3>Ejercicio 4:<a class="headerlink" href="#ejercicio-4" title="Link to this heading">#</a></h3>
+<p>Se lanzan dos dados de seis caras. El usuario ingresa un valor objetivo (entre <span class="math notranslate nohighlight">\(2\)</span> y <span class="math notranslate nohighlight">\(12\)</span>) y el programa debe imprimir todas las combinaciones <span class="math notranslate nohighlight">\((d_1, d_2)\)</span> cuya suma sea igual a ese valor, y al final cuántas son. Por ejemplo, con objetivo <span class="math notranslate nohighlight">\(8\)</span>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(2, 6)
+(3, 5)
+(4, 4)
+(5, 3)
+(6, 2)
+Combinaciones: 5
+</pre></div>
 </div>
+</section>
+<section id="ejercicio-5">
+<h3>Ejercicio 5:<a class="headerlink" href="#ejercicio-5" title="Link to this heading">#</a></h3>
+<p>Realiza un programa que imprima el calendario de un mes. El usuario ingresa cuántos días tiene el mes y en qué día de la semana empieza (<span class="math notranslate nohighlight">\(1\)</span> = lunes, <span class="math notranslate nohighlight">\(2\)</span> = martes, …, <span class="math notranslate nohighlight">\(7\)</span> = domingo). Cada semana va en una fila. Por ejemplo, para un mes de <span class="math notranslate nohighlight">\(30\)</span> días que empieza en miércoles (<span class="math notranslate nohighlight">\(3\)</span>):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>L   M   X   J   V   S   D
+        1   2   3   4   5
+6   7   8   9   10  11  12
+13  14  15  16  17  18  19
+20  21  22  23  24  25  26
+27  28  29  30
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -775,6 +722,14 @@ Promedio del estudiante 2: 3.0
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-librerias">Importar Librerias</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-ciclos-anidados">Ejemplos de ciclos anidados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5:</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
