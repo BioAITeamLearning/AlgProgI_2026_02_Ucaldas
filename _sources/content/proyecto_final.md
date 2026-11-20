@@ -12,7 +12,7 @@ kernelspec:
 
 # 🏁 Proyecto Final — Tienda por consola
 
-Programa en Python, por consola, para manejar una tienda: inventario, productos nuevos, reabastecimiento, búsqueda, ventas con factura y reporte de ventas. Se trabaja solo con listas y funciones, con menús en ASCII, y se sustenta de forma oral.
+Programa en Python, por consola, para manejar una tienda: inventario, productos nuevos, reabastecimiento, búsqueda, ventas con factura y reporte de ventas. Se trabaja solo con listas y funciones, con menús en ASCII, y se trabaja en grupos de máximo 3 personas y se sustenta de forma oral.
 
 :::{card} 📥 Enunciado del proyecto en PDF
 Descripción completa, reglas, pantallas de ejemplo, tips por funcionalidad, datos iniciales y condiciones de entrega.
@@ -21,5 +21,5 @@ Descripción completa, reglas, pantallas de ejemplo, tips por funcionalidad, dat
 :::
 
 :::{important}
-**Fecha límite de entrega: 3 de diciembre de 2026.** Se entrega un único archivo `tienda_nombre_apellido.py`.
+**Grupos de máximo 3 personas.** Se entrega un único archivo `.py` o el enlace a un cuaderno de Google Colab, con los nombres de los integrantes al inicio.
 :::
